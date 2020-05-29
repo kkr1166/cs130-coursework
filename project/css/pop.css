@@ -52,9 +52,13 @@ em{
 ------------------------------------*/
 nav {
   overflow: hidden;
-  margin-left: 100px;
-  margin-right: 100px;
-  border-bottom: solid 10px whitesmoke;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-bottom: solid 3px whitesmoke;
+  height: 75px;
+  position: fixed;
+  top: 0;
+  width: calc(100vw - 100px);
 }
 
 nav a {
@@ -66,10 +70,10 @@ nav a {
   padding-bottom: 13px;
   width: 20%;
   text-decoration: none;
-  font-size: 250px;
   font-family: 'Lao MN', sans-serif;
-  font-size: 10em;
+  font-size: 2.3em;
 }
+
 
 nav>div>a:hover {
   color: black;
@@ -85,7 +89,7 @@ nav>div>a.rainbow-text {
 /* play buttons
 ------------------------------------*/
 i {
-    font-size: 20em;
+    font-size: 3.8em;
 /*
     background-image: linear-gradient(to left, blue, red);   
     -webkit-background-clip: text;
@@ -104,32 +108,32 @@ i:hover {
 
 #one {
     position: absolute; 
-    top: 500px; 
-    left: 1200px;
+    top: 110px; 
+    left: 300px;
 }
 
 #two {
     position: absolute; 
-    top: 700px; 
-    right: 900px;
+    top: 150px; 
+    right: 200px;
 }
 
 #three {
     position: absolute; 
-    top: 1500px; 
-    right: 1700px;
+    bottom: 50px; 
+    right: 300px;
 }
 
 #four {
     position: absolute; 
-    top: 1400px; 
-    right: 300px;
+    top: 320px; 
+    right: 30px;
 }
 
 #five {
     position: absolute; 
-    bottom: 400px; 
-    left: 400px;
+    bottom: 100px; 
+    left: 150px;
     
 }
 

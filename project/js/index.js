@@ -4,5 +4,5 @@
 
 
 $(window).scroll(function(){
-    $(".namediv").css("opacity", 1 - $(window).scrollTop() / 350);
+    $(".namediv").css("opacity", 1 - $(window).scrollTop() / 100);
   });

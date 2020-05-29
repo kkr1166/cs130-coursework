@@ -1,42 +1,17 @@
 /*loading page
 ------------------------------------*/
-
 @-moz-document url(about:blank) {
     html,body { background: black; }
 }
 
-/*body,html*/
+/*body,html
+------------------------------------*/
 
 body, html {
     height: 100%;
     margin: 0; 
     background: black;
 }
-/*background image
-------------------------------------*/
-/*
-body {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh; 
-*/
-
-  /* Create the parallax scrolling effect */
-/*
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-html {
-    height:100%;
-    margin:0;
-    padding: 0;
-}
-*/
-
-
 
 /*parallax
 ------------------------------------*/
@@ -55,43 +30,20 @@ html {
   background-size: cover;
 }
 
-/*
-------------------------------------*/
-
 /*name
 ------------------------------------*/
 .name {
     color: whitesmoke;
     font-family: 'Lao MN';
-    font-size: 17em;
+    font-size: 4em;
     position: absolute; 
     bottom: 0; 
-    right: 0; 
+    right: 25px; 
     
 }
 
 .namediv {
     opacity: 1;
-}
-
-.top {
-  margin: 0;
-  position: relative;
-  width: 100%;
-  background-color: #aaa;
-  height: 300px;
-  opacity: 1;
-  text-align: center;
-  font-family: 'helvetica';
-  font-size: 80px;
-  font-weight: 100;
-  color: #fff;
-}
-
-.title {
-  position: absolute;
-  top: 60%;
-  left: 100px;
 }
 
 /*bio
@@ -100,14 +52,14 @@ html {
 
     background-color: black;
     font-family: 'Lao MN';
-    font-size: 5.6em;
+    font-size: 1em;
 /*    color: rgba(204,135,181);*/
-    padding-right: 300px;
-    padding-left: 300px;
-    max-height: calc(100vh - 275px - 80px);
+    padding-right: 100px;
+    padding-left: 100px;
+    max-height: calc(100vh - 50px - 80px);
     border-top: solid black 10px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 10px;
+    padding-bottom: 30px;
     color: whitesmoke;
 }
 
@@ -117,21 +69,16 @@ em{
 }
 
 /* Navigation
-
-
-  
-
 ------------------------------------*/
 nav {
-
   overflow: hidden;
-  margin-left: 100px;
-  margin-right: 100px;
-  border-bottom: solid 10px whitesmoke;
-  height: 275px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-bottom: solid 3px whitesmoke;
+  height: 75px;
   position: fixed;
   top: 0;
-  width: calc(100vw - 200px);
+  width: calc(100vw - 100px);
 }
 
 nav a {
@@ -143,9 +90,8 @@ nav a {
   padding-bottom: 13px;
   width: 20%;
   text-decoration: none;
-  font-size: 250px;
   font-family: 'Lao MN', sans-serif;
-  font-size: 10em;
+  font-size: 2.3em;
 }
 
 nav>a:hover {

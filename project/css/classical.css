@@ -15,9 +15,13 @@ html {
 ------------------------------------*/
 nav {
   overflow: hidden;
-  margin-left: 100px;
-  margin-right: 100px;
-  border-bottom: solid 10px whitesmoke;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-bottom: solid 3px whitesmoke;
+  height: 75px;
+  position: fixed;
+  top: 0;
+  width: calc(100vw - 100px);
 }
 
 nav a {
@@ -29,9 +33,8 @@ nav a {
   padding-bottom: 13px;
   width: 20%;
   text-decoration: none;
-  font-size: 250px;
   font-family: 'Lao MN', sans-serif;
-  font-size: 10em;
+  font-size: 2.3em;
 }
 
 nav>a:hover {
@@ -52,19 +55,21 @@ nav a.active {
 /*Message
 -----------------------------------*/
 .message {
-    height: 300px;
+    height: 150px;
 }
 
 /*Tracks
 -----------------------------------*/
 .tracks {
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: 150px;
+    margin-right: 150px;
+    
 }
 
 .track {
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     border-radius: 12px;
+
     
 }
 
@@ -91,23 +96,20 @@ nav a.active {
 #rwd, #ffwd {
     color: rgb(231, 230, 230);
     margin: 10px;
-    font-size: 3em; 
+    font-size: 1em; 
 }
 
 #play_pause, #scroll, #arrow {
     color: rgb(231, 230, 230);
     margin: 10px;
-    font-size: 6em;
+    font-size: 1.6em;
 }
-
-
-
 
 .slider {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100px;
+    height: 3px;
     align-items: center;
 }
 
@@ -138,20 +140,21 @@ input[type=range]::-moz-range-track {
   }
 
 [type='range']::-webkit-slider-runnable-track {
+  margin-top: -1.2em;
   box-sizing: border-box;
   border: none;
   width: 12.5em;
-  height: 0.8em;
+  height: 0.3em;
   background: #777;
 }
 
 [type='range']::-webkit-slider-thumb {
-  margin-top: -1em;
+  margin-top: -.5em;
   -webkit-appearance: none;
   box-sizing: border-box;
   border: none;
-  width: 3em;
-  height: 3em;
+  width: 1.2em;
+  height: 1.2em;
   border-radius: 50%;
   background: RGB(199,130,177);
 }

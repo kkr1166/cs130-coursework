@@ -1,0 +1,170 @@
+/*loading page
+------------------------------------*/
+
+@-moz-document url(about:blank) {
+    html,body { background: black; }
+}
+
+/*body,html*/
+
+body, html {
+    height: 100%;
+    margin: 0; 
+    background: black;
+}
+/*background image
+------------------------------------*/
+/*
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; 
+*/
+
+  /* Create the parallax scrolling effect */
+/*
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+html {
+    height:100%;
+    margin:0;
+    padding: 0;
+}
+*/
+
+
+
+/*parallax
+------------------------------------*/
+.parallax {
+  /* The image used */
+  background-image: url('/homework/project/images/center.png')
+      /*url('/homework/project/images/profile.jpeg')*/;
+
+  /* Set a specific height */
+  height: 100vh; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*
+------------------------------------*/
+
+/*name
+------------------------------------*/
+.name {
+    color: whitesmoke;
+    font-family: 'Lao MN';
+    font-size: 17em;
+    position: absolute; 
+    bottom: 0; 
+    right: 0; 
+    
+}
+
+.namediv {
+    opacity: 1;
+}
+
+.top {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  background-color: #aaa;
+  height: 300px;
+  opacity: 1;
+  text-align: center;
+  font-family: 'helvetica';
+  font-size: 80px;
+  font-weight: 100;
+  color: #fff;
+}
+
+.title {
+  position: absolute;
+  top: 60%;
+  left: 100px;
+}
+
+/*bio
+------------------------------------*/
+#bio {
+
+    background-color: black;
+    font-family: 'Lao MN';
+    font-size: 5.6em;
+/*    color: rgba(204,135,181);*/
+    padding-right: 300px;
+    padding-left: 300px;
+    max-height: calc(100vh - 275px - 80px);
+    border-top: solid black 10px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: whitesmoke;
+}
+
+em{
+    font-style: normal;
+    color: whitesmoke;
+}
+
+/* Navigation
+
+
+  
+
+------------------------------------*/
+nav {
+
+  overflow: hidden;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-bottom: solid 10px whitesmoke;
+  height: 275px;
+  position: fixed;
+  top: 0;
+  width: calc(100vw - 200px);
+}
+
+nav a {
+  float: left;
+  color: whitesmoke;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  width: 20%;
+  text-decoration: none;
+  font-size: 250px;
+  font-family: 'Lao MN', sans-serif;
+  font-size: 10em;
+}
+
+nav>a:hover {
+  color: black;
+  font-weight: 525;
+}
+
+nav>div>a:hover {
+  color: black;
+  font-weight: 525;
+}
+
+nav a.active {
+  color: black;
+}
+
+.rainbow-text:hover {
+    background-image: linear-gradient(to left, yellow, orange, red, orange, yellow, violet, orange, red, orange,yellow);   -webkit-background-clip: text;
+  color: transparent;
+    
+}
+

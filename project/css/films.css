@@ -1,0 +1,89 @@
+/*loading page
+------------------------------------*/
+
+@-moz-document url(about:blank) {
+    html,body { background: black; }
+}
+
+/*General
+------------------------------------*/
+html {
+    background-color: black;
+    
+}
+/* Navigation
+------------------------------------*/
+nav {
+  overflow: hidden;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-bottom: solid 10px whitesmoke;
+}
+
+nav a {
+  float: left;
+  color: whitesmoke;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  width: 20%;
+  text-decoration: none;
+  font-size: 250px;
+  font-family: 'Lao MN', sans-serif;
+  font-size: 10em;
+}
+
+nav>a:hover {
+  color: RGB(199,130,177);
+  font-weight: 525;
+}
+
+nav a.active {
+  color: RGB(199,130,177);
+}
+
+.rainbow-text:hover {
+    background-image: linear-gradient(to left, yellow, orange, red, orange, yellow, violet, orange, red, orange,yellow);   -webkit-background-clip: text;
+  color: transparent;
+    
+}
+
+/*Films
+------------------------------------*/
+.preview {
+    display: none;
+}
+
+
+/*Film Posters
+------------------------------------*/
+body * {
+    box-sizing: border-box;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.card {
+    width: calc(33.33% - 20px);
+    height: calc(70% - 20px);
+    min-height: 120px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+
+
+

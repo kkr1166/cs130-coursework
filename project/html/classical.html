@@ -3,13 +3,225 @@
     <head>
         <meta charset="utf-8">
         <title>Classical - Kitra Razin</title>
-        <link rel="stylesheet" href="css/design.css">
+        <link rel="stylesheet" href="/homework/project/css/classical.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/4629a0026c.js" crossorigin="anonymous"></script>
+        <script src="https://a-v2.sndcdn.com/assets/15-88b9f559-3.js" crossorigin=""></script>
     </head>
     <body>
-        <main>
-            this is the classical music page
-        </main>
-        <script type="text/javascript" src="js/index.js"></script>
+        <nav role="navigation">
+            <a href="index.html" title="Homepage">Home</a>
+            <a href="classical.html" title="Classical Music" class="active">Classical</a>
+            <a href="films.html" title="Film Scores">Films</a>
+            <a href="pop.html" class="rainbow-text" title="Pop Music">Pop</a>
+            <a href="lessons.html" title="Composition Lessons">Lessons</a>
+            </nav> 
+        <div class="message">
+        
+        </div>
+        <div class="tracks">
+            <div class="track" id="blacksugar">
+                
+                <div class="player">
+                <div class="controls">
+                    <i id="rwd" class="fas fa-backward"></i>
+                    <i id="play_pause" class="fas fa-play"></i>
+                    <i id="ffwd" class="fas fa-forward"></i>
+                    <i id="scroll" class="fas fa-scroll"></i>
+                    <i id="arrow" class="fas fa-arrow-down"></i>
+                </div>
+                <div class="slider">
+                    <audio preload class="audio">
+                        <source src="#" type="audio/mpeg" />
+                    </audio>
+                    <span id="time-elapsed">00:00</span>
+                    <input type="range" id="player-time" value="1" max="100" min="1" step="1">
+                    <span id="time-total">00:30</span>
+                </div>
+                <audio id="track" src="" />
+            </div>
+            
+            </div>
+            <div class="track" id="smokewater">
+            
+                <div class="player">
+                <div class="controls">
+                    <i id="rwd" class="fas fa-backward"></i>
+                    <i id="play_pause" class="fas fa-play"></i>
+                    <i id="ffwd" class="fas fa-forward"></i>
+                    <i id="scroll" class="fas fa-scroll"></i>
+                    <i id="arrow" class="fas fa-arrow-down"></i>
+                </div>
+                <div class="slider">
+                    <audio preload class="audio">
+                        <source src="#" type="audio/mpeg" />
+                    </audio>
+                    <span id="time-elapsed">00:00</span>
+                    <input type="range" id="player-time" value="1" max="100" min="1" step="1">
+                    <span id="time-total">00:30</span>
+                </div>
+                <audio id="track" src="" />
+            </div>
+
+            </div>
+            <div class="track" id="beehivecoke">
+            
+            <div class="player">
+                <div class="controls">
+                    <i id="rwd" class="fas fa-backward"></i>
+                    <i id="play_pause" class="fas fa-play"></i>
+                    <i id="ffwd" class="fas fa-forward"></i>
+                    <i id="scroll" class="fas fa-scroll"></i>
+                    <i id="arrow" class="fas fa-arrow-down"></i>
+                </div>
+                <div class="slider">
+                    <audio preload class="audio">
+                        <source src="#" type="audio/mpeg" />
+                    </audio>
+                    <span id="time-elapsed">00:00</span>
+                    <input type="range" id="player-time" value="1" max="100" min="1" step="1">
+                    <span id="time-total">00:30</span>
+                </div>
+                <audio id="track" src="" />
+            </div>
+            </div>
+            <div class="track" id="bonesick">
+            
+            <div class="player">
+                <div class="controls">
+                    <i id="rwd" class="fas fa-backward"></i>
+                    <i id="play_pause" class="fas fa-play"></i>
+                    <i id="ffwd" class="fas fa-forward"></i>
+                    <i id="scroll" class="fas fa-scroll"></i>
+                    <i id="arrow" class="fas fa-arrow-down"></i>
+                </div>
+                <div class="slider">
+                    <audio preload class="audio">
+                        <source src="#" type="audio/mpeg" />
+                    </audio>
+                    <span id="time-elapsed">00:00</span>
+                    <input type="range" id="player-time" value="1" max="100" min="1" step="1">
+                    <span id="time-total">00:30</span>
+                </div>
+                <audio id="track" src="" />
+            </div>
+            
+            </div>
+            <div class="track" id="mode">
+            
+            
+            <div class="player">
+                <div class="controls">
+                    <i id="rwd" class="fas fa-backward"></i>
+                    <i id="play_pause" class="fas fa-play"></i>
+                    <i id="ffwd" class="fas fa-forward"></i>
+                    <i id="scroll" class="fas fa-scroll"></i>
+                    <i id="arrow" class="fas fa-arrow-down"></i>
+                </div>
+                <div class="slider">
+                    <audio preload class="audio">
+                        <source src="#" type="audio/mpeg" />
+                    </audio>
+                    <span id="time-elapsed">00:00</span>
+                    <input type="range" id="player-time" value="1" max="100" min="1" step="1">
+                    <span id="time-total">00:30</span>
+                </div>
+                <audio id="track" src="" />
+            </div>
+            
+            </div>
+            <div class="track" id="pluot">
+            
+            <div class="player">
+                <div class="controls">
+                    <i id="rwd" class="fas fa-backward"></i>
+                    <i id="play_pause" class="fas fa-play"></i>
+                    <i id="ffwd" class="fas fa-forward"></i>
+                    <i id="scroll" class="fas fa-scroll"></i>
+                    <i id="arrow" class="fas fa-arrow-down"></i>
+                </div>
+                <div class="slider">
+                    <audio preload class="audio">
+                        <source src="#" type="audio/mpeg" />
+                    </audio>
+                    <span id="time-elapsed">00:00</span>
+                    <input type="range" id="player-time" value="1" max="100" min="1" step="1">
+                    <span id="time-total">00:30</span>
+                </div>
+                <audio id="track" src="" />
+            </div>
+            
+            </div>
+            <div class="track" id="bennu">
+            
+            <div class="player">
+                <div class="controls">
+                    <i id="rwd" class="fas fa-backward"></i>
+                    <i id="play_pause" class="fas fa-play"></i>
+                    <i id="ffwd" class="fas fa-forward"></i>
+                    <i id="scroll" class="fas fa-scroll"></i>
+                    <i id="arrow" class="fas fa-arrow-down"></i>
+                </div>
+                <div class="slider">
+                    <audio preload class="audio">
+                        <source src="#" type="audio/mpeg" />
+                    </audio>
+                    <span id="time-elapsed">00:00</span>
+                    <input type="range" id="player-time" value="1" max="100" min="1" step="1">
+                    <span id="time-total">00:30</span>
+                </div>
+                <audio id="track" src="" />
+            </div>
+            
+            </div>
+<!--            <div class="track" id="tiptoe"></div>-->
+            <div class="track" id="rain">
+            
+            <div class="player">
+                <div class="controls">
+                    <i id="rwd" class="fas fa-backward"></i>
+                    <i id="play_pause" class="fas fa-play"></i>
+                    <i id="ffwd" class="fas fa-forward"></i>
+                    <i id="scroll" class="fas fa-scroll"></i>
+                    <i id="arrow" class="fas fa-arrow-down"></i>
+                </div>
+                <div class="slider">
+                    <audio preload class="audio">
+                        <source src="#" type="audio/mpeg" />
+                    </audio>
+                    <span id="time-elapsed">00:00</span>
+                    <input type="range" id="player-time" value="1" max="100" min="1" step="1">
+                    <span id="time-total">00:30</span>
+                </div>
+                <audio id="track" src="" />
+            </div>
+            
+            </div>
+            <div class="track" id="mourningmoonpiano"></div>
+<!--
+            <div class="track" id="heterochromia"></div>
+            <div class="track" id="aballadofdreamland"></div>
+            <div class="track" id="viperpass"></div>
+            <div class="track" id="mourningmoonstrings"></div>
+-->
+            
+            
+<!--
+            <div class="track" id="smokewater">
+            
+
+            </div>
+            <div class="track" id="beehivecoke"></div>
+            <div class="track" id="bonesick"></div>
+            <div class="track" id="mode"></div>
+            <div class="track" id="pluot"></div>
+            <div class="track" id="bennu"></div>
+            <div class="track" id="tiptoe"></div>
+            <div class="track" id="rain"></div>
+            <div class="track" id="mourningmoonpiano"></div>
+-->
+            
+        </div>
+    <script type="text/javascript" src="/homework/project/js/classical.js"></script>
     </body>
 </html>

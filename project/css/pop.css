@@ -1,0 +1,135 @@
+/*loading page
+------------------------------------*/
+
+@-moz-document url(about:blank) {
+    html,body { background: black; }
+}
+
+/*background image
+------------------------------------*/
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+html {
+    height:100%;
+    margin:0;
+    padding: 0;
+}
+/*name
+------------------------------------*/
+.name {
+    color: whitesmoke;
+    font-family: 'Lao MN';
+    font-size: 17em;
+    position: absolute; 
+    bottom: 0; 
+    right: 0; 
+    
+}
+
+/*bio
+------------------------------------*/
+#bio {
+/*    display:none;*/
+    display: none;
+    font-family: 'Lao MN';
+    font-size: 9em;
+    background-color: rgba(204,135,181,.6);
+    margin-right: 1000px;
+    margin-left: 1000px;
+    padding: 90px;
+}
+
+em{
+    font-style: normal;
+/*    color: whitesmoke;*/
+}
+
+/* Navigation
+------------------------------------*/
+nav {
+  overflow: hidden;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-bottom: solid 10px whitesmoke;
+}
+
+nav a {
+  float: left;
+  color: whitesmoke;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  width: 20%;
+  text-decoration: none;
+  font-size: 250px;
+  font-family: 'Lao MN', sans-serif;
+  font-size: 10em;
+}
+
+nav>div>a:hover {
+  color: black;
+  font-weight: 525;
+}
+
+
+nav>div>a.rainbow-text {
+    background-image: linear-gradient(to left, blue, red);   -webkit-background-clip: text;
+  color: transparent;  
+}
+
+/* play buttons
+------------------------------------*/
+i {
+    font-size: 20em;
+/*
+    background-image: linear-gradient(to left, blue, red);   
+    -webkit-background-clip: text;
+    color: transparent;  
+*/
+    cursor: pointer;
+     
+}
+
+i:hover {
+    background-image: linear-gradient(to left, red, blue);   -webkit-background-clip: text;
+  color: transparent;
+
+    
+}
+
+#one {
+    position: absolute; 
+    top: 500px; 
+    left: 1200px;
+}
+
+#two {
+    position: absolute; 
+    top: 700px; 
+    right: 900px;
+}
+
+#three {
+    position: absolute; 
+    top: 1500px; 
+    right: 1700px;
+}
+
+#four {
+    position: absolute; 
+    top: 1400px; 
+    right: 300px;
+}
+
+#five {
+    position: absolute; 
+    bottom: 400px; 
+    left: 400px;
+    
+}
+

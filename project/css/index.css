@@ -42,8 +42,8 @@ html {
 ------------------------------------*/
 .parallax {
   /* The image used */
-  background-image: url('/homework/project/images/center.png')
-      /*url('/homework/project/images/profile.jpeg')*/;
+  background-image: url('/repo/project/images/center.png')
+      /*url('/repo/project/images/profile.jpeg')*/;
 
   /* Set a specific height */
   height: 100vh; 

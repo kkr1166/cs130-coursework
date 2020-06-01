@@ -9,7 +9,7 @@
 ------------------------------------*/
 html {
     background-color: black;
-    
+    font-family: 'Lao MN', sans-serif;
 } 
 /* Navigation
 ------------------------------------*/
@@ -55,7 +55,9 @@ nav a.active {
 /*Message
 -----------------------------------*/
 .message {
+    text-align: bottom;
     height: 150px;
+    color: whitesmoke;
 }
 
 /*Tracks
@@ -63,69 +65,249 @@ nav a.active {
 .tracks {
     margin-left: 150px;
     margin-right: 150px;
-    
 }
 
 .track {
     margin-bottom: 20px;
-    border-radius: 12px;
-
-    
-}
-
-
-.player {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    min-width: 400px;
     background-color: rgb(59,56,56);
 }
 
+.player {
+    width: auto;
+    min-width: 400px;
+    background-color: rgb(59,56,56);
+    padding-bottom: 5px;
+}
+
 .controls {
-    height: 40px;
-    justify-content: space-around;
     display: flex;
     flex-direction: row;
-    width: 110px;
-    align-self: center;
-    align-items: center;
-    margin-bottom: 10px;
+    justify-content: space-between;
+    color: rgb(231, 230, 230);
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.left {
+    display: flex;
+}
+
+.middle {
+    display: flex;
+}
+
+.right {
+    display: flex;
 }
 
 #rwd, #ffwd {
     color: rgb(231, 230, 230);
-    margin: 10px;
-    font-size: 1em; 
+    font-size: .8em; 
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    cursor: pointer;
 }
 
-#play_pause, #scroll, #arrow {
+#play_pause {
     color: rgb(231, 230, 230);
-    margin: 10px;
-    font-size: 1.6em;
+    font-size: 1.4em;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    cursor: pointer;
 }
 
+
+#scroll {
+    color: rgb(231, 230, 230);
+    font-size: 1.4em;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+#eye {
+    color: rgb(231, 230, 230);
+    font-size: 1.4em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+#time-elapsed {
+    margin-top: 2px;
+    font-size: 1em;
+    color: rgb(231, 230, 230);
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    padding-left: 10px;
+}
+
+.divider {
+    font-size: 1.6em;
+    margin-top: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#time-total {
+    margin-top: 2px;
+    font-size: 1em;
+    color: rgb(231, 230, 230);
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+.track_photo {
+    height:23px;
+    width:23px;
+    background-image: url("https://i1.sndcdn.com/artworks-000508287303-qjyoz1-t500x500.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    margin-right: 6px;
+    margin-top: 3px;
+}
+
+.track_name {
+    white-space: nowrap;
+    font-size: 1.4em;
+    display: flex;
+    align-items: center;
+}
+
+/*Hover
+-----------------------------------*/
+
+#rwd:hover, #ffwd:hover, #play_pause:hover, #eye:hover, #scroll:hover {
+    color: rgb(199,130,177);
+}
+
+/*View hover tooltip
+-----------------------------------*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  text-decoration: underline;
+  width: 110px;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -87px;
+  padding-top: 8px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 80%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: whitesmoke transparent transparent transparent;
+
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  
+}
+
+
+.tooltip:hover #eye {
+    color: rgb(199,130,177);
+}
+
+#embedded_score {
+    display: none;
+    margin-bottom: 20px;
+}
+
+/*Download hover tooltip
+-----------------------------------*/
+
+a{
+    color: black;
+}
+
+a:hover {
+    color: rgb(199,130,177);
+}
+
+.download_tooltip {
+  position: relative;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.download_tooltip .download_tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -147px;
+  padding-top: 8px;
+}
+
+.download_tooltip .download_tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 73%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent whitesmoke transparent;
+}
+
+.download_tooltip:hover .download_tooltiptext {
+  visibility: visible;
+}
+
+.download_tooltip:hover #scroll {
+    color: rgb(199,130,177);
+}
+
+/*Slider
+-----------------------------------*/
 .slider {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 3px;
     align-items: center;
-}
-
-span {
-    font-size: 0.8em;
-    letter-spacing: 1px;
-}
-
-#time-elapsed {
-    margin-right: 32px;
-    color: rgb(231, 230, 230);
-}
-
-#time-total {
-    margin-left: 32px;
-    color: rgb(231, 230, 230);
 }
 
 [type='range'] {
@@ -135,26 +317,27 @@ span {
     -webkit-appearance: none;
     width: 100%;
 }
+
 input[type=range]::-moz-range-track {
     background-color: #777;
   }
 
 [type='range']::-webkit-slider-runnable-track {
-  margin-top: -1.2em;
+/*  margin-top: -1.2em;*/
   box-sizing: border-box;
   border: none;
   width: 12.5em;
-  height: 0.3em;
+  height: 0.2em;
   background: #777;
 }
 
 [type='range']::-webkit-slider-thumb {
-  margin-top: -.5em;
+  margin-top: -.45em;
   -webkit-appearance: none;
   box-sizing: border-box;
   border: none;
-  width: 1.2em;
-  height: 1.2em;
+  width: 1em;
+  height: 1em;
   border-radius: 50%;
   background: RGB(199,130,177);
 }

@@ -1,4 +1,4 @@
-const AudioPlayer = (selector, audioFile) => {
+const AudioPlayer = (selector, audioFile) => { 
     let audio;
     let playButton;
     let rwdButton;

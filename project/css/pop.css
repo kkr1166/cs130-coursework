@@ -5,6 +5,14 @@
     html,body { background: black; }
 }
 
+
+/*General
+------------------------------------*/
+html {
+    background-color: black;
+    font-family: 'Lao MN', sans-serif;
+} 
+
 /*background image
 ------------------------------------*/
 body {

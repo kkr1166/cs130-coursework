@@ -1,0 +1,29 @@
+.track_photo {
+    background-image: url("https://i1.sndcdn.com/artworks-000508287303-qjyoz1-t500x500.jpg");
+}
+
+.player {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.left, .right, .middle {
+    
+    border: solid red 1px;
+}
+
+.left {
+    
+}
+
+ 
+.right {
+    float: right;
+    
+}
+
+.middle {
+    
+}

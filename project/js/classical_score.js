@@ -17,6 +17,6 @@ function viewScore() {
   }
 }
 
-const audioPlayer1 = AudioPlayer('.player.blacksugar', "../media/alarm.mp3");
+const audioPlayer1 = AudioPlayer('.player.blacksugar', "../music/classicalMusic/blacksugar.mp3");
 
 const audioPlayer2 = AudioPlayer('.player.next', "../media/dontthink.mp3");

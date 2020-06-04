@@ -4,33 +4,24 @@ const AudioPlayer = (selector, audioFile) => {
     let rwdButton;
     let ffwdButton;
     let sliderInput;
-    let containerElement = document;
-    if (selector) {
-        containerElement = document.querySelector(selector);
-    }
+    let containerElement;
 
-    this.isPaused = () => {
-        return audio.paused;
-    };
-
-    this.togglePlay = () => {
+    const togglePlay = () => {
         if (audio.paused) {
-            this.play();
+            play();
         } else {
-            this.pause();
+            pause();
         }
     };
 
-    this.play = () => {
-        console.log('play');
+    const play = () => {
         playButton.classList.remove('fa-play', 'fa-pause');
         jumpToTime();
         audio.play();
         playButton.classList.add('fa-pause');
-        
     };
 
-    this.pause = () => {
+    const pause = () => {
         playButton.classList.remove('fa-play', 'fa-pause');
         jumpToTime();
         audio.pause();
@@ -41,7 +32,6 @@ const AudioPlayer = (selector, audioFile) => {
         const progressController = containerElement.querySelector('.player-time');
         const timeElapsed = containerElement.querySelector('.time-elapsed');
         const timeTotal = containerElement.querySelector('.time-total');
-        //console.log(getSliderPosition(), getCurrentTime(), getDuration());
         if (getDuration() === "0NaN:0NaN") {
             console.log('returning...');
             return;
@@ -53,6 +43,7 @@ const AudioPlayer = (selector, audioFile) => {
     };
 
     const skipForward = () => {
+        audio = containerElement.querySelector('.track');
         if (audio.currentTime < audio.duration) {
             audio.currentTime += audio.duration / 10;
         } else {
@@ -102,17 +93,15 @@ const AudioPlayer = (selector, audioFile) => {
         return minutes + ":" + seconds;
     };
 
-    this.setAudioFile = (audio_url) => {
+    const setAudioFile = (audio_url) => {
         audio.src = audio_url;
     };
 
-    this.getAudioFile = (audio_url) => {
-        return audio.src;
-    };
 
-
-    this.initialize = () => {
+    initialize = () => {
         // init DOM hooks:
+        containerElement = document.querySelector(selector);
+        console.log(containerElement);
         audio = containerElement.querySelector('.track');
         playButton = containerElement.querySelector('.play_pause');
         rwdButton = containerElement.querySelector('.rwd');
@@ -125,18 +114,16 @@ const AudioPlayer = (selector, audioFile) => {
         audio.onended = resetTime;
         audio.onloadeddata = function() {
             console.log("preview loaded");
-            //resetTime();
-            //this.pause();
+
         };
-        playButton.onclick = this.togglePlay;
+        playButton.onclick = togglePlay;
         rwdButton.onclick = skipBackward;
         ffwdButton.onclick = skipForward;
         sliderInput.oninput = customTime;
         sliderInput.onchange = customTime;
     };
-    this.initialize();
+    initialize();
     if (audioFile) {
-        this.setAudioFile(audioFile);
+        setAudioFile(audioFile);
     }
-    return this;
 };

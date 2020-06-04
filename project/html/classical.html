@@ -21,6 +21,87 @@
         </div>
         <div class="tracks">
             <div class="track" id="blacksugar">
+                <div class="player blacksugar">
+                    
+                <div class="slider">
+                    <audio preload class="audio">
+                        <source src="#" type="audio/mpeg" />
+                    </audio>
+                    
+                    <input type="range" class="player-time" value="1" max="100" min="1" step="1">
+                    
+                </div>
+                <div class="controls">
+                    <div class="left">
+                        <i class="fas fa-backward rwd"></i>
+                        <i class="fas fa-play play_pause"></i>
+                        <i class="fas fa-forward ffwd"></i>
+                        <div class="time-elapsed">00:00</div>
+                        <div class="divider">/</div>
+                        <div class="time-total">00:30</div></div>
+                    <div class="middle">
+                        <div class="track_photo"></div>
+                        <div class="track_name">Black Sugar</div>
+                        </div>
+                    <div class="right">
+                        <div class="download_tooltip"><i class="scroll" class="fas fa-scroll"></i><span class="download_tooltiptext">
+                            <a href="Black Sugar Violin I" download>Download Violin I</a><br>
+                            <a href="Black Sugar Violin II" download>Download Violin II</a><br>
+                            <a href="Black Sugar Viola" download>Download Viola</a><br>
+                            <a href="Black Sugar Cello" download>Download Cello</a><br>
+                            <a href="Black Sugar Piano" download>Download Piano</a><br>
+                            <a href="Black Sugar Vibraphone" download>Download Vibraphone</a><br>
+                            <a href="../scores/Black%20Sugar%20Score.pdf" download>Download Score</a>
+                            </span></div>
+                        <div class="tooltip"><i class="eye" class="fas fa-eye" onclick="viewScore()"></i><span class="tooltiptext" onclick="viewScore()">View Score</span></div></div>
+                </div>
+                <audio class="track" src="" />
+            </div>
+            </div>
+            <embed src="../scores/Black%20Sugar%20Score.pdf" type="application/pdf" id="embedded_score"   height="350px" width="100%" title="Black Sugar">
+<!-- Next Track------------------------------------------------------------------------------------------>   
+            <div class="track" id="next">
+                <div class="player next">
+                    
+                <div class="slider">
+                    <audio preload class="audio">
+                        <source src="#" type="audio/mpeg" />
+                    </audio>
+                    
+                    <input type="range" class="player-time" value="1" max="100" min="1" step="1">
+                    
+                </div>
+                <div class="controls">
+                    <div class="left">
+                        <i class="fas fa-backward rwd"></i>
+                        <i class="fas fa-play play_pause"></i>
+                        <i class="fas fa-forward ffwd"></i>
+                        <div class="time-elapsed">00:00</div>
+                        <div class="divider">/</div>
+                        <div class="time-total">00:30</div></div>
+                    <div class="middle">
+                        <div class="track_photo"></div>
+                        <div class="track_name">Next</div>
+                        </div>
+                    <div class="right">
+                        <div class="download_tooltip"><i class="scroll" class="fas fa-scroll"></i><span class="download_tooltiptext">
+                            <a href="Black Sugar Violin I" download>Download Violin I</a><br>
+                            <a href="Black Sugar Violin II" download>Download Violin II</a><br>
+                            <a href="Black Sugar Viola" download>Download Viola</a><br>
+                            <a href="Black Sugar Cello" download>Download Cello</a><br>
+                            <a href="Black Sugar Piano" download>Download Piano</a><br>
+                            <a href="Black Sugar Vibraphone" download>Download Vibraphone</a><br>
+                            <a href="../scores/Black%20Sugar%20Score.pdf" download>Download Score</a>
+                            </span></div>
+                        <div class="tooltip"><i class="eye" class="fas fa-eye" onclick="viewScore()"></i><span class="tooltiptext" onclick="viewScore()">View Score</span></div></div>
+                </div>
+                <audio class="track" src="" />
+            </div>
+            </div>
+            <embed src="../scores/Black%20Sugar%20Score.pdf" type="application/pdf" id="embedded_score"   height="350px" width="100%" title="Black Sugar">
+            
+<!-- Placeholder Tracks!------------------------------------------------------------------------------------------>     
+            <div class="track" id="smokewater">
                 <div class="player">
                     
                 <div class="slider">
@@ -41,7 +122,7 @@
                         <div id="time-total">00:30</div></div>
                     <div class="middle">
                         <div class="track_photo"></div>
-                        <div class="track_name">Black Sugar</div>
+                        <div class="track_name">Smoke Water</div>
                         </div>
                     <div class="right">
                         <div class="download_tooltip"><i id="scroll" class="fas fa-scroll"></i><span class="download_tooltiptext">
@@ -55,19 +136,297 @@
                             </span></div>
                         <div class="tooltip"><i id="eye" class="fas fa-eye" onclick="viewScore()"></i><span class="tooltiptext" onclick="viewScore()">View Score</span></div></div>
                 </div>
-                    
-                
                 <audio id="track" src="" />
-                    
-                    
-                    
-                    
-                    
             </div>
-                
             </div>
-            <embed src="../scores/Black%20Sugar%20Score.pdf" type="application/pdf" id="embedded_score"   height="350px" width="100%" title="Black Sugar">
-    
+            
+            <div class="track" id="beehivecoke">
+                <div class="player">
+                    
+                <div class="slider">
+                    <audio preload class="audio">
+                        <source src="#" type="audio/mpeg" />
+                    </audio>
+                    
+                    <input type="range" id="player-time" value="1" max="100" min="1" step="1">
+                    
+                </div>
+                <div class="controls">
+                    <div class="left">
+                        <i id="rwd" class="fas fa-backward"></i>
+                        <i id="play_pause" class="fas fa-play"></i>
+                        <i id="ffwd" class="fas fa-forward"></i>
+                        <div id="time-elapsed">00:00</div>
+                        <div class="divider">/</div>
+                        <div id="time-total">00:30</div></div>
+                    <div class="middle">
+                        <div class="track_photo"></div>
+                        <div class="track_name">Beehive Coke</div>
+                        </div>
+                    <div class="right">
+                        <div class="download_tooltip"><i id="scroll" class="fas fa-scroll"></i><span class="download_tooltiptext">
+                            <a href="Black Sugar Violin I" download>Download Violin I</a><br>
+                            <a href="Black Sugar Violin II" download>Download Violin II</a><br>
+                            <a href="Black Sugar Viola" download>Download Viola</a><br>
+                            <a href="Black Sugar Cello" download>Download Cello</a><br>
+                            <a href="Black Sugar Piano" download>Download Piano</a><br>
+                            <a href="Black Sugar Vibraphone" download>Download Vibraphone</a><br>
+                            <a href="../scores/Black%20Sugar%20Score.pdf" download>Download Score</a>
+                            </span></div>
+                        <div class="tooltip"><i id="eye" class="fas fa-eye" onclick="viewScore()"></i><span class="tooltiptext" onclick="viewScore()">View Score</span></div></div>
+                </div>
+                <audio id="track" src="" />
+            </div>
+            </div>
+            
+            <div class="track" id="bonesick">
+                <div class="player">
+                    
+                <div class="slider">
+                    <audio preload class="audio">
+                        <source src="#" type="audio/mpeg" />
+                    </audio>
+                    
+                    <input type="range" id="player-time" value="1" max="100" min="1" step="1">
+                    
+                </div>
+                <div class="controls">
+                    <div class="left">
+                        <i id="rwd" class="fas fa-backward"></i>
+                        <i id="play_pause" class="fas fa-play"></i>
+                        <i id="ffwd" class="fas fa-forward"></i>
+                        <div id="time-elapsed">00:00</div>
+                        <div class="divider">/</div>
+                        <div id="time-total">00:30</div></div>
+                    <div class="middle">
+                        <div class="track_photo"></div>
+                        <div class="track_name">Bone Sick</div>
+                        </div>
+                    <div class="right">
+                        <div class="download_tooltip"><i id="scroll" class="fas fa-scroll"></i><span class="download_tooltiptext">
+                            <a href="Black Sugar Violin I" download>Download Violin I</a><br>
+                            <a href="Black Sugar Violin II" download>Download Violin II</a><br>
+                            <a href="Black Sugar Viola" download>Download Viola</a><br>
+                            <a href="Black Sugar Cello" download>Download Cello</a><br>
+                            <a href="Black Sugar Piano" download>Download Piano</a><br>
+                            <a href="Black Sugar Vibraphone" download>Download Vibraphone</a><br>
+                            <a href="../scores/Black%20Sugar%20Score.pdf" download>Download Score</a>
+                            </span></div>
+                        <div class="tooltip"><i id="eye" class="fas fa-eye" onclick="viewScore()"></i><span class="tooltiptext" onclick="viewScore()">View Score</span></div></div>
+                </div>
+                <audio id="track" src="" />
+            </div>
+            </div>
+            
+            <div class="track" id="mode">
+                <div class="player">
+                    
+                <div class="slider">
+                    <audio preload class="audio">
+                        <source src="#" type="audio/mpeg" />
+                    </audio>
+                    
+                    <input type="range" id="player-time" value="1" max="100" min="1" step="1">
+                    
+                </div>
+                <div class="controls">
+                    <div class="left">
+                        <i id="rwd" class="fas fa-backward"></i>
+                        <i id="play_pause" class="fas fa-play"></i>
+                        <i id="ffwd" class="fas fa-forward"></i>
+                        <div id="time-elapsed">00:00</div>
+                        <div class="divider">/</div>
+                        <div id="time-total">00:30</div></div>
+                    <div class="middle">
+                        <div class="track_photo"></div>
+                        <div class="track_name">Mode</div>
+                        </div>
+                    <div class="right">
+                        <div class="download_tooltip"><i id="scroll" class="fas fa-scroll"></i><span class="download_tooltiptext">
+                            <a href="Black Sugar Violin I" download>Download Violin I</a><br>
+                            <a href="Black Sugar Violin II" download>Download Violin II</a><br>
+                            <a href="Black Sugar Viola" download>Download Viola</a><br>
+                            <a href="Black Sugar Cello" download>Download Cello</a><br>
+                            <a href="Black Sugar Piano" download>Download Piano</a><br>
+                            <a href="Black Sugar Vibraphone" download>Download Vibraphone</a><br>
+                            <a href="../scores/Black%20Sugar%20Score.pdf" download>Download Score</a>
+                            </span></div>
+                        <div class="tooltip"><i id="eye" class="fas fa-eye" onclick="viewScore()"></i><span class="tooltiptext" onclick="viewScore()">View Score</span></div></div>
+                </div>
+                <audio id="track" src="" />
+            </div>
+            </div>
+            
+            <div class="track" id="pluot">
+                <div class="player">
+                    
+                <div class="slider">
+                    <audio preload class="audio">
+                        <source src="#" type="audio/mpeg" />
+                    </audio>
+                    
+                    <input type="range" id="player-time" value="1" max="100" min="1" step="1">
+                    
+                </div>
+                <div class="controls">
+                    <div class="left">
+                        <i id="rwd" class="fas fa-backward"></i>
+                        <i id="play_pause" class="fas fa-play"></i>
+                        <i id="ffwd" class="fas fa-forward"></i>
+                        <div id="time-elapsed">00:00</div>
+                        <div class="divider">/</div>
+                        <div id="time-total">00:30</div></div>
+                    <div class="middle">
+                        <div class="track_photo"></div>
+                        <div class="track_name">Pluot</div>
+                        </div>
+                    <div class="right">
+                        <div class="download_tooltip"><i id="scroll" class="fas fa-scroll"></i><span class="download_tooltiptext">
+                            <a href="Black Sugar Violin I" download>Download Violin I</a><br>
+                            <a href="Black Sugar Violin II" download>Download Violin II</a><br>
+                            <a href="Black Sugar Viola" download>Download Viola</a><br>
+                            <a href="Black Sugar Cello" download>Download Cello</a><br>
+                            <a href="Black Sugar Piano" download>Download Piano</a><br>
+                            <a href="Black Sugar Vibraphone" download>Download Vibraphone</a><br>
+                            <a href="../scores/Black%20Sugar%20Score.pdf" download>Download Score</a>
+                            </span></div>
+                        <div class="tooltip"><i id="eye" class="fas fa-eye" onclick="viewScore()"></i><span class="tooltiptext" onclick="viewScore()">View Score</span></div></div>
+                </div>
+                <audio id="track" src="" />
+            </div>
+            </div>
+            
+            <div class="track" id="tiptoe">
+                <div class="player">
+                    
+                <div class="slider">
+                    <audio preload class="audio">
+                        <source src="#" type="audio/mpeg" />
+                    </audio>
+                    
+                    <input type="range" id="player-time" value="1" max="100" min="1" step="1">
+                    
+                </div>
+                <div class="controls">
+                    <div class="left">
+                        <i id="rwd" class="fas fa-backward"></i>
+                        <i id="play_pause" class="fas fa-play"></i>
+                        <i id="ffwd" class="fas fa-forward"></i>
+                        <div id="time-elapsed">00:00</div>
+                        <div class="divider">/</div>
+                        <div id="time-total">00:30</div></div>
+                    <div class="middle">
+                        <div class="track_photo"></div>
+                        <div class="track_name">Tiptoe</div>
+                        </div>
+                    <div class="right">
+                        <div class="download_tooltip"><i id="scroll" class="fas fa-scroll"></i><span class="download_tooltiptext">
+                            <a href="Black Sugar Violin I" download>Download Violin I</a><br>
+                            <a href="Black Sugar Violin II" download>Download Violin II</a><br>
+                            <a href="Black Sugar Viola" download>Download Viola</a><br>
+                            <a href="Black Sugar Cello" download>Download Cello</a><br>
+                            <a href="Black Sugar Piano" download>Download Piano</a><br>
+                            <a href="Black Sugar Vibraphone" download>Download Vibraphone</a><br>
+                            <a href="../scores/Black%20Sugar%20Score.pdf" download>Download Score</a>
+                            </span></div>
+                        <div class="tooltip"><i id="eye" class="fas fa-eye" onclick="viewScore()"></i><span class="tooltiptext" onclick="viewScore()">View Score</span></div></div>
+                </div>
+                <audio id="track" src="" />
+            </div>
+            </div>
+            
+            <div class="track" id="rain">
+                <div class="player">
+                    
+                <div class="slider">
+                    <audio preload class="audio">
+                        <source src="#" type="audio/mpeg" />
+                    </audio>
+                    
+                    <input type="range" id="player-time" value="1" max="100" min="1" step="1">
+                    
+                </div>
+                <div class="controls">
+                    <div class="left">
+                        <i id="rwd" class="fas fa-backward"></i>
+                        <i id="play_pause" class="fas fa-play"></i>
+                        <i id="ffwd" class="fas fa-forward"></i>
+                        <div id="time-elapsed">00:00</div>
+                        <div class="divider">/</div>
+                        <div id="time-total">00:30</div></div>
+                    <div class="middle">
+                        <div class="track_photo"></div>
+                        <div class="track_name">Rain</div>
+                        </div>
+                    <div class="right">
+                        <div class="download_tooltip"><i id="scroll" class="fas fa-scroll"></i><span class="download_tooltiptext">
+                            <a href="Black Sugar Violin I" download>Download Violin I</a><br>
+                            <a href="Black Sugar Violin II" download>Download Violin II</a><br>
+                            <a href="Black Sugar Viola" download>Download Viola</a><br>
+                            <a href="Black Sugar Cello" download>Download Cello</a><br>
+                            <a href="Black Sugar Piano" download>Download Piano</a><br>
+                            <a href="Black Sugar Vibraphone" download>Download Vibraphone</a><br>
+                            <a href="../scores/Black%20Sugar%20Score.pdf" download>Download Score</a>
+                            </span></div>
+                        <div class="tooltip"><i id="eye" class="fas fa-eye" onclick="viewScore()"></i><span class="tooltiptext" onclick="viewScore()">View Score</span></div></div>
+                </div>
+                <audio id="track" src="" />
+            </div>
+            </div>
+            
+            <div class="track" id="heterochromia">
+                <div class="player">
+                    
+                <div class="slider">
+                    <audio preload class="audio">
+                        <source src="#" type="audio/mpeg" />
+                    </audio>
+                    
+                    <input type="range" id="player-time" value="1" max="100" min="1" step="1">
+                    
+                </div>
+                <div class="controls">
+                    <div class="left">
+                        <i id="rwd" class="fas fa-backward"></i>
+                        <i id="play_pause" class="fas fa-play"></i>
+                        <i id="ffwd" class="fas fa-forward"></i>
+                        <div id="time-elapsed">00:00</div>
+                        <div class="divider">/</div>
+                        <div id="time-total">00:30</div></div>
+                    <div class="middle">
+                        <div class="track_photo"></div>
+                        <div class="track_name">Heterochromia</div>
+                        </div>
+                    <div class="right">
+                        <div class="download_tooltip"><i id="scroll" class="fas fa-scroll"></i><span class="download_tooltiptext">
+                            <a href="Black Sugar Violin I" download>Download Violin I</a><br>
+                            <a href="Black Sugar Violin II" download>Download Violin II</a><br>
+                            <a href="Black Sugar Viola" download>Download Viola</a><br>
+                            <a href="Black Sugar Cello" download>Download Cello</a><br>
+                            <a href="Black Sugar Piano" download>Download Piano</a><br>
+                            <a href="Black Sugar Vibraphone" download>Download Vibraphone</a><br>
+                            <a href="../scores/Black%20Sugar%20Score.pdf" download>Download Score</a>
+                            </span></div>
+                        <div class="tooltip"><i id="eye" class="fas fa-eye" onclick="viewScore()"></i><span class="tooltiptext" onclick="viewScore()">View Score</span></div></div>
+                </div>
+                <audio id="track" src="" />
+            </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
         </div>
     <script type="text/javascript" src="../js/classical.js"></script>
         <script type="text/javascript" src="../js/classical_score.js"></script>

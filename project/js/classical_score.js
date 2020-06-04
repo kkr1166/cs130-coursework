@@ -6,15 +6,17 @@ function viewScore() {
     x.style.display = "block";
     y.innerHTML = "";
     y.innerHTML = "Hide Score"; 
-    z.classList.remove('fas fa-eye', 'fas fa-times');
-    z.classList.add('fas fa-times');
+    z.classList.remove('fa-eye', 'fa-times');
+    z.classList.add('fa-times');
   } else {
     x.style.display = "none";
     y.innerHTML = "";
     y.innerHTML = "View Score";
-    z.classList.remove('fas fa-times', 'fas fa-eye');
-    z.classList.add('fas fa-eye');    
+    z.classList.remove('fa-times', 'fa-eye');
+    z.classList.add('fa-eye');    
   }
 }
 
-const audioPlayer = AudioPlayer('.player', "../media/alarm.mp3");
+const audioPlayer1 = AudioPlayer('.player.blacksugar', "../media/alarm.mp3");
+
+const audioPlayer2 = AudioPlayer('.player.next', "../media/dontthink.mp3");

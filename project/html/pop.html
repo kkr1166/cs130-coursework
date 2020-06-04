@@ -3,11 +3,16 @@
     <head>
         <meta charset="utf-8">
         <title>Pop - Kitra Razin</title>
-        <link rel="stylesheet" href="../css/pop.css">
+        <link rel="stylesheet" href="../css/pop.css"> 
         <script src="https://kit.fontawesome.com/4629a0026c.js" crossorigin="anonymous"></script>
+        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body class="homepage" style="background-image:url('../images/pop2.png')">
+  
+    <body class="homepage">
+        
+<!--        style="background-image:url('../images/pop2.png')"-->
+                    
         <nav role="navigation">
             <div class="pop">
             <a href="index.html" title="Homepage">Home</a>
@@ -19,11 +24,16 @@
         </nav>
             
         <main>
-            <i class="fas fa-play-circle" id="one" ></i>
+            <audio id="dontThinkAudio">
+  <source src="../media/dontThink.mp3" type="audio/mpeg" />
+</audio>
+            <i class="fas fa-play-circle" id="play-pause" class="play"></i>
             <i class="fas fa-play-circle" id="two"></i>
             <i class="fas fa-play-circle" id="three"></i>
             <i class="fas fa-play-circle" id="four"></i>
             <i class="fas fa-play-circle" id="five"></i>
+            
         </main>
+       <script src="../js/pop.js" type="text/javascript"></script> 
     </body>
 </html>

@@ -9,8 +9,10 @@
 ------------------------------------*/
 html {
     background-color: black;
-    
+    color:whitesmoke;
+    font-family: 'Lao MN', sans-serif;
 }
+
 /* Navigation
 ------------------------------------*/
 nav {
@@ -22,6 +24,7 @@ nav {
   position: fixed;
   top: 0;
   width: calc(100vw - 100px);
+    background-color: black;
 }
 
 nav a {
@@ -52,5 +55,86 @@ nav a.active {
   color: transparent;
     
 }
+/* info
+------------------------------------*/
+.info {
+    color:whitesmoke;
+    margin-top: 110px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.fas fa-envelope {
+    color: rgb(199,130,177);
+}
+
+.mail_icon>a {
+    color: rgb(199,130,177);
+    text-decoration: none;
+    font-size:3em;
+}
+
+.fas fa-envelope {
+    border: 1px solid whitesmoke;
+    background-color: aqua;
+    
+}
+
+.mail_icon, ul {
+    text-align: center;
+}
 
 
+
+i:hover {
+    background-image: linear-gradient(to left, yellow, orange, violet, orange, yellow);   -webkit-background-clip: text;
+  color: transparent;
+    
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+li {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.email {
+    text-align: center;
+}
+/* border
+------------------------------------*/
+
+.schools_container {
+  padding: 1em;
+  border: 0.25em solid rgb(199,130,177);
+  position: relative;
+}
+.schools_container::before, .schools_container::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: black;
+}
+.schools_container::before {
+  top: -0.3em;
+  bottom: -0.3em;
+  left: 1em;
+  right: 1em;
+}
+.schools_container::after {
+  left: -0.3em;
+  right: -0.3em;
+  top: 1em;
+  bottom: 1em;
+}
+.schools_container .schools {
+  position: relative;
+  z-index: 1;
+}

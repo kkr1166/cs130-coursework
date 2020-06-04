@@ -1,6 +1,6 @@
 /*loading page
 ------------------------------------*/
-
+ 
 @-moz-document url(about:blank) {
     html,body { background: black; }
 }
@@ -9,7 +9,7 @@
 /*General
 ------------------------------------*/
 html {
-    background-color: black;
+/*    background-color: black;*/
     font-family: 'Lao MN', sans-serif;
 } 
 
@@ -79,7 +79,7 @@ nav a {
   width: 20%;
   text-decoration: none;
   font-family: 'Lao MN', sans-serif;
-  font-size: 2.3em;
+  font-size: 2em;
 }
 
 
@@ -145,3 +145,30 @@ i:hover {
     
 }
 
+
+/*
+#player-container #play-pause {
+  cursor: pointer;
+  text-indent: -999999px;
+  height:40px;
+  width: 40px;
+  background: #eb01a5;
+  background-image: url('http://basichow.com/asserts/images/play.png');
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:20px;
+}
+
+.play {
+  background-image: url('http://basichow.com/asserts/images/play.png');
+}
+.pause {
+   background-image: url('http://basichow.com/asserts/images/pause.png')!important;
+}
+*/
+
+#play-pause {
+    position: absolute; 
+    top: 110px; 
+    left: 300px;
+}

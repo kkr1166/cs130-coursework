@@ -23,24 +23,24 @@ const AudioPlayer = (selector, audioFile) => {
 
     this.play = () => {
         console.log('play');
-        playButton.classList.remove('fas fa-play', 'fas fa-pause');
+        playButton.classList.remove('fa-play', 'fa-pause');
         jumpToTime();
         audio.play();
-        playButton.classList.add('fas fa-pause');
+        playButton.classList.add('fa-pause');
         
     };
 
     this.pause = () => {
-        playButton.classList.remove('fas fa-play', 'fas fa-pause');
+        playButton.classList.remove('fa-play', 'fa-pause');
         jumpToTime();
         audio.pause();
-        playButton.classList.add('fas fa-play');
+        playButton.classList.add('fa-play');
     };
 
     const jumpToTime = () => {
-        const progressController = containerElement.querySelector('#player-time');
-        const timeElapsed = containerElement.querySelector('#time-elapsed');
-        const timeTotal = containerElement.querySelector('#time-total');
+        const progressController = containerElement.querySelector('.player-time');
+        const timeElapsed = containerElement.querySelector('.time-elapsed');
+        const timeTotal = containerElement.querySelector('.time-total');
         //console.log(getSliderPosition(), getCurrentTime(), getDuration());
         if (getDuration() === "0NaN:0NaN") {
             console.log('returning...');
@@ -88,8 +88,8 @@ const AudioPlayer = (selector, audioFile) => {
 
     const resetTime = () => {
         audio.currentTime = 0;
-        playButton.classList.remove('fas fa-pause')
-        playButton.classList.add('fas fa-play');
+        playButton.classList.remove('fa-pause')
+        playButton.classList.add('fa-play');
         jumpToTime();
     };
 
@@ -113,11 +113,11 @@ const AudioPlayer = (selector, audioFile) => {
 
     this.initialize = () => {
         // init DOM hooks:
-        audio = containerElement.querySelector('#track');
-        playButton = containerElement.querySelector('#play_pause');
-        rwdButton = containerElement.querySelector('#rwd');
-        ffwdButton = containerElement.querySelector('#ffwd');
-        sliderInput = containerElement.querySelector('#player-time');
+        audio = containerElement.querySelector('.track');
+        playButton = containerElement.querySelector('.play_pause');
+        rwdButton = containerElement.querySelector('.rwd');
+        ffwdButton = containerElement.querySelector('.ffwd');
+        sliderInput = containerElement.querySelector('.player-time');
 
         console.log(audio, playButton);
         // attach events to event handlers (i.e. functions)

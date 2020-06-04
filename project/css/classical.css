@@ -2,14 +2,14 @@
 ------------------------------------*/
 
 @-moz-document url(about:blank) {
-    html,body { background: black; }
+    html,body { background: whitesmoke; }
 }
 
 /*General
 ------------------------------------*/
 html {
-    background-color: black;
-    font-family: 'Lao MN', sans-serif;
+    background-color: whitesmoke;
+    font-family: 'times new roman';
 } 
 /* Navigation
 ------------------------------------*/
@@ -17,33 +17,34 @@ nav {
   overflow: hidden;
   margin-left: 50px;
   margin-right: 50px;
-  border-bottom: solid 3px whitesmoke;
+  border-bottom: solid 3px black;
   height: 75px;
   position: fixed;
   top: 0;
   width: calc(100vw - 100px);
+    background-color: whitesmoke;
 }
 
 nav a {
   float: left;
-  color: whitesmoke;
+  color: black;
   text-align: center;
   box-sizing: border-box;
   padding-top: 13px;
   padding-bottom: 13px;
   width: 20%;
   text-decoration: none;
-  font-family: 'Lao MN', sans-serif;
+  font-family: 'times new roman';
   font-size: 2.3em;
 }
 
 nav>a:hover {
-  color: RGB(199,130,177);
+  color: grey;
   font-weight: 525;
 }
 
 nav a.active {
-  color: RGB(199,130,177);
+  color: grey;
 }
 
 .rainbow-text:hover {
@@ -95,13 +96,14 @@ nav a.active {
 
 .middle {
     display: flex;
+    text-align: left;
 }
 
 .right {
     display: flex;
 }
 
-#rwd, #ffwd {
+.rwd, .ffwd {
     color: rgb(231, 230, 230);
     font-size: .8em; 
     display: flex;
@@ -110,7 +112,7 @@ nav a.active {
     cursor: pointer;
 }
 
-#play_pause {
+.play_pause {
     color: rgb(231, 230, 230);
     font-size: 1.4em;
     display: flex;
@@ -120,7 +122,7 @@ nav a.active {
 }
 
 
-#scroll {
+.scroll {
     color: rgb(231, 230, 230);
     font-size: 1.4em;
     display: flex;
@@ -129,7 +131,7 @@ nav a.active {
     cursor: pointer;
 }
 
-#eye {
+.eye {
     color: rgb(231, 230, 230);
     font-size: 1.4em;
     display: flex;
@@ -138,7 +140,7 @@ nav a.active {
     
 }
 
-#time-elapsed {
+.time-elapsed {
     margin-top: 2px;
     font-size: 1em;
     color: rgb(231, 230, 230);
@@ -157,7 +159,7 @@ nav a.active {
     align-items: center;
 }
 
-#time-total {
+.time-total {
     margin-top: 2px;
     font-size: 1em;
     color: rgb(231, 230, 230);
@@ -188,7 +190,7 @@ nav a.active {
 /*Hover
 -----------------------------------*/
 
-#rwd:hover, #ffwd:hover, #play_pause:hover, #eye:hover, #scroll:hover {
+.rwd:hover, .ffwd:hover, .play_pause:hover, .eye:hover, .scroll:hover {
     color: rgb(199,130,177);
 }
 
@@ -339,7 +341,7 @@ input[type=range]::-moz-range-track {
   width: 1em;
   height: 1em;
   border-radius: 50%;
-  background: RGB(199,130,177);
+  background: black;
 }
 
 

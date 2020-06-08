@@ -2,15 +2,15 @@
 ------------------------------------*/
 
 @-moz-document url(about:blank) {
-    html,body { background: black; }
+    html,body { background: whitesmoke; }
 }
 
 /*General
 ------------------------------------*/
 html {
-    background-color: black;
-    color:whitesmoke;
-    font-family: 'Lao MN', sans-serif;
+    background-color: whitesmoke;
+    color:black;
+    font-family: 'times new roman';
 }
 
 /* Navigation
@@ -19,72 +19,66 @@ nav {
   overflow: hidden;
   margin-left: 50px;
   margin-right: 50px;
-  border-bottom: solid 3px whitesmoke;
-  height: 75px;
+  border-bottom: solid 3px black;
+  height: 60px;
   position: fixed;
   top: 0;
   width: calc(100vw - 100px);
-    background-color: black;
+  background-color: whitesmoke;
 }
 
 nav a {
   float: left;
-  color: whitesmoke;
+  color: black;
   text-align: center;
   box-sizing: border-box;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 20%;
   text-decoration: none;
-  font-family: 'Lao MN', sans-serif;
-  font-size: 2.3em;
+  font-family: 'times new roman';
+  font-size: 2em;
 }
 
 
 nav>a:hover {
-  color: RGB(199,130,177);
+  color: grey;
   font-weight: 525;
 }
 
 nav a.active {
-  color: RGB(199,130,177);
+  color: grey;
 }
 
+/*
 .rainbow-text:hover {
     background-image: linear-gradient(to left, yellow, orange, red, orange, yellow, violet, orange, red, orange,yellow);   -webkit-background-clip: text;
   color: transparent;
     
 }
+*/
 /* info
 ------------------------------------*/
 .info {
-    color:whitesmoke;
+    color:grey;
     margin-top: 110px;
     margin-left: 200px;
     margin-right: 200px;
 }
 
 .fas fa-envelope {
-    color: rgb(199,130,177);
+    color: grey;
 }
 
 .mail_icon>a {
-    color: rgb(199,130,177);
+    color: grey;
     text-decoration: none;
     font-size:3em;
-}
-
-.fas fa-envelope {
-    border: 1px solid whitesmoke;
-    background-color: aqua;
-    
 }
 
 .mail_icon, ul {
     text-align: center;
 }
-
-
 
 i:hover {
     background-image: linear-gradient(to left, yellow, orange, violet, orange, yellow);   -webkit-background-clip: text;
@@ -96,8 +90,8 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-    font-style: italic;
-    font-size: 1.2em;
+  font-style: italic;
+  font-size: 1.2em;
 }
 
 li {
@@ -113,14 +107,14 @@ li {
 
 .schools_container {
   padding: 1em;
-  border: 0.25em solid rgb(199,130,177);
+  border: 0.25em solid grey;
   position: relative;
 }
 .schools_container::before, .schools_container::after {
   content: '';
   display: block;
   position: absolute;
-  background: black;
+  background: whitesmoke;
 }
 .schools_container::before {
   top: -0.3em;

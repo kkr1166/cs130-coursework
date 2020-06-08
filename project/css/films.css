@@ -2,7 +2,7 @@
 ------------------------------------*/
 
 @-moz-document url(about:blank) {
-    html,body { background: black; }
+    html,body { background: whitesmoke; }
 }
 
 /*General
@@ -18,11 +18,11 @@ nav {
   margin-left: 50px;
   margin-right: 50px;
   border-bottom: solid 3px black;
-  height: 75px;
+  height: 60px;
   position: fixed;
   top: 0;
   width: calc(100vw - 100px);
-    background-color: whitesmoke;
+  background-color: whitesmoke;
 }
 
 nav a {
@@ -30,28 +30,24 @@ nav a {
   color: black;
   text-align: center;
   box-sizing: border-box;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 20%;
   text-decoration: none;
   font-family: 'times new roman';
   font-size: 2em;
+  background-color: whitesmoke;
 }
 
 nav>a:hover {
-  color: darkgrey;
+  color: grey;
   font-weight: 525;
 }
 
 nav a.active {
-  color: darkgrey;
+  color: grey;
 }
 
-.rainbow-text:hover {
-    background-image: linear-gradient(to left, yellow, orange, red, orange, yellow, violet, orange, red, orange,yellow);   -webkit-background-clip: text;
-  color: transparent;
-    
-}
 
 /*Films
 ------------------------------------*/
@@ -80,6 +76,7 @@ body * {
 }
 
 .card {
+/*
     width: calc(33.33% - 20px);
     height: calc(70% - 20px);
     min-height: 120px;
@@ -88,14 +85,146 @@ body * {
     margin-right: 10px;
     margin-left: 10px;
     margin-bottom: 20px;
-    background-color: whitesmoke;
+    background-color: whitesmoke;*/
 }
 
-.card:hover {
-    opacity: 50%;
-    border: 3px solid aqua;
+.front:hover {
     cursor: pointer;
 }
 
 
+/*Flip Posters
+------------------------------------*/
 
+
+/* flip the pane when hovered */
+
+.card.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.card {
+    width: calc(33.33% - 20px);
+    height: calc(70% - 20px);
+    min-height: 120px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+/* flip speed */
+
+.flipper {
+    transition: 1.2s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+
+/* hide back of pane during swap */
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    
+    
+/*
+    position: absolute;
+    top: 0;
+    left: 0;
+*/
+    
+}
+
+.front:hover {
+    opacity: 70%;
+}
+
+/* front pane, placed above back */
+
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+
+/* back, initially hidden pane */
+
+.back {
+    transform: rotateY(180deg);
+    background-color: white;
+    color: grey;
+}
+
+.front, .back {
+    height: calc(70vh - 20px - 15px);
+    width: calc(33.33vw - 100px);
+    box-shadow: 3px 3px 8px 3px lightgrey;
+}
+
+.flipper {
+    display: flex;
+    flex-direction: column;
+}
+
+.front {
+    background: center center no-repeat;
+    background-size: cover;
+}
+
+.cards {
+    display: flex;
+}
+
+/*Film Info
+------------------------------------*/
+.back {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+h1, h2 {
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 1.3em;
+    margin-top: 0px;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+btn {
+    color: white;
+    background-color: grey;
+    padding: 10px;
+    font-size: 1.3em;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    margin-left: calc(16.67vw - 130px);
+    margin-right: calc(16.67vw - 130px);
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 4px 4px 8px 3px lightgrey;
+}
+
+btn:hover {
+    background-color: black;
+    box-shadow: 4px 4px 3px 3px lightgrey;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

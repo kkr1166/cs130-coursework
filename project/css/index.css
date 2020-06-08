@@ -10,7 +10,7 @@
 body, html {
     height: 100%;
     margin: 0; 
-    background: black;
+    background: whitesmoke;
 }
 
 /*parallax
@@ -34,7 +34,7 @@ body, html {
 ------------------------------------*/
 .name {
     color: whitesmoke;
-    font-family: 'Lao MN';
+    font-family: 'times new roman';
     font-size: 4em;
     position: absolute; 
     bottom: 0; 
@@ -50,22 +50,17 @@ body, html {
 ------------------------------------*/
 #bio {
 
-    background-color: black;
-    font-family: 'Lao MN';
+    background-color: whitesmoke;
+    font-family: 'times new roman';
     font-size: 1.2em;
 /*    color: rgba(204,135,181);*/
     padding-right: 100px;
     padding-left: 100px;
     max-height: calc(100vh - 50px - 80px);
-    border-top: solid black 10px;
+    border-top: solid whitesmoke 10px;
     padding-top: 10px;
     padding-bottom: 30px;
-    color: whitesmoke;
-}
-
-em{
-    font-style: normal;
-    color: whitesmoke;
+    color: grey;
 }
 
 /* Navigation
@@ -75,7 +70,7 @@ nav {
   margin-left: 50px;
   margin-right: 50px;
   border-bottom: solid 3px whitesmoke;
-  height: 75px;
+  height: 60px;
   position: fixed;
   top: 0;
   width: calc(100vw - 100px);
@@ -86,12 +81,12 @@ nav a {
   color: whitesmoke;
   text-align: center;
   box-sizing: border-box;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 20%;
   text-decoration: none;
-  font-family: 'Lao MN', sans-serif;
-  font-size: 2.3em;
+  font-family: 'times new roman';
+  font-size: 2em;
 }
 
 nav>a:hover {
@@ -108,9 +103,11 @@ nav a.active {
   color: black;
 }
 
+/*
 .rainbow-text:hover {
     background-image: linear-gradient(to left, yellow, orange, red, orange, yellow, violet, orange, red, orange,yellow);   -webkit-background-clip: text;
   color: transparent;
     
 }
+*/
 

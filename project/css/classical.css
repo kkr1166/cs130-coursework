@@ -11,6 +11,12 @@ html {
     background-color: whitesmoke;
     font-family: 'times new roman';
 } 
+/*
+body {
+    color: grey;
+}
+*/
+
 /* Navigation
 ------------------------------------*/
 nav {
@@ -18,11 +24,11 @@ nav {
   margin-left: 50px;
   margin-right: 50px;
   border-bottom: solid 3px black;
-  height: 75px;
+  height: 60px;
   position: fixed;
   top: 0;
   width: calc(100vw - 100px);
-    background-color: whitesmoke;
+  background-color: whitesmoke;
 }
 
 nav a {
@@ -30,12 +36,13 @@ nav a {
   color: black;
   text-align: center;
   box-sizing: border-box;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 20%;
   text-decoration: none;
   font-family: 'times new roman';
-  font-size: 2.3em;
+  font-size: 2em;
+  background-color: whitesmoke;
 }
 
 nav>a:hover {
@@ -47,17 +54,18 @@ nav a.active {
   color: grey;
 }
 
+/*
 .rainbow-text:hover {
     background-image: linear-gradient(to left, yellow, orange, red, orange, yellow, violet, orange, red, orange,yellow);   -webkit-background-clip: text;
-  color: transparent;
-    
+  color: transparent; 
 }
+*/
 
 /*Message
 -----------------------------------*/
 .message {
     text-align: bottom;
-    height: 150px;
+    height: 100px;
     color: whitesmoke;
 }
 
@@ -70,28 +78,35 @@ nav a.active {
 
 .track {
     margin-bottom: 20px;
-    background-color: rgb(59,56,56);
+    
 }
 
 .player {
     width: auto;
     min-width: 400px;
     background-color: rgb(59,56,56);
-    padding-bottom: 5px;
+/*
+    background-color: lightgrey;
+    background-color: #f5f5f5;
+*/
 }
 
 .controls {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     color: rgb(231, 230, 230);
-    margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
 }
 
 .left {
     display: flex;
+    align-items: center;
+}
+
+.left_of_middle {
+/*    width: calc((1vw - 150px - 150px - 10px - 10px - 150px - 150px - 50px)/2);*/
+    width: calc(50vw - 450px);
 }
 
 .middle {
@@ -99,60 +114,56 @@ nav a.active {
     text-align: left;
 }
 
-.right {
+.right_of_middle {
+
+}
+
+.fas fa-forward {
     display: flex;
+    align-items: center;
+}
+
+.right {
+    margin-top: 12px;
+    position: absolute;
+    right: 160px;
+    display: flex;
+    align-items: center;
+  
+}
+
+.instrumentation {
+    color: grey;
 }
 
 .rwd, .ffwd {
     color: rgb(231, 230, 230);
-    font-size: .8em; 
-    display: flex;
-    align-items: center;
+    font-size: .8em;
     padding-right: 10px;
     cursor: pointer;
+/*    color: darkslategrey;*/
 }
 
 .play_pause {
     color: rgb(231, 230, 230);
     font-size: 1.4em;
-    display: flex;
-    align-items: center;
     padding-right: 10px;
     cursor: pointer;
-}
-
-
-.scroll {
-    color: rgb(231, 230, 230);
-    font-size: 1.4em;
-    display: flex;
-    align-items: center;
-    padding-right: 10px;
-    cursor: pointer;
-}
-
-.eye {
-    color: rgb(231, 230, 230);
-    font-size: 1.4em;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    
+/*    color: darkslategrey;*/
 }
 
 .time-elapsed {
-    margin-top: 2px;
     font-size: 1em;
     color: rgb(231, 230, 230);
     display: flex;
     align-items: center;
     letter-spacing: 1px;
     padding-left: 10px;
+/*    color: darkslategrey;*/
 }
 
 .divider {
     font-size: 1.6em;
-    margin-top: 2px;
     margin-left: 5px;
     margin-right: 5px;
     display: flex;
@@ -160,24 +171,29 @@ nav a.active {
 }
 
 .time-total {
-    margin-top: 2px;
     font-size: 1em;
     color: rgb(231, 230, 230);
     display: flex;
     align-items: center;
     letter-spacing: 1px;
+/*    color: darkslategrey;*/
 }
 
 .track_photo {
-    height:23px;
-    width:23px;
-    background-image: url("https://i1.sndcdn.com/artworks-000508287303-qjyoz1-t500x500.jpg");
+    height:50px;
+    width:50px;
+    background-image: url('../images/filler.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     margin-right: 6px;
-    margin-top: 3px;
+    
+}
+
+.track_info {
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 .track_name {
@@ -185,51 +201,73 @@ nav a.active {
     font-size: 1.4em;
     display: flex;
     align-items: center;
+/*    color: darkslategrey;*/
 }
 
 /*Hover
 -----------------------------------*/
 
 .rwd:hover, .ffwd:hover, .play_pause:hover, .eye:hover, .scroll:hover {
-    color: rgb(199,130,177);
+    color: grey;
+/*    color: black;*/
+    cursor: pointer;
+}
+
+.fa-ellipsis-v:hover {
+    cursor: pointer;
+}
+
+.view_score:hover {
+    color: whitesmoke;
 }
 
 /*View hover tooltip
 -----------------------------------*/
+.fa-ellipsis-v {
+    font-size: 1.5em;   
+}
+
 .tooltip {
   position: relative;
   display: inline-block;
   display: flex;
   align-items: center;
   cursor: pointer;
+  padding-left: 60px;
+  padding-right: 16px;
+/*  color: darkslategrey;*/
+    
 }
 
 .tooltip .tooltiptext {
   visibility: hidden;
   text-decoration: underline;
-  width: 110px;
-  background-color: whitesmoke;
-  color: black;
+  width: 200px;
+  background-color: rgb(59,56,56);
+  color: grey;
   text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
+  border-radius: 0px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
   position: absolute;
   z-index: 1;
-  bottom: 100%;
+  top: 100%;
   left: 50%;
-  margin-left: -87px;
-  padding-top: 8px;
+  margin-left: -169px;
+  border: solid 3px lightgrey;
 }
 
 .tooltip .tooltiptext::after {
   content: "";
   position: absolute;
-  top: 100%;
+  bottom: 100%;
   left: 80%;
-  margin-left: -5px;
-  border-width: 5px;
+  margin-left: 13px;
+  border-width: 15px;
   border-style: solid;
-  border-color: whitesmoke transparent transparent transparent;
+  border-color: transparent transparent lightgrey transparent;
 
 }
 
@@ -238,12 +276,12 @@ nav a.active {
   
 }
 
-
-.tooltip:hover #eye {
-    color: rgb(199,130,177);
+.tooltip:hover {
+  color: grey;
+  
 }
 
-#embedded_score {
+.embedded_score {
     display: none;
     margin-bottom: 20px;
 }
@@ -251,55 +289,12 @@ nav a.active {
 /*Download hover tooltip
 -----------------------------------*/
 
-a{
-    color: black;
+a {
+    color: grey;
 }
 
 a:hover {
-    color: rgb(199,130,177);
-}
-
-.download_tooltip {
-  position: relative;
-  display: inline-block;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.download_tooltip .download_tooltiptext {
-  visibility: hidden;
-  width: 200px;
-  background-color: whitesmoke;
-  color: black;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  top: 100%;
-  left: 50%;
-  margin-left: -147px;
-  padding-top: 8px;
-}
-
-.download_tooltip .download_tooltiptext::after {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  left: 73%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent whitesmoke transparent;
-}
-
-.download_tooltip:hover .download_tooltiptext {
-  visibility: visible;
-}
-
-.download_tooltip:hover #scroll {
-    color: rgb(199,130,177);
+    color: whitesmoke;
 }
 
 /*Slider
@@ -315,7 +310,7 @@ a:hover {
 [type='range'] {
 	outline: none;
     background: transparent;
-    font: 1em/1 arial, sans-serif;
+    font: 1em/1 'times new roman';
     -webkit-appearance: none;
     width: 100%;
 }
@@ -341,7 +336,14 @@ input[type=range]::-moz-range-track {
   width: 1em;
   height: 1em;
   border-radius: 50%;
-  background: black;
+  background-color: grey;
+}
+
+/*Embedded score
+-----------------------------------*/
+.score {
+/*    padding-top: 10px;*/
+/*    display: none;*/
 }
 
 

@@ -82,3 +82,19 @@ body {
 .cards {
     display: flex;
 }
+
+.item {
+    background: #ccc;
+  width: 200px;
+    height: 300px;
+}
+.block {
+    height: 50px;
+    background: red;
+    width: 100%;
+}
+.info{
+    background: green;
+    height: 20px;
+    width: 100%;
+}

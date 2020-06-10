@@ -43,7 +43,6 @@ nav a {
 
 nav>a:hover {
   color: grey;
-  font-weight: 525;
 }
 
 nav a.active {

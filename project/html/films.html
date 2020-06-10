@@ -5,8 +5,10 @@
         <title>Films - Kitra Razin</title>
         <link rel="stylesheet" href="../css/films.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/4629a0026c.js" crossorigin="anonymous"></script>
         <script src="jquery-3.5.1.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
     </head>
     <body onload="hoverMessage()">
         
@@ -21,14 +23,25 @@
                 </nav>
             
         <main>
-           
+            
+<!--            <div class="message-a">Hover over the film posters to hear short score excerpts.<div><button class="ok">OK</button></div></div>-->
+<!--
+            <div class="message-b">Hover over the film posters to hear score excerpts. <br>Click on the posters for more information.<div><button class="ok" onclick="divMessage()">OK</button></div>
+            </div>
+-->
+                
+            <div class="message-b"><div><button class="ok" onclick="divMessage()">
+<!--                <i class="fas fa-lock"></i>-->
+                UNLOCK</button></div>
+            </div>
+            
 
             <section class="cards">
                 
                 <div class="card" onmouseenter="playAudio(this.id)" onmouseleave="pauseAudio(this.id)" id="one">
                     <div class="flipper">
                         <div class="front" style="background-image:url('../images/mrp_poster.jpeg')"></div>
-                        <div class="back"><h1>Mississippi River Princess</h1><h2>(2018)</h2> <p>Two black sisters journey south along the Mississippi River to save their family's home and reconnect to their spiritual roots.</p><btn onclick=" window.open('placeholder.html','_blank')">watch film</btn> <btn>flip card</btn></div>
+                        <div class="back"><h1>Mississippi River Princess</h1><h2>(2018)</h2> <p>Two black sisters journey south along the Mississippi River to save their family's home and reconnect to their spiritual roots.</p><button class="btn listen"><i class="fas fa-volume-up"></i></button><a class="btn watch" href="placeholder.html" target="_blank">watch film</a> <button class="btn back-button">flip card</button></div>
                     </div>
                 </div>
                 
@@ -36,7 +49,7 @@
                     <div class="flipper">
                         <div class="front" style="background-image:url('../images/eb_poster.JPG')"></div>
                         <div class="back"><h1>Evelyn's Bracelet</h1><h2>(2019)</h2> <p>A delusional high school girl is challenged to face the reality of her unrequited love and finds new meaning in life through an unexpected friendship.</p>
-                        <btn onclick="window.open('placeholder.html','_blank')">watch film</btn> <btn>flip card</btn>
+                        <a class="btn watch" href="placeholder.html" target="_blank">watch film</a> <button class="btn back-button">flip card</button>
                         </div>
                     </div>
                 </div>
@@ -44,49 +57,49 @@
                 <div class="card" onmouseenter="playAudio(this.id)" onmouseleave="pauseAudio(this.id)" id="three">
                     <div class="flipper">
                         <div class="front" style="background-image:url('../images/wrtiy_poster.jpg')"></div>
-                        <div class="back"><h1>We Regret to Inform You</h1><h2>(2019)</h2> <p>Amid college acceptance drama, a high schooler doesn’t know what she wants more: to kill herself or everyone around her. This is not a typical teen comedy.</p><btn onclick=" window.open('placeholder.html','_blank')">watch film</btn> <btn>flip card</btn></div>
+                        <div class="back"><h1>We Regret to Inform You</h1><h2>(2019)</h2> <p>Amid college acceptance drama, a high schooler doesn’t know what she wants more: to kill herself or everyone around her. This is not a typical teen comedy.</p><a class="btn watch" href="placeholder.html" target="_blank">watch film</a> <button class="btn back-button">flip card</button></div>
                     </div>
                 </div>
                 
                 <div class="card" onmouseenter="playAudio(this.id)" onmouseleave="pauseAudio(this.id)" id="four">
                     <div class="flipper">
-                        <div class="front" style="background-image:url('../images/playback_poster.png')"></div>
-                        <div class="back"><h1>Playback</h1><h2>(2018)</h2> <p>Bringing a camera back to life, a photographer is ready to move on from his relationship. The conversation with his lover drifts apart as he is left to face the truth by himself.</p><btn onclick=" window.open('placeholder.html','_blank')">watch film</btn> <btn>flip card</btn></div>
+                        <div class="front" style="background-image:url('../images/playback_poster.jpeg')"></div>
+                        <div class="back"><h1>Playback</h1><h2>(2018)</h2> <p>Bringing a camera back to life, a photographer is ready to move on from his relationship. The conversation with his lover drifts apart as he is left to face the truth by himself.</p><a class="btn watch" href="placeholder.html" target="_blank">watch film</a> <button class="btn back-button">flip card</button></div>
                     </div>                
                 </div>
                 
                 <div class="card" onmouseenter="playAudio(this.id)" onmouseleave="pauseAudio(this.id)" id="five">
                     <div class="flipper">
                         <div class="front" style="background-image:url('../images/matched_long_poster.png')"></div>
-                        <div class="back"><h1>Matched</h1><h2>(2020)</h2> <p>In a world where being good is rewarded with social currency, a man with little promise decides to make a gamble in order to change his family’s situation.</p><btn onclick=" window.open('placeholder.html','_blank')">watch film</btn> <btn>flip card</btn></div>
+                        <div class="back"><h1>Matched</h1><h2>(2020)</h2> <p>In a world where being good is rewarded with social currency, a man with little promise decides to make a gamble in order to change his family’s situation.</p><a class="btn watch" href="placeholder.html" target="_blank">watch film</a> <button class="btn back-button">flip card</button></div>
                     </div>
                 </div>
                 
                 <div class="card" onmouseenter="playAudio(this.id)" onmouseleave="pauseAudio(this.id)" id="six">
                     <div class="flipper">
-                        <div class="front" style="background-image:url('../images/itst_poster.png')"></div>
-                        <div class="back"><h1>Is This Seat Taken?</h1><h2>(2019)</h2> <p>A gay college student searches for love through a series of conversations with random strangers in a coffee shop.</p><btn onclick=" window.open('placeholder.html','_blank')">watch film</btn> <btn>flip card</btn></div>
+                        <div class="front" style="background-image:url('../images/itst_poster.jpeg')"></div>
+                        <div class="back"><h1>Is This Seat Taken?</h1><h2>(2019)</h2> <p>A gay college student searches for love through a series of conversations with random strangers in a coffee shop.</p><a class="btn watch" href="placeholder.html" target="_blank">watch film</a> <button class="btn back-button">flip card</button></div>
                     </div>
                 </div>
                 
                 <div class="card" onmouseenter="playAudio(this.id)" onmouseleave="pauseAudio(this.id)" id="seven">
                     <div class="flipper">
                         <div class="front" style="background-image:url('../images/cp_poster.png')"></div>
-                        <div class="back"><h1>Cat & Piano</h1><h2>(2020)</h2> <p>A cat copes with loss through music and unexpected companionship in this heartwarming animation.</p><btn onclick=" window.open('placeholder.html','_blank')">watch film</btn> <btn>flip card</btn></div>
+                        <div class="back"><h1>Cat &amp; Piano</h1><h2>(2020)</h2> <p>A cat copes with loss through music and unexpected companionship in this heartwarming animation.</p><a class="btn watch" href="placeholder.html" target="_blank">watch film</a> <button class="btn back-button">flip card</button></div>
                     </div>
                 </div>
                 
                 <div class="card" onmouseenter="playAudio(this.id)" onmouseleave="pauseAudio(this.id)" id="eight">
                     <div class="flipper">
-                        <div class="front" style="background-image:url('../images/mrp_poster.jpeg')"></div>
-                        <div class="back"><h1>Mississippi River Princess</h1><h2>(2018)</h2> <p>Two black sisters journey south along the Mississippi River to save their family's home and reconnect to their spiritual roots.</p><btn onclick=" window.open('placeholder.html','_blank')">watch film</btn> <btn>flip card</btn></div>
+                        <div class="front" style="background-image:url('../images/yards.jpeg')"></div>
+                        <div class="back"><h1>The Yards</h1><h2>(2018)</h2> <p>Feeling trapped financially and morally in a broken neighborhood, two south side Latino boys plan to commit a crime in an attempt to do the right thing.</p><a class="btn watch" href="placeholder.html" target="_blank">watch film</a> <button class="btn back-button">flip card</button></div>
                     </div>
                 </div>
                 
                 <div class="card" onmouseenter="playAudio(this.id)" onmouseleave="pauseAudio(this.id)" id="nine">
                     <div class="flipper">
                         <div class="front" style="background-image:url('../images/yup2_poster.jpeg')"></div>
-                        <div class="back"><h1>Yup!</h1><h2>(2018)</h2> <p>A talking dog, doctor and their friends navigate their lives, jobs and relationships in the big city.</p><btn onclick=" window.open('placeholder.html','_blank')">watch film</btn> <btn>flip card</btn></div>
+                        <div class="back"><h1>Yup!</h1><h2>(2018)</h2> <p>A talking dog, doctor and their friends navigate their lives, jobs and relationships in the big city.</p><a class="btn watch" href="placeholder.html" target="_blank">watch film</a> <button class="btn back-button">flip card</button></div>
                     </div>
                 </div>
                 
@@ -99,8 +112,8 @@
             <audio src="../music/filmMusic/matched.mp3" id="audiofive" type="audio/mpeg"></audio>
             <audio src="../music/filmMusic/ebone.mp3" id="audiosix" type="audio/mpeg"></audio>
             <audio src="../music/filmMusic/cpone.mp3" id="audioseven" type="audio/mpeg"></audio>
-            <audio src="../music/filmMusic/wrtiytwo.mp3" id="audioeight" type="audio/mpeg"></audio>
-            <audio src="../music/filmMusic/cptwo.mp3" id="audionine" type="audio/mpeg"></audio>
+            <audio src="../music/filmMusic/pb.mp3" id="audioeight" type="audio/mpeg"></audio>
+            <audio src="../music/filmMusic/alarm.mp3" id="audionine" type="audio/mpeg"></audio>
 
             <!-- preview panel -->
             <section class="preview">

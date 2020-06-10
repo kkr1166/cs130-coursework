@@ -2,7 +2,7 @@
 ------------------------------------*/
 
 @-moz-document url(about:blank) {
-    html,body { background: whitesmoke; }
+    html, body { background: whitesmoke; }
 }
 
 /*General
@@ -11,12 +11,8 @@ html {
     background-color: whitesmoke;
     font-family: 'times new roman';
 } 
-/*
-body {
-    color: grey;
-}
-*/
 
+ 
 /* Navigation
 ------------------------------------*/
 nav {
@@ -47,7 +43,6 @@ nav a {
 
 nav>a:hover {
   color: grey;
-  font-weight: 525;
 }
 
 nav a.active {
@@ -180,9 +175,9 @@ nav a.active {
 }
 
 .track_photo {
-    height:50px;
-    width:50px;
-    background-image: url('../images/filler.jpg');
+    height:52px;
+    width:52px;
+    background-image: url('../images/filler.jpeg');
     background-size: cover;
     background-position: center;
     display: flex;

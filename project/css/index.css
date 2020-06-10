@@ -17,7 +17,7 @@ body, html {
 ------------------------------------*/
 .parallax {
   /* The image used */
-  background-image: url('../images/center.png')
+  background-image: url('../images/profile.jpeg')
       /*url('../images/profile.jpeg')*/;
 
   /* Set a specific height */
@@ -91,12 +91,10 @@ nav a {
 
 nav>a:hover {
   color: black;
-  font-weight: 525;
 }
 
 nav>div>a:hover {
   color: black;
-  font-weight: 525;
 }
 
 nav a.active {

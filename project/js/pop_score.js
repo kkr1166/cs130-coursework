@@ -15,21 +15,19 @@ function viewScore(id) {
 }
  
 
+ 
+const audioPlayer1 = AudioPlayer('.player.heterochromia', "../music/popMusic/dontThink.mp3");
 
-const audioPlayer1 = AudioPlayer('.player.heterochromia', "../music/popMusic/heterochromia.mp3");
+const audioPlayer2 = AudioPlayer('.player.bonesick', "../music/popMusic/affluentAphasia.mp3");
 
-const audioPlayer2 = AudioPlayer('.player.bonesick', "../music/classicalMusic/boneSick.m4a");
+const audioPlayer3 = AudioPlayer('.player.blacksugar', "../music/popMusic/faeries.mp3");
 
-const audioPlayer3 = AudioPlayer('.player.blacksugar', "../music/classicalMusic/blackSugar.m4a");
+const audioPlayer4 = AudioPlayer('.player.smokewater', "../music/popMusic/skeletonLies.mp3");
 
-const audioPlayer4 = AudioPlayer('.player.smokewater', "../music/classicalMusic/smokeWater.m4a");
+const audioPlayer5 = AudioPlayer('.player.beehivecoke', "../music/popMusic/seaSharpe.mp3");
 
-const audioPlayer5 = AudioPlayer('.player.beehivecoke', "../music/classicalMusic/beehiveCoke.m4a");
+const audioPlayer6 = AudioPlayer('.player.mode', "../music/popMusic/roslynByBon.mp3");
 
-const audioPlayer6 = AudioPlayer('.player.mode', "../music/classicalMusic/mode.mp3");
+const audioPlayer7 = AudioPlayer('.player.tiptoe', "../music/popMusic/whyWait.mp3");
 
-const audioPlayer7 = AudioPlayer('.player.tiptoe', "../music/classicalMusic/tiptoe.mp3");
-
-const audioPlayer8 = AudioPlayer('.player.rain', "../music/classicalMusic/rain.mp3");
-
-const audioPlayer9 = AudioPlayer('.player.mourningmoon', "../music/classicalMusic/mourningMoon.mp3");
+const audioPlayer8 = AudioPlayer('.player.rain', "../music/popMusic/riverByIbeyi.mp3");

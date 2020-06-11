@@ -1,7 +1,7 @@
 /*loading page
 ------------------------------------*/
 @-moz-document url(about:blank) {
-    html,body { background: black; }
+    html,body { background: whitesmoke; }
 }
 
 /*body,html
@@ -10,7 +10,6 @@
 body, html {
     height: 100%;
     margin: 0; 
-    background: whitesmoke;
 }
 
 /*parallax
@@ -53,7 +52,6 @@ body, html {
     background-color: whitesmoke;
     font-family: 'times new roman';
     font-size: 1.2em;
-/*    color: rgba(204,135,181);*/
     padding-right: 100px;
     padding-left: 100px;
     max-height: calc(100vh - 50px - 80px);
@@ -75,7 +73,7 @@ nav {
   top: 0;
   width: calc(100vw - 100px);
 }
-
+ 
 nav a {
   float: left;
   color: whitesmoke;
@@ -91,21 +89,12 @@ nav a {
 
 nav>a:hover {
   color: black;
-}
-
-nav>div>a:hover {
-  color: black;
+  text-decoration: none;
 }
 
 nav a.active {
   color: black;
 }
 
-/*
-.rainbow-text:hover {
-    background-image: linear-gradient(to left, yellow, orange, red, orange, yellow, violet, orange, red, orange,yellow);   -webkit-background-clip: text;
-  color: transparent;
-    
-}
-*/
+
 

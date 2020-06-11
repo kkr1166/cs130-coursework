@@ -5,30 +5,13 @@
     html, body { background: whitesmoke; }
 }
 
-
 /*General
 ------------------------------------*/
 html {
-    font-family: 'times new roman';
     background-color: whitesmoke;
+    font-family: 'times new roman';
 } 
 
-/*background image
-------------------------------------*/
-/*
-body {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: whitesmoke;
-}
-
-html {
-    height:100%;
-    margin:0;
-    padding: 0;
-}
-*/
  
 /* Navigation
 ------------------------------------*/
@@ -58,16 +41,20 @@ nav a {
   background-color: whitesmoke;
 }
 
-
-nav>div>a:hover {
+nav>a:hover {
   color: grey;
 }
 
-
-nav>div>a.rainbow-text {
-    background-image: linear-gradient(to left, blue, red);   -webkit-background-clip: text;
-    color: transparent;  
+nav a.active {
+  color: grey;
 }
+
+/*
+.rainbow-text:hover {
+    background-image: linear-gradient(to left, yellow, orange, red, orange, yellow, violet, orange, red, orange,yellow);   -webkit-background-clip: text;
+  color: transparent; 
+}
+*/
 
 /*Message
 -----------------------------------*/
@@ -76,65 +63,6 @@ nav>div>a.rainbow-text {
     height: 100px;
     color: whitesmoke;
 }
-
-/* play buttons
-------------------------------------*/
-i {
-    font-size: 3.8em;
-/*
-    background-image: linear-gradient(to left, blue, red);   
-    -webkit-background-clip: text;
-    color: transparent;  
-*/
-    cursor: pointer;
-     
-}
-
-i:hover {
-    background-image: linear-gradient(to left, red, blue);   -webkit-background-clip: text;
-  color: transparent;
-
-    
-}
-
-/*
-#one {
-    position: absolute; 
-    top: 110px; 
-    left: 300px;
-}
-
-#two {
-    position: absolute; 
-    top: 150px; 
-    right: 200px;
-}
-
-#three {
-    position: absolute; 
-    bottom: 50px; 
-    right: 300px;
-}
-
-#four {
-    position: absolute; 
-    top: 320px; 
-    right: 30px;
-}
-
-#five {
-    position: absolute; 
-    bottom: 100px; 
-    left: 150px;
-    
-}
-
-#play-pause {
-    position: absolute; 
-    top: 110px; 
-    left: 300px;
-}
-*/
 
 /*Tracks
 -----------------------------------*/
@@ -152,10 +80,6 @@ i:hover {
     width: auto;
     min-width: 400px;
     background-color: rgb(59,56,56);
-/*
-    background-color: lightgrey;
-    background-color: #f5f5f5;
-*/
 }
 
 .controls {
@@ -208,7 +132,6 @@ i:hover {
     font-size: .8em;
     padding-right: 10px;
     cursor: pointer;
-/*    color: darkslategrey;*/
 }
 
 .play_pause {
@@ -216,7 +139,6 @@ i:hover {
     font-size: 1.4em;
     padding-right: 10px;
     cursor: pointer;
-/*    color: darkslategrey;*/
 }
 
 .time-elapsed {
@@ -226,7 +148,6 @@ i:hover {
     align-items: center;
     letter-spacing: 1px;
     padding-left: 10px;
-/*    color: darkslategrey;*/
 }
 
 .divider {
@@ -243,7 +164,6 @@ i:hover {
     display: flex;
     align-items: center;
     letter-spacing: 1px;
-/*    color: darkslategrey;*/
 }
 
 .track_photo {
@@ -255,7 +175,6 @@ i:hover {
     display: flex;
     align-items: center;
     margin-right: 6px;
-    
 }
 
 .track_info {
@@ -268,7 +187,97 @@ i:hover {
     font-size: 1.4em;
     display: flex;
     align-items: center;
-/*    color: darkslategrey;*/
+}
+
+/*Hover
+-----------------------------------*/
+
+.rwd:hover, .ffwd:hover, .play_pause:hover, .eye:hover, .scroll:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+.fa-ellipsis-v:hover {
+    cursor: pointer;
+}
+
+.view_score:hover {
+    color: whitesmoke;
+}
+
+/*View hover tooltip
+-----------------------------------*/
+.fa-ellipsis-v {
+    font-size: 1.5em;   
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 60px;
+  padding-right: 16px;
+    
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  text-decoration: underline;
+  width: 200px;
+  background-color: rgb(59,56,56);
+  color: grey;
+  text-align: center;
+  border-radius: 0px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -169px;
+  border: solid 3px lightgrey;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 80%;
+  margin-left: 13px;
+  border-width: 15px;
+  border-style: solid;
+  border-color: transparent transparent lightgrey transparent;
+
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  
+}
+
+.tooltip:hover {
+  color: grey;
+  
+}
+
+.embedded_score {
+    display: none;
+    margin-bottom: 20px;
+}
+
+/*Download hover tooltip
+-----------------------------------*/
+
+a {
+    color: grey;
+}
+
+a:hover {
+    color: whitesmoke;
 }
 
 /*Slider
@@ -312,3 +321,87 @@ input[type=range]::-moz-range-track {
   border-radius: 50%;
   background-color: grey;
 }
+
+/*Embedded score
+-----------------------------------*/
+.score {
+/*    padding-top: 10px;*/
+/*    display: none;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Old Code
+-----------------------------------------------------------*/
+nav>a.rainbow-text {
+    background-image: linear-gradient(to left, blue, red);   -webkit-background-clip: text;
+    color: transparent;  
+}
+
+
+/* play buttons
+------------------------------------*/
+i {
+    font-size: 3.8em;
+/*
+    background-image: linear-gradient(to left, blue, red);   
+    -webkit-background-clip: text;
+    color: transparent;  
+*/
+    cursor: pointer;
+     
+}
+
+i:hover {
+    background-image: linear-gradient(to left, red, blue);   -webkit-background-clip: text;
+    color: transparent;  
+}
+
+/*
+#one {
+    position: absolute; 
+    top: 110px; 
+    left: 300px;
+}
+
+#two {
+    position: absolute; 
+    top: 150px; 
+    right: 200px;
+}
+
+#three {
+    position: absolute; 
+    bottom: 50px; 
+    right: 300px;
+}
+
+#four {
+    position: absolute; 
+    top: 320px; 
+    right: 30px;
+}
+
+#five {
+    position: absolute; 
+    bottom: 100px; 
+    left: 150px;
+    
+}
+
+#play-pause {
+    position: absolute; 
+    top: 110px; 
+    left: 300px;
+}
+*/
+

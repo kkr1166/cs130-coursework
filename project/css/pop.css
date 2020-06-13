@@ -79,7 +79,8 @@ nav a.active {
 .player {
     width: auto;
     min-width: 400px;
-    background-color: rgb(59,56,56);
+/*    background-color: rgb(59,56,56);*/
+    background-color: black;
 }
 
 .controls {
@@ -267,6 +268,11 @@ nav a.active {
 .embedded_score {
     display: none;
     margin-bottom: 20px;
+    
+}
+
+.score {
+    height: 200px;
 }
 
 /*Download hover tooltip

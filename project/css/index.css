@@ -15,19 +15,20 @@ body, html {
 /*parallax
 ------------------------------------*/
 .parallax {
-  /* The image used */
-  background-image: url('../images/profile.jpeg')
-      /*url('../images/profile.jpeg')*/;
-
+  background-image: url('../images/profile.jpeg');
   /* Set a specific height */
   height: 100vh; 
-
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.second {
+    height: calc(100vh - 175px);
+}
+
 
 /*name
 ------------------------------------*/
@@ -96,5 +97,267 @@ nav a.active {
   color: black;
 }
 
+/* Media Queries! ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Special ----------- */
+@media only screen and (max-width : 1120px) {
+
+    .second {
+        height: calc(100vh - 195px);
+    }
+}
+
+/* Big ----------- */
+@media only screen and (max-width : 1000px) {
+
+    nav a {
+        font-size: 1.8em;
+    }
+    nav {
+        height: 50px;
+    }
+    
+    .name {
+        font-size: 3.5em;
+    }
+    
+    #bio {
+        
+    }
+    
+/*
+    .parallax {
+        background-image: url('../images/profile2000w.jpeg');
+    }
+*/
+    
+    .second {
+        height: calc(100vh - 300px);
+    }
+}
+
+/* Medium ----------- */
+@media only screen and (max-width : 800px) {
+
+    nav a {
+        font-size: 1.6em;
+    }
+    nav {
+        height: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: calc(100vw - 40px);
+        border-bottom: solid whitesmoke 2.5px;
+    }
+    
+    .name {
+        font-size: 3.3em;
+    }
+    
+    #bio {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    
+    
+}
+ 
+/* Small ----------- */
+@media only screen and (max-width : 600px) {
+
+    nav a {
+        font-size: 1.2em;
+    }
+    nav {
+        height: 45px;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: calc(100vw - 40px);
+        border-bottom: solid whitesmoke 2px;
+    }
+    
+    .name {
+        font-size: 3.5em;
+    }
+    
+    #bio {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    
+    .parallax {
+        background-image: url('../images/profile1000w.jpeg');
+    }
+    
+    .second {
+        height: calc(100vh - 45px - 300px);
+    }
 
 
+}
+
+/* Smaller ----------- */
+@media only screen and (max-width : 465px) {
+
+    nav a {
+        font-size: 1.1em;
+    }
+    nav {
+        height: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+        width: calc(100vw - 10px);
+        border-bottom: solid whitesmoke 2px;
+    }
+    
+    .name {
+        font-size: 3.5em;
+    }
+    
+    #bio {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    
+    .parallax {
+        background-image: url('../images/profile1000w.jpeg');
+    }
+    
+    .second {
+        height: calc(100vh - 45px - 280px);
+    }
+
+
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+}
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+
+}
+
+/* iPhone 6, 7, 8 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+
+}
+
+/* iPhone 6+, 7+, 8+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+
+    
+}
+
+/* iPhone X ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+
+}
+
+/* iPhone XS Max, XR ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+    
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+
+}

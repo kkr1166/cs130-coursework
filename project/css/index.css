@@ -282,24 +282,159 @@ iPad 3
 
 /* iPhone 4 ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+    nav a {
+        font-size: 1.1em;
+    }
+    nav {
+        height: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+        width: calc(100vw - 10px);
+        border-bottom: solid whitesmoke 2px;
+    }
+    
+    .name {
+        font-size: 3.5em;
+    }
+    
+    #bio {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    
+    .parallax {
+        background-image: url('../images/profile1000w.jpeg');
+    }
+    
+    .second {
+        height: calc(100vh - 45px - 280px);
+    }
 
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    nav a {
+        font-size: 1.1em;
+    }
+    nav {
+        height: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+        width: calc(100vw - 10px);
+        border-bottom: solid whitesmoke 2px;
+    }
+    
+    .name {
+        font-size: 3.5em;
+    }
+    
+    #bio {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    
+    .parallax {
+        background-image: url('../images/profile1000w.jpeg');
+    }
+    
+    .second {
+        height: calc(100vh - 45px - 280px);
+    }
 
 }
 
 /* iPhone 5 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    nav a {
+        font-size: 1.1em;
+    }
+    nav {
+        height: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+        width: calc(100vw - 10px);
+        border-bottom: solid whitesmoke 2px;
+    }
+    
+    .name {
+        font-size: 3.5em;
+    }
+    
+    #bio {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    
+    .parallax {
+        background-image: url('../images/profile1000w.jpeg');
+    }
+    
+    .second {
+        height: calc(100vh - 45px - 280px);
+    }
 
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+    nav a {
+        font-size: 1.1em;
+    }
+    nav {
+        height: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+        width: calc(100vw - 10px);
+        border-bottom: solid whitesmoke 2px;
+    }
+    
+    .name {
+        font-size: 3.5em;
+    }
+    
+    #bio {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    
+    .parallax {
+        background-image: url('../images/profile1000w.jpeg');
+    }
+    
+    .second {
+        height: calc(100vh - 45px - 280px);
+    }
 
 }
 
 /* iPhone 6, 7, 8 ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    nav a {
+        font-size: 1.1em;
+    }
+    nav {
+        height: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+        width: calc(100vw - 10px);
+        border-bottom: solid whitesmoke 2px;
+    }
+    
+    .name {
+        font-size: 3.5em;
+    }
+    
+    #bio {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    
+    .parallax {
+        background-image: url('../images/profile1000w.jpeg');
+    }
+    
+    .second {
+        height: calc(100vh - 45px - 280px);
+    }
 
 }
 

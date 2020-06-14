@@ -238,24 +238,6 @@ nav a.active {
 @media only screen and (max-width : 465px) {
 
     nav a {
-        font-size: .8em;
-        color: black;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        
-    }
-    nav {
-        margin-left: 0px;
-        margin-right: 0px;
-        width: calc(100vw);
-        border-bottom: solid whitesmoke 2px;
-        background-color: whitesmoke;
-        max-height: 25px;
-        
-    }
-
-    /*
-    nav a {
         font-size: 1.3em;
         width: 100%;
         color: black;
@@ -273,12 +255,11 @@ nav a.active {
         flex-direction: column;
         height: auto;
         background-color: whitesmoke;
-
+/*        opacity: 70%;*/
         padding-bottom: 5px;
-        
+        display: none;
         
     }
-*/
     
     nav>a:hover {
         color: grey;
@@ -290,7 +271,10 @@ nav a.active {
     }
     
     .ham {
-        display: none;
+        display: block;
+        padding-left: 30px;
+        padding-top: 10px;
+        font-size: 1.8em;
     }
     
     .ham:hover {

@@ -188,20 +188,46 @@ nav a.active {
 /* Small ----------- */
 @media only screen and (max-width : 600px) {
 
+    nav {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: calc(100vw);
+        border-bottom: none;
+        background-color: whitesmoke;
+        max-height: 35px;
+    }
+    
     nav a {
         font-size: 1.2em;
-    }
-    nav {
-        height: 45px;
-        margin-left: 20px;
-        margin-right: 20px;
-        width: calc(100vw - 40px);
-        border-bottom: solid whitesmoke 2px;
+        color: black;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
     
+    nav>a:hover {
+        color: grey;
+        
+    }
     
-    .name {
-        font-size: 3.5em;
+    nav a.active {
+        color: grey;
+    }
+    
+    .smaller {
+        display: block;
+        margin-top: 35px;
+    }
+        
+    img {
+        width: auto ;
+        max-width: 100% ;
+        height: auto ;
+    }
+    
+    .namediv {
+        display: none;
     }
     
     #bio {
@@ -210,12 +236,16 @@ nav a.active {
     }
     
     .parallax {
-        background-image: url('../images/profile1000w.jpeg');
-        
+        background-image: none;
+        height: 100vh;
+        background-attachment: scroll;
+        background-color: whitesmoke;
+        height: auto;
     }
     
     .second {
         height: calc(100vh - 45px - 300px);
+        display: none;
     }
     
     .bar {
@@ -225,14 +255,6 @@ nav a.active {
 
 }
 
-
-/*
-@media only screen and (max-width : 465px) {
-    nav {
-        display: none;
-    }
-}
-*/
 /* Smaller ------
 ----- */
 @media only screen and (max-width : 465px) {
@@ -268,30 +290,6 @@ nav a.active {
         display: none;
     }
     
-    .ham:hover {
-        cursor: pointer;
-        
-    }
-    
-    .bar {
-/*        display: none;*/
-        padding-top: 15px;
-        padding-bottom: 15px;
-        background-color: whitesmoke;
-        color: grey;
-    }
-    
-    .fa-bars {
-        padding-right: 25px;
-    }
-    .bar:hover {
-        color: black;
-    }
-    
-    .x:hover {
-        color: black;
-    }
-
     .smaller {
         display: block;
         margin-top: 30px;
@@ -305,11 +303,7 @@ nav a.active {
     .namediv {
         display: none;
     }
-    
-    .name {
-        font-size: 3.5em;
-        color: grey;
-    }
+
     
     #bio {
         padding-right: 30px;

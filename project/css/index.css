@@ -12,13 +12,15 @@ body, html {
     margin: 0; 
 }
 
+.hide { 
+    display: none; 
+}
+
 /*parallax
 ------------------------------------*/
 .parallax {
   background-image: url('../images/profile.jpeg');
-  /* Set a specific height */
   height: 100vh; 
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -95,6 +97,13 @@ nav>a:hover {
 
 nav a.active {
   color: black;
+}
+
+/* Hamburger
+------------------------------------*/
+
+.ham {
+    display: none;
 }
 
 /* Media Queries! ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -187,6 +196,7 @@ nav a.active {
     
     .parallax {
         background-image: url('../images/profile1000w.jpeg');
+        
     }
     
     .second {
@@ -196,18 +206,66 @@ nav a.active {
 
 }
 
-/* Smaller ----------- */
+/* Smaller ------
+----- */
 @media only screen and (max-width : 465px) {
 
     nav a {
-        font-size: 1.1em;
+        font-size: 1.3em;
+        width: 100%;
+        color: black;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
     }
+    
     nav {
-        height: 40px;
-        margin-left: 5px;
-        margin-right: 5px;
-        width: calc(100vw - 10px);
+        margin-left: 0px;
+        margin-right: 0px;
+        width: calc(100vw);
         border-bottom: solid whitesmoke 2px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        background-color: whitesmoke;
+        opacity: 70%;
+        padding-bottom: 5px;
+        display: none;
+        
+    }
+    
+    nav>a:hover {
+        color: grey;
+        
+    }
+    
+    nav a.active {
+        color: grey;
+    }
+    
+    .ham {
+        display: block;
+        padding-left: 30px;
+        padding-top: 10px;
+        font-size: 1.8em;
+    }
+    
+    .ham:hover {
+        cursor: pointer;
+        
+    }
+    
+    .bar {
+/*        display: none;*/
+        padding-top: 15px;
+    }
+    
+    .bar:hover {
+        color: whitesmoke;
+    }
+    
+    .x:hover {
+        color: grey;
     }
     
     .name {
@@ -217,14 +275,17 @@ nav a.active {
     #bio {
         padding-right: 30px;
         padding-left: 30px;
+
     }
     
     .parallax {
         background-image: url('../images/profile1000w.jpeg');
+        background-attachment: scroll;
     }
     
     .second {
         height: calc(100vh - 45px - 280px);
+        display: none;
     }
 
 

@@ -34,7 +34,7 @@ const getTracks = (term) => {
                 document.getElementById('tracks').innerHTML = "No tracks match search!";
                 
             } else {
-                
+                 
             let counter = 0;
             for (const track of data) {
                 if (counter === 5) {

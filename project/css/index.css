@@ -1,7 +1,7 @@
 /*loading page
 ------------------------------------*/
 @-moz-document url(about:blank) {
-    html,body { background: whitesmoke; }
+    html,body { background-color: whitesmoke; }
 }
 
 /*body,html
@@ -10,6 +10,7 @@
 body, html {
     height: 100%;
     margin: 0; 
+    background-color: whitesmoke;
 }
 
 .hide { 
@@ -118,6 +119,9 @@ nav a.active {
     .second {
         height: calc(100vh - 195px);
     }
+    .bar {
+        display: none;
+    }
 }
 
 /* Big ----------- */
@@ -147,6 +151,9 @@ nav a.active {
     .second {
         height: calc(100vh - 300px);
     }
+    .bar {
+        display: none;
+    }
 }
 
 /* Medium ----------- */
@@ -172,6 +179,9 @@ nav a.active {
         padding-left: 60px;
     }
     
+    .bar {
+        display: none;
+    }
     
 }
  
@@ -188,6 +198,7 @@ nav a.active {
         width: calc(100vw - 40px);
         border-bottom: solid whitesmoke 2px;
     }
+    
     
     .name {
         font-size: 3.5em;
@@ -206,10 +217,22 @@ nav a.active {
     .second {
         height: calc(100vh - 45px - 300px);
     }
+    
+    .bar {
+        display: none;
+    }
 
 
 }
 
+
+/*
+@media only screen and (max-width : 465px) {
+    nav {
+        display: none;
+    }
+}
+*/
 /* Smaller ------
 ----- */
 @media only screen and (max-width : 465px) {
@@ -277,30 +300,11 @@ nav a.active {
     .x:hover {
         color: black;
     }
-/*
-    .smaller {
-        background-image: url('../images/profile1000w.jpeg');}
-    
-*/
-/*
-        display: flex;
-        width: 100vw;
-        height: 500px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-*/
-/*
-        min-width: 100%;
-        height: auto;
-*/
+
     .smaller {
         display: block;
     }
         
-        
-    
-    
     img {
         width: auto ;
         max-width: 100% ;

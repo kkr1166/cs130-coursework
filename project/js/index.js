@@ -25,9 +25,11 @@ $(window).scroll(function(){
 //    console.log(counter);
 //}
 
-function menuFunction() {
+var x = document.querySelector(".x");
+x.addEventListener("click", function () {
     var nav = document.querySelector("nav");
     var bar = document.querySelector(".bar");
+    var bio = document.querySelector("#bio");
     nav.style.display === "none";
     if (nav.style.display === "none") {
         bar.style.display = "none";
@@ -37,7 +39,64 @@ function menuFunction() {
         bar.style.display = "block";
         nav.style.display = "none";
     }
-}
+});
+
+var bar = document.querySelector(".bar");
+bar.addEventListener("click", function () {
+    var nav = document.querySelector("nav");
+    var bar = document.querySelector(".bar");
+    var bio = document.querySelector("#bio");
+    nav.style.display === "none";
+    if (nav.style.display === "none") {
+        bar.style.display = "none";
+        nav.style.display = "block";
+    }
+    else {
+        bar.style.display = "block";
+        nav.style.display = "none";
+    }
+});
+
+//var ham = document.querySelector(".ham");
+//ham.addEventListener("click", function () {
+//    var nav = document.querySelector("nav");
+//    var bar = document.querySelector(".bar");
+//    var bio = document.querySelector("#bio");
+//    nav.style.display === "none";
+//    if (nav.style.display === "none") {
+//        bar.style.display = "none";
+//        nav.style.display = "block";
+//    }
+//    else {
+//        bar.style.display = "block";
+//        nav.style.display = "none";
+//    }
+//});
+//function menuFunction() {
+//    var nav = document.querySelector("nav");
+//    var bar = document.querySelector(".bar");
+//    var bio = document.querySelector("#bio");
+//    nav.style.display === "none";
+//    if (nav.style.display === "none") {
+//        bar.style.display = "none";
+//        nav.style.display = "block";
+//    }
+//    else {
+//        bar.style.display = "block";
+//        nav.style.display = "none";
+//    }
+//}
+//
+//// When the user clicks the button, open the modal 
+//btn.addEventListener('click', function () {
+//    var x = window.innerWidth;
+//    if (x > 768) {
+//        //event.preventDefault();
+//        modal.style.display = "block";
+//    } else {
+//        //event.preventDefault();
+//    }
+//});
 
 //function menuFunction() {
 //  var nav = document.querySelector("nav");

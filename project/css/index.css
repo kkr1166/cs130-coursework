@@ -253,32 +253,6 @@ nav a.active {
         max-height: 25px;
         
     }
-
-    /*
-    nav a {
-        font-size: 1.3em;
-        width: 100%;
-        color: black;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        
-    }
-    
-    nav {
-        margin-left: 0px;
-        margin-right: 0px;
-        width: calc(100vw);
-        border-bottom: solid whitesmoke 2px;
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        background-color: whitesmoke;
-
-        padding-bottom: 5px;
-        
-        
-    }
-*/
     
     nav>a:hover {
         color: grey;
@@ -319,7 +293,7 @@ nav a.active {
 
     .smaller {
         display: block;
-        margin-top: 25px;
+        margin-top: 30px;
     }
         
     img {

@@ -106,6 +106,10 @@ nav a.active {
     display: none;
 }
 
+.smaller {
+    display: none;
+}
+
 /* Media Queries! ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* Special ----------- */
@@ -228,7 +232,7 @@ nav a.active {
         flex-direction: column;
         height: auto;
         background-color: whitesmoke;
-        opacity: 70%;
+/*        opacity: 70%;*/
         padding-bottom: 5px;
         display: none;
         
@@ -258,33 +262,75 @@ nav a.active {
     .bar {
 /*        display: none;*/
         padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: whitesmoke;
+        color: grey;
     }
     
+    .fa-bars {
+        padding-right: 25px;
+    }
     .bar:hover {
-        color: whitesmoke;
+        color: black;
     }
     
     .x:hover {
-        color: grey;
+        color: black;
+    }
+/*
+    .smaller {
+        background-image: url('../images/profile1000w.jpeg');}
+    
+*/
+/*
+        display: flex;
+        width: 100vw;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+*/
+/*
+        min-width: 100%;
+        height: auto;
+*/
+    .smaller {
+        display: block;
+    }
+        
+        
+    
+    
+    img {
+        width: auto ;
+        max-width: 100% ;
+        height: auto ;
+    }
+    .namediv {
+        display: none;
     }
     
     .name {
         font-size: 3.5em;
+        color: grey;
     }
     
     #bio {
         padding-right: 30px;
         padding-left: 30px;
+        max-height: none;
 
     }
     
     .parallax {
-        background-image: url('../images/profile1000w.jpeg');
+        background-image: none;
+        height: 100vh;
         background-attachment: scroll;
+        background-color: whitesmoke;
+        height: auto;
     }
     
     .second {
-        height: calc(100vh - 45px - 280px);
         display: none;
     }
 

@@ -2,7 +2,7 @@
 ------------------------------------*/
  
 @-moz-document url(about:blank) {
-    html, body { background: whitesmoke; }
+    html, body { background-color: whitesmoke; }
 }
 
 /*General
@@ -11,7 +11,9 @@ html {
     background-color: whitesmoke;
     font-family: 'times new roman';
 } 
-
+body {
+    margin: 0;
+}
  
 /* Navigation
 ------------------------------------*/
@@ -78,7 +80,6 @@ nav a.active {
 
 .player {
     width: auto;
-    min-width: 400px;
     background-color: black;
 }
 
@@ -164,6 +165,10 @@ nav a.active {
     display: flex;
     align-items: center;
     letter-spacing: 1px;
+}
+
+.stack {
+    display: flex;
 }
 
 .track_photo {
@@ -327,6 +332,340 @@ input[type=range]::-moz-range-track {
 .score {
 /*    padding-top: 10px;*/
 /*    display: none;*/
+}
+
+/* Media Queries! ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Special ----------- */
+@media only screen and (max-width : 1120px) {
+    .tracks {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+    .left_of_middle {
+    width: calc(50vw - 380px);
+    }
+    
+    .right {
+        right: 110px;
+    }
+    
+}
+
+/* Big ----------- */
+@media only screen and (max-width : 1000px) {
+
+    nav {
+        height: 50px;
+    }
+    
+    nav a {
+        font-size: 1.8em;
+        
+    }
+    
+    .tracks {
+        margin-left: 85px;
+        margin-right: 85px;
+    }
+    
+    .left_of_middle {
+        width: calc(50vw - 365px);
+    }
+    
+    .right {
+        right: 90px;
+    }
+    
+    .time-elapsed {
+        padding-left: 5px;
+    }
+    
+    .message {
+        height: 80px;
+    }
+
+
+}
+
+/* Medium ----------- */
+@media only screen and (max-width : 800px) {
+
+    nav a {
+        font-size: 1.6em;
+    }
+    nav {
+        height: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: calc(100vw - 40px);
+        border-bottom: solid black 2.5px;
+    }
+    
+    .tracks {
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+    
+    .left_of_middle {
+        width: calc(50vw - 280px);
+    }
+    
+    .right {
+        right: 43px;
+    }
+    
+    .time-elapsed {
+        padding-left: 0px;
+    }
+    
+    .message {
+        height: 70px;
+    }
+    
+    embed {
+        height: 300px;
+    }
+    
+    .rwd {
+        font-size: .8em;
+        padding-right: 10px;
+    }
+    
+    .ffwd {
+        font-size: .8em;
+        padding-right: 3px;
+}
+
+    .play_pause {
+        font-size: 1em;
+        padding-right: 10px;
+}
+
+    .time-elapsed {
+        font-size: .9em;
+        color: rgb(231, 230, 230);
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+}
+
+    .divider {
+        font-size: 1.3em;
+        margin-left: 2px;
+        margin-right: 2px;
+        display: flex;
+        align-items: center;
+}
+
+    .time-total {
+        font-size: .9em;
+}
+
+    .track_photo {
+        height:46px;
+        width:46px;
+        margin-right: 6px;
+}
+
+    .track_info {
+        margin-top: 3px;
+        margin-bottom: 3px;
+}
+
+    .track_name {
+        font-size: 1.2em;
+}
+
+    .fa-ellipsis-v {
+        font-size: 1.2em;   
+}
+    .instrumentation {
+        font-size: .9em;
+    }
+
+}
+
+/* Medium Small ----------- */
+@media only screen and (max-width : 650px) {
+    
+    .left .rwd, .left .ffwd {
+        display: none;
+    }
+    
+    .left .play_pause {
+        padding-left: 10px;
+    }
+    
+    .left_of_middle {
+        width: calc(50vw - 240px);
+    }
+}
+
+/* Small ----------- */
+@media only screen and (max-width : 600px) {
+
+    nav {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: calc(100vw);
+        border-bottom: black solid 2px;
+        background-color: whitesmoke;
+        max-height: 35px;
+    }
+    
+    nav a {
+        font-size: 1.2em;
+        color: black;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+    }
+    
+    nav>a:hover {
+        color: grey;
+        
+    }
+    
+    nav a.active {
+        color: grey;
+    }
+    
+    .tracks {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .left_of_middle {
+        width: calc(50vw - 210px);
+    }
+    
+    .right {
+        right: 17px;
+        margin-top: 9px;
+    }
+    
+    .track_name {
+        font-size: 1em;
+}
+    
+        .track_photo {
+        height:40px;
+        width:40px;
+        margin-right: 6px;
+}
+
+    .track_info {
+        margin-top: 2px;
+        margin-bottom: 2px;
+}
+    .message {
+        height: 55px;
+    }
+    
+    
+
+}
+
+/* Smaller ------
+----- */
+@media only screen and (max-width : 465px) {
+
+    nav {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: calc(100vw);
+        border-bottom: black solid 2px;
+        background-color: whitesmoke;
+        max-height: 25px;
+        
+    }
+    
+    nav a {
+        font-size: .8em;
+        color: black;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+    }
+    
+    nav>a:hover {
+        color: grey;
+        
+    }
+    
+    nav a.active {
+        color: grey;
+    }
+    
+    .track {
+        margin-bottom: 12px;
+    }
+    .right {
+        margin-top: 8.5px;
+        padding-left: 0px;
+    }
+    
+    .instrumentation {
+        font-size: 0.75em;
+    }
+    
+    .time-elapsed, .time-total {
+        font-size: 0.75em;
+    }
+    
+    .divider {
+        display: none;
+    }
+    
+    .stack {
+        flex-direction: column;
+        margin-left: 5px;
+    }
+    
+    .time-elapsed {
+        border-bottom: solid 0.4px whitesmoke;
+        padding-left: 0px;
+        
+    }
+    .time-total {
+        padding-top: 2px;
+    }
+    .left_of_middle {
+        width: calc(50vw - 160px);
+    }
+    
+    .message {
+        height: 40px;
+    }
+    
+    
+    
+    .controls {
+        margin-left: 4px;
+    }
+    
+    [type='range']::-webkit-slider-thumb {
+  margin-top: -.25em;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  border: none;
+  width: 0.7em;
+  height: 0.7em;
+}
+    
+/* Smallest ------
+----- */
+    @media only screen and (max-width : 370px) {
+        .time-elapsed, .time-total {
+            display: none;
+        }
+        
+    }
+    
 }
 
 

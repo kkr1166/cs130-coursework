@@ -32,7 +32,7 @@ const AudioPlayer = (selector, audioFile) => {
         const progressController = containerElement.querySelector('.player-time');
         const timeElapsed = containerElement.querySelector('.time-elapsed');
         const timeTotal = containerElement.querySelector('.time-total');
-        if (getDuration() === "0NaN:0NaN") {
+        if (getDuration() === "NaN:0NaN") {
             console.log('returning...');
             return;
         }
@@ -87,12 +87,12 @@ const AudioPlayer = (selector, audioFile) => {
     const formatTime = (timeCount) => {
         var seconds = timeCount,
             minutes = Math.floor(seconds / 60);
-        minutes = (minutes >= 10) ? minutes : "0" + minutes;
+        minutes = (minutes >= 10) ? minutes : minutes;
         seconds = Math.floor(seconds % 60);
         seconds = (seconds >= 10) ? seconds : "0" + seconds;
         return minutes + ":" + seconds;
     };
-
+ 
     const setAudioFile = (audio_url) => {
         audio.src = audio_url;
     };

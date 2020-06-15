@@ -550,7 +550,6 @@ i:hover {
     .track_photo {
         height:46px;
         width:46px;
-        margin-right: 6px;
 }
 
     .track_info {
@@ -648,7 +647,6 @@ i:hover {
         .track_photo {
         height:40px;
         width:40px;
-        margin-right: 6px;
 }
 
     .track_info {
@@ -744,7 +742,7 @@ i:hover {
         padding-top: 2px;
     }
     .left_of_middle {
-        width: calc(50vw - 190px);
+        width: calc(50vw - 170px);
     }
     
     .message {
@@ -772,5 +770,22 @@ i:hover {
         .time-elapsed, .time-total {
             display: none;
         }
+        
+        .controls {
+        margin-left: 0px;
+            margin-right: 0px;
+    }
+        .right {
+        right: 12px;
+    }
+        
+        .play_pause {
+    padding-right: 0px;
+}
+/*
+        .tooltip {
+            display: none;
+        }
+*/
         
     }

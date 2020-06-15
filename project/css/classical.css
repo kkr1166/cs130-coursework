@@ -675,6 +675,20 @@ input[type=range]::-moz-range-track {
             display: none;
         }
         
+        .controls {
+        margin-left: 0px;
+            margin-right: 0px;
+    }
+        .right {
+        right: 12px;
+    }
+        
+        .play_pause {
+    padding-right: 0px;
+}
+        .left_of_middle {
+        width: calc(50vw - 150px);
+    }
     }
     
 

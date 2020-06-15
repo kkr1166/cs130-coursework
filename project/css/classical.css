@@ -51,13 +51,6 @@ nav a.active {
   color: grey;
 }
 
-/*
-.rainbow-text:hover {
-    background-image: linear-gradient(to left, yellow, orange, red, orange, yellow, violet, orange, red, orange,yellow);   -webkit-background-clip: text;
-  color: transparent; 
-}
-*/
-
 /*Message
 -----------------------------------*/
 .message {
@@ -496,22 +489,31 @@ input[type=range]::-moz-range-track {
     
     .left .play_pause {
         padding-left: 10px;
+        font-size: 1.4em;
     }
     
     .left_of_middle {
         width: calc(50vw - 240px);
     }
+    
+    [type='range']::-webkit-slider-thumb {
+  margin-top: -.30em;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  border: none;
+  width: 0.8em;
+  height: 0.8em;
+}
+    
 }
 
 /* Small ----------- */
 @media only screen and (max-width : 600px) {
 
     nav {
-        margin-left: 0px;
-        margin-right: 0px;
-        padding-left: 5px;
-        padding-right: 5px;
-        width: calc(100vw);
+        margin-left: 15px;
+        margin-right: 15px;
+        width: calc(100vw - 30px);
         border-bottom: black solid 2px;
         background-color: whitesmoke;
         max-height: 35px;
@@ -566,6 +568,15 @@ input[type=range]::-moz-range-track {
         height: 55px;
     }
     
+    [type='range']::-webkit-slider-thumb {
+  margin-top: -.25em;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  border: none;
+  width: 0.7em;
+  height: 0.7em;
+}
+    
     
 
 }
@@ -575,9 +586,9 @@ input[type=range]::-moz-range-track {
 @media only screen and (max-width : 465px) {
 
     nav {
-        margin-left: 0px;
-        margin-right: 0px;
-        width: calc(100vw);
+        margin-left: 10px;
+        margin-right: 10px;
+        width: calc(100vw - 20px);
         border-bottom: black solid 2px;
         background-color: whitesmoke;
         max-height: 25px;
@@ -666,6 +677,6 @@ input[type=range]::-moz-range-track {
         
     }
     
-}
+
 
 

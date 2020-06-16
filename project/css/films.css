@@ -2,7 +2,9 @@
 ------------------------------------*/
 
 @-moz-document url(about:blank) {
-    html,body { background: whitesmoke; }
+    html, body { 
+        background-color: whitesmoke; 
+    }
 }
 
 /*General
@@ -10,12 +12,19 @@
 html {
     background-color: whitesmoke;
     font-family: 'times new roman';
+    margin: 0;
     
 }
 
 body {
     overflow: hidden;
+    margin: 0;
 }
+
+.main {
+    margin: 0;
+}
+
 
 /* Navigation
 ------------------------------------*/
@@ -40,7 +49,6 @@ nav a {
   padding-bottom: 10px;
   width: 20%;
   text-decoration: none;
-  font-family: 'times new roman';
   font-size: 2em;
   background-color: whitesmoke;
 }
@@ -53,57 +61,50 @@ nav a.active {
   color: grey;
 }
 
-
-/*Films
-------------------------------------*/
-.preview {
-    display: none;
-}
-
  
 /*Film Posters
 ------------------------------------*/
-body * {
-    box-sizing: border-box;
-}
 
 .cards {
     display: flex;
     flex-wrap: wrap;
-/*    justify-content: space-between;*/
-    height: 100vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
     margin-top: 119px;
-    margin-bottom: 40px;
-    margin-left: 100px;
-    margin-right: 100px;
-    padding-left: 20px;
-    padding-bottom: 20px;
+    width: calc(100vw - 160px); /*100vw - side paddings of .cards - side borders of .cards*/
+    height: calc(150vw - 330px + 60px); /*3*(height of .card + sum of top&bottom borders of all .card in 1 column + sum of top&bottom margins of all .card in 1 column)*/
+}
+
+.card, .front, .back {
+    width: calc(33.33vw - 73.3333px); /*(1/3)*(100vw - side paddings of .cards (80+80) - side borders of .cards (0) - sum of side borders of all .card in 1 row (0) - sum of side margin of all .card in 1 row (60)*/
+    height: calc(50vw - 110px); /*1.5 width of .card*/
+}
+
+.card {
+    margin: 10px;
     
+}
+
+img {
+    width: 100%;
 }
 
 .front:hover {
     cursor: pointer;
+    opacity: 70%;
 }
+
 
 
 /*Flip Posters
 ------------------------------------*/
 
-
 /* flip the pane when hovered */
 
 .card.hover .flipper {
     transform: rotateY(180deg);
-}
-
-.card {
-/*    width: 300px;*/
-    width: calc(33.33% - 20px);
-    height: calc(70% - 20px);
-    min-height: 120px;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 20px;
 }
 
 /* flip speed */
@@ -112,70 +113,37 @@ body * {
     transition: 1.2s;
     transform-style: preserve-3d;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
-
 /* hide back of pane during swap */
-
 .front, .back {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     position: absolute;
     width: 100%;
- 
-}
-
-.front:hover {
-    opacity: 70%;
+    box-shadow: 3px 3px 8px 3px lightgrey;
 }
 
 /* front pane, placed above back */
-
 .front {
     z-index: 2;
     transform: rotateY(0deg);
+    background-image: none !important;  
 }
 
-
 /* back, initially hidden pane */
-
 .back {
     transform: rotateY(180deg);
     background-color: white;
     color: grey;
-}
-
-.front, .back {
-    height: calc(70vh - 20px - 15px);
-    width: calc(33.33vw - 100px);
-/*
-    width:100%;
-    height: calc(70vh - 20px - 15px);
-*/
-    box-shadow: 3px 3px 8px 3px lightgrey;
-}
-
-.flipper {
-    display: flex;
-    flex-direction: column;
-}
-
-.front {
-    background: center center no-repeat;
-    background-size: cover;
-}
-
-.cards {
-    display: flex;
-}
-
-/*Film Info
-------------------------------------*/
-.back {
     text-align: left;
+}
+
+h1, h2, p {
     padding-left: 20px;
     padding-right: 20px;
-    
 }
 
 h1, h2 {
@@ -216,14 +184,14 @@ p {
 }
 
 .watch {
-    margin-left: calc(16.67vw - 130px);
-    margin-right: calc(16.67vw - 130px);
+    margin-left: calc(16.67vw - 95px);
+    margin-right: calc(16.67vw - 95px);
     
 }
 
 .back-button {
-    margin-left: calc(16.67vw - 115px);
-    margin-right: calc(16.67vw - 115px);
+    margin-left: calc(16.67vw - 85px);
+    margin-right: calc(16.67vw - 85px);
 }
 
 .btn:hover {
@@ -234,26 +202,11 @@ p {
 
 /*Alerts
 ------------------------------------*/
-.front {
-/*    background-image: none !important;*/
-/*    opacity: 20%;*/
-}
-
-.message-a, .message-b {
-    margin-top: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
-    padding: 11px;
+.message-b {
     text-align: center;
     font-size: 1.5em;
     box-shadow: 3px 3px 8px 3px lightgrey;
     color: grey;
-    background-color: white;
-    height: 134px;
-}
-
-.message-b {
-    
     height: 100vh;
     position: absolute;
     z-index: 10;
@@ -262,7 +215,7 @@ p {
     left: 0px;
     background: rgba(255,255,255,0.8);
     margin: 0px;
-    padding-left: 25px;
+    padding-top: 11px;
 }
 
 .ok {
@@ -286,39 +239,439 @@ button:focus {
 outline: none;
 }
 
-.message-a {
-/*    display: none;*/
-}
-
 .fa-lock {
     padding-right: 4px;
     
 }
 
-/*Media Queries
-------------------------------------*/
-.listen {
-    display: none;
-    margin-left: calc(16.67vw - 95px);
-    margin-right: calc(16.67vw - 95px);
-}
 
-@media (max-width: 900px) {
-    main .card { 
-        width: calc(50% - 20px);
-/*        height: calc(50vh - 20px);*/
+/* Media Queries! ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Special ----------- */
+@media only screen and (max-width : 1120px) {
+    
+    h1 {
+    font-size: 1.6em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1.2em;
+        margin-top: 0px;
     }
     
-.front, .back {
-/*    height: calc(70vh - 20px - 15px);*/
-    width: calc(50vw - 100px);
-    box-shadow: 3px 3px 8px 3px lightgrey;
+    .btn {
+        font-size: 1.2em;
+    }
+    
+    .back-button {
+        margin-left: calc(16.67vw - 82px);
+        margin-right: calc(16.67vw - 82px);
 }
+    
+    
 }
 
-@media (max-width: 550px) {
-    main .card { 
-        width: calc(100% - 20px);
-/*        height: 70vh;*/
+/* Big ----------- */
+@media only screen and (max-width : 1000px) {
+
+    nav {
+        height: 50px;
+    }
+    
+    nav a {
+        font-size: 1.8em;
+        
+    }
+    
+    .cards {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 119px;
+    width: calc(100vw - 80px); /*100vw - side paddings of .cards - side borders of .cards*/
+    height: calc(150vw - 210px + 60px); /*3*(height of .card + sum of top&bottom borders of all .card in 1 column + sum of top&bottom margins of all .card in 1 column)*/
+}
+
+.card, .front, .back {
+    width: calc(33.3333vw - 46.66667px); /*(1/3)*(100vw - side paddings of .cards (80) - side borders of .cards - sum of side borders of all .card in 1 row - sum of side margin of all .card in 1 row (60)*/
+    height: calc(50vw - 70px); /*1.5 width of .card*/
+}
+    .btn, h2 {
+        font-size: 1.1em;
+    }
+    
+    p {
+        margin-bottom: 0px;
+    }
+    
+    h1 {
+        font-size: 1.6em;
+        margin-top: 15px;
+    }
+    
+    .btn {
+        padding: 3px;
+        margin-top: 16px;
+        box-shadow: 1px 1px 4px 1px lightgrey;
+    }
+    
+    .btn:hover {
+        background-color: black;
+        box-shadow: 1px 1px 2px 1px lightgrey;
+        cursor: pointer;
+}
+    .watch {
+    margin-left: calc(16.67vw - 72px);
+    margin-right: calc(16.67vw - 72px);
+    
+    
+}
+
+.back-button {
+    margin-left: calc(16.67vw - 65px);
+    margin-right: calc(16.67vw - 65px);
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+}
+
+/* Big-Medium ----------- */
+@media only screen and (max-width : 880px) {
+
+    nav {
+        height: 50px;
+    }
+    
+    nav a {
+        font-size: 1.8em;
+        
+    }
+    
+    p, .btn, h2 {
+        font-size: 1.1em;
+    }
+    
+    p {
+        margin-bottom: 0px;
+    }
+    h1 {
+        font-size: 1.6em;
+        margin-top: 15px;
+    }
+    
+    .btn {
+        padding: 3px;
+        margin-top: 4px;
+        box-shadow: 1px 1px 4px 1px lightgrey;
+    }
+    
+    .btn:hover {
+        background-color: black;
+        box-shadow: 1px 1px 2px 1px lightgrey;
+        cursor: pointer;
+}
+    .watch {
+        margin-left: calc(16.67vw - 72px);
+        margin-right: calc(16.67vw - 72px);
+    
+    
+}
+
+.back-button {
+    margin-left: calc(16.67vw - 65px);
+    margin-right: calc(16.67vw - 65px);
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+}
+
+
+/* Medium ----------- */
+@media only screen and (max-width : 800px) {
+
+    nav a {
+        font-size: 1.6em;
+    }
+    nav {
+        height: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: calc(100vw - 40px);
+        border-bottom: solid black 2.5px;
+    }
+    
+    .cards {
+        margin-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: calc(100vw - 40px); /*100vw - side paddings of .cards - side borders of .cards*/
+        height: calc(150vw - 150px + 60px); /*3*(height of .card + sum of top&bottom borders of all .card in 1 column + sum of top&bottom margins of all .card in 1 column)*/
+}
+
+.card, .front, .back {
+    width: calc(33.3333vw - 33.3333px); /*(1/3)*(100vw - side paddings of .cards (40) - side borders of .cards - sum of side borders of all .card in 1 row - sum of side margin of all .card in 1 row (60)*/
+    height: calc(50vw - 50px); /*1.5 width of .card*/
+}
+    h1 {
+        font-size: 1.3em;
+    }
+    
+    .watch {
+        margin-left: calc(16.67vw - 60px);
+        margin-right: calc(16.67vw - 60px);
+    
+    
+}
+
+.back-button {
+    margin-left: calc(16.67vw - 55px);
+    margin-right: calc(16.67vw - 55px);
+    padding-left: 8px;
+    padding-right: 8px;
+}
+  
+}
+
+/* Medium Medium Small ----------- */
+@media only screen and (max-width : 730px) {
+    
+    .watch {
+        display: none;
+    }
+    
+    .back-button {
+        margin-top: 10px;
+}
+    h1, h2, p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+    h1 {
+        margin-top: 5px;
     }
 }
+
+/* Medium Small ----------- */
+@media only screen and (max-width : 670px) {
+    
+    h1 {
+        font-size: 1.1em;
+    }
+    
+    h2, p, .back-button {
+        font-size: 1em;
+    }
+    
+    .back-button {
+        margin-top: 8px;
+}
+    
+}
+
+/* Small ----------- */
+@media only screen and (max-width : 600px) {
+
+    nav {
+        margin-left: 15px;
+        margin-right: 15px;
+        width: calc(100vw - 30px);
+        border-bottom: black solid 2px;
+        background-color: whitesmoke;
+        max-height: 35px;
+    }
+    
+    nav a {
+        font-size: 1.2em;
+        color: black;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+    }
+    
+    nav>a:hover {
+        color: grey;
+        
+    }
+    
+    nav a.active {
+        color: grey;
+    }
+    
+    .cards {
+        margin-top: 75px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: calc(100vw - 40px); /*100vw - side paddings of .cards - side borders of .cards*/
+        height: calc(375vw - 300px + 100px); /*5*(height of .card + sum of top&bottom borders of all .card in 1 column + sum of top&bottom margins of all .card in 1 column (100))*/
+}
+
+    .card, .front, .back {
+        width: calc(50vw - 40px); /*(1/2)*(100vw - side paddings of .cards (40) - side borders of .cards - sum of side borders of all .card in 1 row - sum of side margin of all .card in 1 row (40)*/
+        height: calc(75vw - 60px); /*1.5 width of .card*/
+}
+    .message-b {
+        top: 36px;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
+    
+    p, h1, h2 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    h2, p, .btn {
+        font-size: 1.2em;
+    }
+    
+    .back-button {
+    margin-left: calc(16.67vw - 12px);
+    margin-right: calc(16.67vw - 12px);
+        margin-top: 20px;
+  
+}
+
+
+}
+
+/* Small-Smaller ------
+----- */
+@media only screen and (max-width : 580px) {
+    
+    .back-button {
+        margin-left: calc(16.67vw - 19px);
+        margin-right: calc(16.67vw - 19px);
+}
+    
+/* Small-Smaller-Smaller ------
+----- */  
+@media only screen and (max-width : 525px) {
+    
+    h1 {
+        font-size: 1.2em;
+    }
+    
+    h2, p, .btn {
+        font-size: 1em;
+    }
+    
+    
+    .back-button {
+        margin-left: calc(16.67vw - 19px);
+        margin-right: calc(16.67vw - 19px);
+}
+  
+}
+    
+    
+/* Smaller ------
+----- */
+@media only screen and (max-width : 465px) {
+
+    nav {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: calc(100vw - 20px);
+        border-bottom: black solid 2px;
+        background-color: whitesmoke;
+        max-height: 25px;
+        
+    }
+    
+    nav a {
+        font-size: .8em;
+        color: black;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+    }
+    
+    nav>a:hover {
+        color: grey;
+        
+    }
+    
+    nav a.active {
+        color: grey;
+    }
+    
+    .message-b {
+        top: 26px;
+    }
+    
+    .cards {
+        margin-top: 65px;
+    }
+    
+    .back-button {
+        margin-top: 10px;
+        margin-left: 0;
+        margin-right: 0;
+        position: absolute;
+        left: calc(50% - 34px);
+    }
+    
+    h1 {
+        margin-top: 10px;
+    }
+    
+    h1, h2, p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    }
+    
+/* Smallest ------
+----- */
+    @media only screen and (max-width : 440px) {
+        
+        h1 {
+            font-size: 1em;
+        }
+        
+        h2, p, .btn {
+            font-size: .9em;
+        }
+        
+        .ok {
+        font-size: .5em;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 3px;
+            padding-right: 3px;
+    }
+    }
+    
+/* Smallest!!! ------
+----- */
+    @media only screen and (max-width : 410px) {
+        
+        .message-b {
+/*            display: none;*/
+        }
+        
+        .cards {
+        margin-top: 28px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: calc(100vw - 20px); /*100vw - side paddings of .cards - side borders of .cards*/
+        height: calc(1350vw - 540px + 180px); /*9*(height of .card) + sum of top&bottom margins of all .card in 1 column (180)*/
+}
+
+    .card, .front, .back {
+        width: calc(100vw - 40px); /*100vw - side paddings of .cards (20) - side paddings of .card (20)*/
+        height: calc(150vw - 60px); /*1.5 width of .card*/
+}
+        
+    }

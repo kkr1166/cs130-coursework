@@ -30,7 +30,7 @@ body * {
 .image:hover {
     opacity: 0.7;
 }
-
+ 
 /* Media Queries */
 @media (max-width: 900px) {
     main .card { 

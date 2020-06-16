@@ -1,0 +1,263 @@
+/*loading page
+------------------------------------*/
+
+@-moz-document url(about:blank) {
+    html, body { 
+        background-color: whitesmoke; 
+    }
+}
+
+/*General
+------------------------------------*/
+html {
+    background-color: whitesmoke;
+    font-family: 'times new roman';
+    margin: 0;
+    
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+}
+
+.main {
+    margin: 0;
+}
+
+
+/* Navigation
+------------------------------------*/
+nav {
+  overflow: hidden;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-bottom: solid 3px black;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: calc(100vw - 100px);
+  background-color: whitesmoke;
+}
+
+nav a {
+  float: left;
+  color: black;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 20%;
+  text-decoration: none;
+  font-size: 2em;
+  background-color: whitesmoke;
+}
+
+nav>a:hover {
+  color: grey;
+}
+
+nav a.active {
+  color: grey;
+}
+
+ 
+/*Film Posters
+------------------------------------*/
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 1px red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 119px;
+    width: calc(100vw - 20px - 2px);
+    height: calc(150vw - 66px);
+    
+}
+
+.card {
+    width: calc(33.33vw - 29.3333px);
+    height: calc(50vw - 44px);
+    margin: 10px;
+    border: solid 1px teal;
+    background-color: pink;
+    
+}
+
+img {
+    width: 100%;
+}
+
+.front:hover {
+    cursor: pointer;
+    opacity: 70%;
+}
+
+
+
+/*Flip Posters
+------------------------------------*/
+
+
+/* flip the pane when hovered */
+
+.card.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+/* flip speed */
+
+.flipper {
+    transition: 1.2s;
+    transform-style: preserve-3d;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    box-shadow: 3px 3px 8px 3px lightgrey;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+    background-image: none !important;
+    width: calc(33.3333vw - 29.3333px);
+    height: calc(50vw - 44px);
+    
+    
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+    background-color: white;
+    color: grey;
+    width: calc(33.3333vw - 29.3333px);
+    height: calc(50vw - 44px);
+    text-align: left;
+}
+
+h1, h2, p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h1, h2 {
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 1.3em;
+    margin-top: 0px;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+.btn {
+    font-family: 'times new roman';
+    border: none;
+    color: white;
+    background-color: grey;
+    padding: 10px;
+    font-size: 1.3em;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 4px 4px 8px 3px lightgrey;
+    text-decoration: none;
+    
+}
+
+.watch {
+    margin-left: calc(16.67vw - 70px);
+    margin-right: calc(16.67vw - 70px);
+    
+}
+
+.back-button {
+    margin-left: calc(16.67vw - 60px);
+    margin-right: calc(16.67vw - 60px);
+}
+
+.btn:hover {
+    background-color: black;
+    box-shadow: 4px 4px 3px 3px lightgrey;
+    cursor: pointer;
+}
+
+/*Alerts
+------------------------------------*/
+.message-b {
+    text-align: center;
+    font-size: 1.5em;
+    box-shadow: 3px 3px 8px 3px lightgrey;
+    color: grey;
+    height: 100vh;
+    position: absolute;
+    z-index: 10;
+    width: 100vw;
+    top: 60px;
+    left: 0px;
+    background: rgba(255,255,255,0.8);
+    margin: 0px;
+    padding-top: 11px;
+    padding-right: 11px;
+    padding-left: 25px;
+}
+
+.ok {
+    font-family: 'times new roman';
+    margin-top: 0px;
+    color: grey;
+    background-color: white;
+    border: solid 1px grey;
+    padding-left: 10px;
+    padding-right: 10px;    
+}
+
+.ok:hover {
+    color: white;
+    background-color: black;
+    border: solid 1px black;
+    cursor: pointer;
+}
+
+button:focus {
+outline: none;
+}
+
+.fa-lock {
+    padding-right: 4px;
+    
+}
+
+.listen {
+    display: none;
+    margin-left: calc(16.67vw - 95px);
+    margin-right: calc(16.67vw - 95px);
+}
+

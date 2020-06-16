@@ -288,12 +288,20 @@ outline: none;
         
     }
     
+    .message-b {
+            display: none;
+        }
+        
+        body {
+            overflow: auto; 
+        }
+    
     .cards {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 40px;
     padding-right: 40px;
-    margin-top: 119px;
+    margin-top: 60px;
     width: calc(100vw - 80px); /*100vw - side paddings of .cards - side borders of .cards*/
     height: calc(150vw - 210px + 60px); /*3*(height of .card + sum of top&bottom borders of all .card in 1 column + sum of top&bottom margins of all .card in 1 column)*/
 }
@@ -409,7 +417,7 @@ outline: none;
     }
     
     .cards {
-        margin-top: 100px;
+        margin-top: 55px;
         padding-left: 20px;
         padding-right: 20px;
         width: calc(100vw - 40px); /*100vw - side paddings of .cards - side borders of .cards*/
@@ -505,8 +513,16 @@ outline: none;
         color: grey;
     }
     
+    .message-b {
+            display: none;
+        }
+        
+        body {
+            overflow: auto; 
+        }
+    
     .cards {
-        margin-top: 75px;
+        margin-top: 35px;
         padding-left: 20px;
         padding-right: 20px;
         width: calc(100vw - 40px); /*100vw - side paddings of .cards - side borders of .cards*/
@@ -611,7 +627,7 @@ outline: none;
     }
     
     .cards {
-        margin-top: 65px;
+        margin-top: 28px;
     }
     
     .back-button {
@@ -658,7 +674,11 @@ outline: none;
     @media only screen and (max-width : 410px) {
         
         .message-b {
-/*            display: none;*/
+            display: none;
+        }
+        
+        body {
+            overflow: auto; 
         }
         
         .cards {
@@ -666,12 +686,56 @@ outline: none;
         padding-left: 10px;
         padding-right: 10px;
         width: calc(100vw - 20px); /*100vw - side paddings of .cards - side borders of .cards*/
-        height: calc(1350vw - 540px + 180px); /*9*(height of .card) + sum of top&bottom margins of all .card in 1 column (180)*/
+        height: calc(375vw - 225px + 100px); /*5*(height of .card) + sum of top&bottom margins of all .card in 1 column (100)*/
 }
 
     .card, .front, .back {
-        width: calc(100vw - 40px); /*100vw - side paddings of .cards (20) - side paddings of .card (20)*/
-        height: calc(150vw - 60px); /*1.5 width of .card*/
+        width: calc(50vw - 30px); /*(1/2)*(100vw - side paddings of .cards (20) - side paddings of .card (40))*/
+        height: calc(75vw - 45px); /*1.5 width of .card*/
 }
+        h1, h2, p {
+           padding-left: 5px;
+        padding-right: 5px; 
+        }
         
+    }
+    
+/* Smallest!!! ------
+----- */
+    @media only screen and (max-width : 370px) {
+        
+        h1 {
+            margin-top: 5px;
+            font-size: 1em;
+        }
+        
+        h2, p, .btn {
+           font-size: .8em; 
+        }
+        h2 {
+            margin-bottom: 2px;
+        }
+        p, .btn {
+            margin-top: 4px;
+        }
+        
+        .card {
+            margin: 5px;
+        }
+        
+        .cards {
+            margin-top: 28px;
+            padding-left: 10px;
+            padding-right: 10px;
+            width: calc(100vw - 20px); /*100vw - side paddings of .cards - side borders of .cards*/
+            height: calc(375vw - 150px + 50px); /*5*(height of .card) + sum of top&bottom margins of all .card in 1 column (100)*/
+}
+
+        .card, .front, .back {
+            width: calc(50vw - 20px); /*(1/2)*(100vw - side paddings of .cards (20) - side paddings of .card (20))*/
+            height: calc(75vw - 30px); /*1.5 width of .card*/
+}
+        .front, .back {
+            box-shadow: 1px 1px 3px 1px lightgrey;
+        }
     }

@@ -54,12 +54,6 @@ nav a.active {
   color: grey;
 }
 
-/*
-.rainbow-text:hover {
-    background-image: linear-gradient(to left, yellow, orange, red, orange, yellow, violet, orange, red, orange,yellow);   -webkit-background-clip: text;
-  color: transparent; 
-}
-*/
 
 /*Message
 -----------------------------------*/

@@ -44,7 +44,7 @@ function viewScore(id) {
 //  audio.pause();
 //}
 
-const audioPlayer1 = AudioPlayer('.player.heterochromia', "../music/classicalMusic/mourningMoon.mp3");
+const audioPlayer1 = AudioPlayer('.player.heterochromia', "../music/classicalMusic/heterochromia.mp3");
 
 const audioPlayer2 = AudioPlayer('.player.bonesick', "../music/classicalMusic/boneSick.m4a");
 

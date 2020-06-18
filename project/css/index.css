@@ -17,10 +17,12 @@ body, html {
     display: none; 
 }
 
+
 /*parallax
 ------------------------------------*/
 .parallax {
-  background-image: url('../images/profile.jpeg');
+  background-image: none;
+/*    background-image: url('../images/p2.jpeg');*/
   height: 100vh; 
   background-attachment: fixed;
   background-position: center;
@@ -30,13 +32,14 @@ body, html {
 
 .second {
     height: calc(100vh - 175px);
+    display: none;
 }
 
 
 /*name
 ------------------------------------*/
 .name {
-    color: whitesmoke;
+    color: grey;
     font-family: 'times new roman';
     font-size: 4em;
     position: absolute; 
@@ -71,16 +74,22 @@ nav {
   overflow: hidden;
   margin-left: 50px;
   margin-right: 50px;
-  border-bottom: solid 3px whitesmoke;
+/*
+    padding-left: 50px;
+    padding-right: 50px;
+*/
+  border-bottom: solid 3px white;
   height: 60px;
   position: fixed;
   top: 0;
   width: calc(100vw - 100px);
+  background-color: white;
 }
  
 nav a {
   float: left;
-  color: whitesmoke;
+/*  color: whitesmoke;*/
+    color: grey;
   text-align: center;
   box-sizing: border-box;
   padding-top: 10px;
@@ -92,12 +101,14 @@ nav a {
 }
 
 nav>a:hover {
-  color: black;
+/*  color: black;*/
+    color: black;
   text-decoration: none;
 }
 
 nav a.active {
-  color: black;
+/*  color: black;*/
+    color: black;
 }
 
 /* Hamburger

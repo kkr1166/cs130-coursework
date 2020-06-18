@@ -14,18 +14,18 @@ html {
 body {
     margin: 0;
 }
- 
+  
 /* Navigation
 ------------------------------------*/
 nav {
   overflow: hidden;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 10vw;
+  margin-right: 10vw;
   border-bottom: solid 3px black;
   height: 60px;
   position: fixed;
   top: 0;
-  width: calc(100vw - 100px);
+  width: calc(100vw - 20vw);
   background-color: whitesmoke;
 }
 
@@ -45,6 +45,7 @@ nav a {
 
 nav>a:hover {
   color: grey;
+    cursor: pointer;
 }
 
 nav a.active {
@@ -62,8 +63,8 @@ nav a.active {
 /*Tracks
 -----------------------------------*/
 .tracks {
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 15vw;
+    margin-right: 15vw;
 }
 
 .track {
@@ -91,16 +92,12 @@ nav a.active {
 
 .left_of_middle {
 /*    width: calc((1vw - 150px - 150px - 10px - 10px - 150px - 150px - 50px)/2);*/
-    width: calc(50vw - 450px);
+    width: calc(35vw - 300px);
 }
 
 .middle {
     display: flex;
     text-align: left;
-}
-
-.right_of_middle {
-
 }
 
 .fas fa-forward {
@@ -111,7 +108,7 @@ nav a.active {
 .right {
     margin-top: 14px;
     position: absolute;
-    right: 160px;
+    right: 15vw;
     display: flex;
     align-items: center;
   
@@ -203,7 +200,7 @@ nav a.active {
     color: whitesmoke;
 }
 
-/*View hover tooltip
+/*Tooltip
 -----------------------------------*/
 .fa-ellipsis-v {
     font-size: 1.5em;   
@@ -265,6 +262,18 @@ nav a.active {
 .embedded_score {
     display: none;
     margin-bottom: 20px;
+}
+
+
+/*Tooltip Up
+-----------------------------------*/
+.up .tooltiptext {
+  top: -510%;
+}
+
+.up .tooltiptext::after {
+  top: 100%;
+  border-color: lightgrey transparent transparent transparent;
 }
 
 /*Download hover tooltip
@@ -332,8 +341,8 @@ input[type=range]::-moz-range-track {
 /* Special ----------- */
 @media only screen and (max-width : 1120px) {
     .tracks {
-        margin-left: 100px;
-        margin-right: 100px;
+        margin-left: 120px;
+        margin-right: 120px;
     }
     
     .left_of_middle {
@@ -359,8 +368,8 @@ input[type=range]::-moz-range-track {
     }
     
     .tracks {
-        margin-left: 85px;
-        margin-right: 85px;
+        margin-left: 100px;
+        margin-right: 100px;
     }
     
     .left_of_middle {
@@ -368,7 +377,7 @@ input[type=range]::-moz-range-track {
     }
     
     .right {
-        right: 90px;
+        right: 100px;
     }
     
     .time-elapsed {
@@ -478,6 +487,16 @@ input[type=range]::-moz-range-track {
     .instrumentation {
         font-size: .9em;
     }
+    
+    .up .tooltiptext {
+
+  top: -660%;
+}
+
+.up .tooltiptext::after {
+  top: 100%;
+  border-color: lightgrey transparent transparent transparent;
+}
 
 }
 

@@ -13,6 +13,10 @@ html {
     font-family: 'times new roman';
 }
 
+body {
+    margin: 0;
+}
+
 /* Navigation
 ------------------------------------*/
 nav {
@@ -26,7 +30,7 @@ nav {
   width: calc(100vw - 100px);
   background-color: whitesmoke;
 }
-
+ 
 nav a {
   float: left;
   color: black;
@@ -49,20 +53,13 @@ nav a.active {
   color: grey;
 }
 
-/*
-.rainbow-text:hover {
-    background-image: linear-gradient(to left, yellow, orange, red, orange, yellow, violet, orange, red, orange,yellow);   -webkit-background-clip: text;
-  color: transparent;
-    
-}
-*/
 /* info
 ------------------------------------*/
 .info {
     color:grey;
-    margin-top: 110px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-top: calc(0.12*(100vw));
+    margin-left: calc(0.1*(100vw));
+    margin-right: calc(0.1*(100vw));
 }
 
 .fas fa-envelope {
@@ -131,3 +128,104 @@ li {
   position: relative;
   z-index: 1;
 }
+
+/* Media Queries! ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Special ----------- */
+@media only screen and (max-width : 1120px) {
+
+}
+
+/* Big ----------- */
+@media only screen and (max-width : 1000px) {
+
+    nav {
+        height: 50px;
+    }
+    
+    nav a {
+        font-size: 1.8em;
+        
+    }
+
+
+
+}
+
+/* Medium ----------- */
+@media only screen and (max-width : 800px) {
+
+    nav a {
+        font-size: 1.6em;
+    }
+    nav {
+        height: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: calc(100vw - 40px);
+        border-bottom: solid black 2.5px;
+    }
+    
+
+
+}
+
+/* Medium Small ----------- */
+@media only screen and (max-width : 650px) {
+
+    
+}
+
+/* Small ----------- */
+@media only screen and (max-width : 600px) {
+
+    nav {
+        margin-left: 15px;
+        margin-right: 15px;
+        width: calc(100vw - 30px);
+        border-bottom: black solid 2px;
+        background-color: whitesmoke;
+        max-height: 35px;
+    }
+    
+    nav a {
+        font-size: 1.2em;
+        color: black;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+    }
+
+}
+ 
+/* Smaller ------
+----- */
+@media only screen and (max-width : 465px) {
+
+    nav {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: calc(100vw - 20px);
+        border-bottom: black solid 2px;
+        background-color: whitesmoke;
+        max-height: 25px;
+        
+    }
+    
+    nav a {
+        font-size: .8em;
+        color: black;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+    }
+
+
+}
+/* Smallest ------
+----- */
+    @media only screen and (max-width : 370px) {
+     
+    }
+    
+

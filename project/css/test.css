@@ -1,6 +1,18 @@
 body {
     background-color: whitesmoke;
 }
+.squared {
+    height: 50px;
+    background-color: red;
+/*
+    margin-left: calc(.05vw*.05vw);
+    margin-right: calc(.05vw*.05vw);
+    width: calc(100% - .05vw*.05vw - .05vw*.05vw);
+*/
+    margin-left: calc(100%*.05*100%);
+    margin-right: calc(100%*.05*100%);
+    width: calc(100% - 100%*.05*100% - 100%*.05*100%);
+}
 
 .one {
     width: 100px;

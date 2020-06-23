@@ -329,11 +329,68 @@ input[type=range]::-moz-range-track {
   background-color: grey;
 }
 
-/*Embedded score
+/*Icons
 -----------------------------------*/
-.score {
-/*    padding-top: 10px;*/
-/*    display: none;*/
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+a>i {
+    color: dimgray;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.classical, .pop {
+    font-size: 1.6em;
+}
+
+
+.fa-envelope {
+    font-size: 2.2em;
+}
+
+i.classical:hover {
+    background-image: linear-gradient(to left, blue, red);   -webkit-background-clip: text;
+    color: transparent; 
+    
+}
+
+i.pop:hover {
+    background-image: linear-gradient(to left, red, blue);   -webkit-background-clip: text;
+    color: transparent; 
+}
+
+i.fa-envelope:hover {
+    color: darkblue;
+    
+}
+
+/*Icon Media Queries
+-----------------------------------*/
+@media only screen and (max-width : 1000px) {
+    .icons {
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    .classical, .pop {
+    font-size: 1.2em;
+}
+
+
+.fa-envelope {
+    font-size: 1.6em;
+}
 }
 
 /* Media Queries! ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -397,6 +454,7 @@ input[type=range]::-moz-range-track {
     nav a {
         font-size: 1.6em;
     }
+    
     nav {
         height: 50px;
         margin-left: 20px;
@@ -497,6 +555,13 @@ input[type=range]::-moz-range-track {
   top: 100%;
   border-color: lightgrey transparent transparent transparent;
 }
+    .tooltip {
+        padding-left: 10px;
+    }
+    .tooltip .tooltiptext {
+        
+        margin-left: -194px;
+    }
 
 }
 
@@ -680,8 +745,6 @@ input[type=range]::-moz-range-track {
         height: 40px;
     }
     
-    
-    
     .controls {
         margin-left: 4px;
     }
@@ -694,6 +757,14 @@ input[type=range]::-moz-range-track {
   width: 0.7em;
   height: 0.7em;
 }
+    .tooltip {
+        padding-left: 0px;
+    }
+    
+    .tooltip .tooltiptext {
+        
+        margin-left: -199px;
+    }
 }
 /* Smallest ------
 ----- */
@@ -718,7 +789,7 @@ input[type=range]::-moz-range-track {
         .left_of_middle {
             width: calc(50vw - 150px);
         }
-    }
+    } 
     
 
 

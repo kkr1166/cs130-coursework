@@ -17,18 +17,18 @@ body, html {
     margin: 0; 
     background-color: whitesmoke;
 }
- 
+
 /* Navigation
 ------------------------------------*/
 nav {
   overflow: hidden;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 10vw;
+  margin-right: 10vw;
   border-bottom: solid 3px black;
   height: 60px;
   position: fixed;
   top: 0;
-  width: calc(100vw - 100px);
+  width: calc(100vw - 20vw);
   background-color: whitesmoke;
 }
 
@@ -66,8 +66,8 @@ nav a.active {
 /*Tracks
 -----------------------------------*/
 .tracks {
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 15vw;
+    margin-right: 15vw;
 }
 
 .track {
@@ -95,7 +95,7 @@ nav a.active {
 
 .left_of_middle {
 /*    width: calc((1vw - 150px - 150px - 10px - 10px - 150px - 150px - 50px)/2);*/
-    width: calc(50vw - 450px);
+    width: calc(35vw - 300px);
 }
 
 .middle {
@@ -115,7 +115,7 @@ nav a.active {
 .right {
     margin-top: 14px;
     position: absolute;
-    right: 160px;
+    right: 15vw;
     display: flex;
     align-items: center;
   
@@ -347,31 +347,70 @@ input[type=range]::-moz-range-track {
 
 
 
-/*Old Code
------------------------------------------------------------*/
-nav>a.rainbow-text {
+/*Icons
+-----------------------------------*/
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+a>i {
+    color: dimgray;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.classical, .pop {
+    font-size: 1.6em;
+}
+
+
+.fa-envelope {
+    font-size: 2.2em;
+}
+
+i.classical:hover {
     background-image: linear-gradient(to left, blue, red);   -webkit-background-clip: text;
-    color: transparent;  
+    color: transparent; 
+    
 }
 
-
-/* play buttons
-------------------------------------*/
-i {
-    font-size: 3.8em;
-/*
-    background-image: linear-gradient(to left, blue, red);   
-    -webkit-background-clip: text;
-    color: transparent;  
-*/
-    cursor: pointer;
-     
-}
-
-i:hover {
+i.pop:hover {
     background-image: linear-gradient(to left, red, blue);   -webkit-background-clip: text;
-    color: transparent;  
+    color: transparent; 
 }
+
+i.fa-envelope:hover {
+    color: maroon;
+    
+}
+
+/*Icon Media Queries
+-----------------------------------*/
+@media only screen and (max-width : 1000px) {
+    .icons {
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    .classical, .pop {
+    font-size: 1.2em;
+}
+
+
+.fa-envelope {
+    font-size: 1.6em;
+}
+}
+
 
 /*
 #one {
@@ -417,8 +456,8 @@ i:hover {
 /* Special ----------- */
 @media only screen and (max-width : 1120px) {
     .tracks {
-        margin-left: 100px;
-        margin-right: 100px;
+        margin-left: 120px;
+        margin-right: 120px;
     }
     
     .left_of_middle {
@@ -444,8 +483,8 @@ i:hover {
     }
     
     .tracks {
-        margin-left: 85px;
-        margin-right: 85px;
+        margin-left: 100px;
+        margin-right: 100px;
     }
     
     .left_of_middle {
@@ -453,7 +492,7 @@ i:hover {
     }
     
     .right {
-        right: 90px;
+        right: 100px;
     }
     
     .time-elapsed {
@@ -561,6 +600,15 @@ i:hover {
 }
     .instrumentation {
         font-size: .9em;
+    }
+    
+    .tooltip {
+        padding-left: 10px;
+    }
+    
+    .tooltip .tooltiptext {
+        
+        margin-left: -194px;
     }
 
 }
@@ -754,7 +802,18 @@ i:hover {
   border: none;
   width: 0.7em;
   height: 0.7em;
-    }}
+    }
+    
+    .tooltip {
+        padding-left: 0px;
+    }
+    
+    .tooltip .tooltiptext {
+        
+        margin-left: -199px;
+    }
+
+}
      
 /* Smallest ------
 ----- */

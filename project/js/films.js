@@ -27,3 +27,7 @@ $(document).ready(function(){
       $("body").css("overflow", "auto");
   });
 });
+
+function fadeIn(obj) {
+    $(obj).fadeIn(1000);
+} 

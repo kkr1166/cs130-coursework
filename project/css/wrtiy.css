@@ -1,0 +1,419 @@
+/*loading page
+------------------------------------*/
+
+@-moz-document url(about:blank) {
+    html, body { 
+        background-color: whitesmoke; 
+    }
+}
+
+/*General
+------------------------------------*/
+html {
+    background-color: whitesmoke;
+    font-family: 'times new roman';
+    margin: 0;
+    
+}
+
+body {
+/*    overflow: hidden;*/
+    margin: 0;
+    overflow: auto; 
+}
+
+.main {
+    margin: 0;
+}
+
+
+/* Navigation
+------------------------------------*/
+nav {
+  overflow: hidden;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  border-bottom: solid 3px black;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: calc(100vw - 20vw);
+  background-color: whitesmoke;
+}
+
+nav a {
+  float: left;
+  color: black;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 20%;
+  text-decoration: none;
+  font-size: 2em;
+  background-color: whitesmoke;
+}
+
+nav>a:hover {
+  color: grey;
+}
+
+nav a.active {
+  color: grey;
+}
+
+ 
+/*Film Position
+------------------------------------*/
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    margin-top: 80px;
+    width: calc(100vw - 30vw); /*100vw - side paddings of .cards - side borders of .cards*/
+/*    height: calc(150vw - 45vw - 90px + 60px); */
+    /*3*(height of .card + sum of top&bottom borders of all .card in 1 column + sum of top&bottom margins of all .card in 1 column)*/
+}
+
+/*Film Size
+------------------------------------*/
+iframe {
+    width: 75vw; 
+    height: calc(75vw*(315/560)); 
+}
+
+.info {
+    width: calc(75vw - 10vw);
+    padding: 5vw;
+    padding-top: 2.5vw;
+/*    border: solid 1px red;*/
+}
+
+h1, h2, p {
+    font-family: 'times new roman';
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0px;
+    
+}
+
+h2 {
+    font-size: 1.4em;
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+
+p {
+    font-size: 1.3em;
+    color: dimgrey;
+    margin: 0px;
+}
+/*560*1.2=672*/
+/*315*1.2=378*/
+
+/* Media Queries! ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Special ----------- */
+@media only screen and (max-width : 1290px) {
+    
+   
+}
+
+/* Special ----------- */
+@media only screen and (max-width : 1120px) {
+    
+    .cards {
+    padding-left: 80px;
+    padding-right: 80px;
+    width: calc(100vw - 160px); /*100vw - side paddings of .cards - side borders of .cards*/
+/*    height: calc(150vw - 330px + 60px); */
+        /*3*(height of .card + sum of top&bottom borders of all .card in 1 column + sum of top&bottom margins of all .card in 1 column)*/
+}
+
+    .info {
+        padding-top: 2.5vw;
+    }
+    
+    
+}
+
+/* Big ----------- */
+@media only screen and (max-width : 1000px) {
+
+    nav {
+        height: 50px;
+    }
+    
+    nav a {
+        font-size: 1.8em;
+        
+    }
+    
+    
+    .cards {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 60px;
+    width: calc(100vw - 80px); /*100vw - side paddings of .cards - side borders of .cards*/
+/*    height: calc(150vw - 210px + 60px); */
+        /*3*(height of .card + sum of top&bottom borders of all .card in 1 column + sum of top&bottom margins of all .card in 1 column)*/
+}
+    .info {
+        padding-top: 2.5vw;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+
+
+}
+
+/* Big-Medium ----------- */
+@media only screen and (max-width : 880px) {
+
+    nav {
+        height: 50px;
+    }
+    
+    nav a {
+        font-size: 1.8em;
+        
+    }
+    
+    
+    
+}
+
+
+/* Medium ----------- */
+@media only screen and (max-width : 800px) {
+
+    nav a {
+        font-size: 1.6em;
+    }
+    nav {
+        height: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: calc(100vw - 40px);
+        border-bottom: solid black 2.5px;
+    }
+    
+    .cards {
+        margin-top: 55px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: calc(100vw - 40px); /*100vw - side paddings of .cards - side borders of .cards*/
+/*        height: calc(150vw - 150px + 60px); */
+        /*3*(height of .card + sum of top&bottom borders of all .card in 1 column + sum of top&bottom margins of all .card in 1 column)*/
+}
+        iframe {
+            width: 85vw; 
+            height: calc(85vw*(315/560)); 
+        }
+    
+    .info {
+        width: calc(85vw - 10vw);
+        padding: 5vw;
+    }
+    
+    h1 {
+    font-size: 1.8em;
+    margin: 0px;
+    
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+
+p {
+    font-size: 1em;
+    color: dimgrey;
+    margin: 0px;
+}
+  
+}
+
+/* Medium Medium Small ----------- */
+@media only screen and (max-width : 730px) {
+    
+    
+}
+
+/* Medium Small ----------- */
+@media only screen and (max-width : 670px) {
+    
+    h1 {
+    font-size: 1.6em;
+    
+}
+
+   
+    
+}
+
+/* Small ----------- */
+@media only screen and (max-width : 600px) {
+
+    nav {
+        margin-left: 15px;
+        margin-right: 15px;
+        width: calc(100vw - 30px);
+        border-bottom: black solid 2px;
+        background-color: whitesmoke;
+        max-height: 35px;
+    }
+    
+    nav a {
+        font-size: 1.2em;
+        color: black;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+    }
+    
+    nav>a:hover {
+        color: grey;
+        
+    }
+    
+    nav a.active {
+        color: grey;
+    }
+    
+    
+    .cards {
+        margin-top: 35px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: calc(100vw - 40px); /*100vw - side paddings of .cards - side borders of .cards*/
+/*        height: calc(375vw - 300px + 100px); */
+        /*5*(height of .card + sum of top&bottom borders of all .card in 1 column + sum of top&bottom margins of all .card in 1 column (100))*/
+}
+
+}
+
+/* Small-Smaller ------
+----- */
+@media only screen and (max-width : 580px) {
+    
+}
+/* Small-Smaller-Smaller ------
+----- */  
+@media only screen and (max-width : 525px) {
+    
+    
+  
+}
+    
+    
+/* Smaller ------
+----- */
+@media only screen and (max-width : 465px) {
+
+    nav {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: calc(100vw - 20px);
+        border-bottom: black solid 2px;
+        background-color: whitesmoke;
+        max-height: 25px;
+        
+    }
+    
+    nav a {
+        font-size: .8em;
+        color: black;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+    }
+    
+    nav>a:hover {
+        color: grey;
+        
+    }
+    
+    nav a.active {
+        color: grey;
+    }
+    
+    
+    .cards {
+        margin-top: 28px;
+    }
+    
+        iframe {
+            width: 90vw; 
+            height: calc(90vw*(315/560)); 
+        }    
+    .info {
+        width: calc(90vw - 10vw);
+        padding: 5vw;
+    }
+    
+    
+    }
+    
+/* Smallest ------
+----- */
+    @media only screen and (max-width : 440px) {
+        
+        
+    }
+    
+/* Smallest!!! ------
+----- */
+    @media only screen and (max-width : 410px) {
+        
+        
+        .cards {
+        margin-top: 28px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: calc(100vw - 20px); /*100vw - side paddings of .cards - side borders of .cards*/
+/*        height: calc(375vw - 225px + 100px); */
+            /*5*(height of .card) + sum of top&bottom margins of all .card in 1 column (100)*/
+}
+        h1 {
+            font-size: 1.4em;
+        }
+        
+        h2 {
+            font-size: .9em;
+        }
+        
+    }
+    
+/* Smallest!!! ------
+----- */
+    @media only screen and (max-width : 370px) {
+        
+       
+        .cards {
+            margin-top: 28px;
+            padding-left: 10px;
+            padding-right: 10px;
+            width: calc(100vw - 20px); /*100vw - side paddings of .cards - side borders of .cards*/
+/*            height: calc(375vw - 150px + 50px); */
+            /*5*(height of .card) + sum of top&bottom margins of all .card in 1 column (100)*/
+}
+
+    }

@@ -7,37 +7,48 @@
 /*body,html
 ------------------------------------*/
 
-html {
+body, html {
+    height: 100%;
+    margin: 0; 
     background-color: whitesmoke;
-    font-family: 'times new roman';
-} 
-body {
-    margin: 0;
 }
 
-/*main stuff
+.hide { 
+    display: none; 
+}
+
+/*parallax
 ------------------------------------*/
-.container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-    margin-left: 20vw;
-    margin-right: 20vw;
-    justify-content: center;
+.parallax {
+  background-image: none;
+    background-image: url('../images/profile2000w.jpeg');
+  height: 100vh; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.portrait {
-    display: flex;
-    justify-content: center;
-}
-
-img {
-    width: 500px;
-    border: solid 3px grey;
-}
-
-.small {
+.second {
+    height: calc(100vh - 175px);
     display: none;
+}
+
+
+/*name
+------------------------------------*/
+.name {
+    color: grey;
+    font-family: 'times new roman';
+    font-size: 4em;
+    position: absolute; 
+    bottom: 0; 
+    right: 25px; 
+    
+}
+
+.namediv {
+    opacity: 1;
 }
 
 /*bio
@@ -47,6 +58,10 @@ img {
     background-color: whitesmoke;
     font-family: 'times new roman';
     font-size: 1.2em;
+    padding-right: 100px;
+    padding-left: 100px;
+    max-height: calc(100vh - 50px - 80px);
+    border-top: solid whitesmoke 10px;
     padding-top: 10px;
     padding-bottom: 30px;
     color: grey;
@@ -56,19 +71,24 @@ img {
 ------------------------------------*/
 nav {
   overflow: hidden;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  border-bottom: solid 3px black;
+  margin-left: 50px;
+  margin-right: 50px;
+/*
+    padding-left: 50px;
+    padding-right: 50px;
+*/
+  border-bottom: solid 3px white;
   height: 60px;
   position: fixed;
   top: 0;
-  width: calc(100vw - 20vw);
-  background-color: whitesmoke;
+  width: calc(100vw - 100px);
+  background-color: white;
 }
-
+ 
 nav a {
   float: left;
-  color: black;
+/*  color: whitesmoke;*/
+    color: grey;
   text-align: center;
   box-sizing: border-box;
   padding-top: 10px;
@@ -77,111 +97,55 @@ nav a {
   text-decoration: none;
   font-family: 'times new roman';
   font-size: 2em;
-  background-color: whitesmoke;
 }
 
 nav>a:hover {
-  color: grey;
-    cursor: pointer;
+/*  color: black;*/
+    color: black;
+  text-decoration: none;
 }
 
 nav a.active {
-  color: grey;
+/*  color: black;*/
+    color: black;
 }
 
-/*Icons
------------------------------------*/
-.icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 45px;
-    margin-bottom: 20px;
+/* Hamburger
+------------------------------------*/
+
+.ham {
+    display: none;
 }
 
-.icon {
-    display: flex;
-    align-items: center;
-}
-
-a>i {
-    color: dimgray;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.classical, .pop {
-    font-size: 1.6em;
-}
-
-
-.fa-envelope {
-    font-size: 2.2em;
-}
-
-i.classical:hover {
-    background-image: linear-gradient(to left, blue, red);   -webkit-background-clip: text;
-    color: transparent; 
-    
-}
-
-i.pop:hover {
-    background-image: linear-gradient(to left, red, blue);   -webkit-background-clip: text;
-    color: transparent; 
-}
-
-i.fa-envelope:hover {
-    color: maroon;
-    
-}
-
-/*Icon Media Queries
------------------------------------*/
-@media only screen and (max-width : 1000px) {
-    .icons {
-        margin-top: 25px;
-    }
-}
-
-@media only screen and (max-width : 600px) {
-    .classical, .pop {
-    font-size: 1.2em;
-}
-
-
-.fa-envelope {
-    font-size: 1.6em;
-}
+.smaller {
+    display: none;
 }
 
 /* Media Queries! ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* Special ----------- */
 @media only screen and (max-width : 1120px) {
-    .container {
-    margin-left: 15vw;
-    margin-right: 15vw;
-}
-
-img {
-    width: 450px;
-}
-
+    .second {
+        height: calc(100vh - 195px);
+    }
 }
 
 /* Big ----------- */
 @media only screen and (max-width : 1000px) {
 
+    nav a {
+        font-size: 1.8em;
+    }
     nav {
         height: 50px;
     }
     
-    nav a {
-        font-size: 1.8em;
-        
+    .name {
+        font-size: 3.5em;
     }
-    
-    .container {
-        margin-top: 80px;
+
+    .second {
+        height: calc(100vh - 300px);
     }
 
 }
@@ -193,30 +157,39 @@ img {
     nav a {
         font-size: 1.6em;
     }
-    
     nav {
         height: 50px;
         margin-left: 20px;
         margin-right: 20px;
         width: calc(100vw - 40px);
-        border-bottom: solid black 2.5px;
+        border-bottom: solid whitesmoke 2.5px;
     }
     
-    .container {
-    margin-left: 10vw;
-    margin-right: 10vw;
-}
+    .name {
+        font-size: 3.3em;
+    }
+    
+    #bio {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    
+    .bar {
+        display: none;
+    }
     
 }
-
+ 
 /* Small ----------- */
 @media only screen and (max-width : 600px) {
 
     nav {
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
         width: calc(100vw - 30px);
-        border-bottom: black solid 2px;
+        border-bottom: none;
         background-color: whitesmoke;
         max-height: 35px;
     }
@@ -226,7 +199,6 @@ img {
         color: black;
         padding-top: 5px;
         padding-bottom: 5px;
-        
     }
     
     nav>a:hover {
@@ -238,46 +210,44 @@ img {
         color: grey;
     }
     
-    .container {
-        margin-top: 50px;
-/*
-        margin-left: 6vw;
-        margin-right: 6vw;
-*/
-}
-    img {
-    width: 80vw;
-}
-    
-    
-
-}
-
-/* Smaller ------
------ */
-@media only screen and (max-width : 500px) {
-    img {
-    width: 90vw;
-}
-    .container {
-    margin-left: calc(5vw - 3px);
-    margin-right: calc(5vw - 3px);
-}
-    
-    .small {
+    .smaller {
         display: block;
+        margin-top: 35px;
+    }
+        
+    img {
+        width: auto ;
+        max-width: 100% ;
+        height: auto ;
     }
     
-    .big {
+    .namediv {
         display: none;
     }
     
     #bio {
-        padding-bottom: 0px;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-right: 50px;
+        padding-left: 50px;
     }
     
+    .parallax {
+        background-image: none;
+        height: 100vh;
+        background-attachment: scroll;
+        background-color: whitesmoke;
+        height: auto;
+    }
+    
+    .second {
+        height: calc(100vh - 45px - 300px);
+        display: none;
+    }
+    
+    .bar {
+        display: none;
+    }
+
+
 }
 
 /* Smaller ------
@@ -285,10 +255,12 @@ img {
 @media only screen and (max-width : 465px) {
 
     nav {
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
         width: calc(100vw - 20px);
-        border-bottom: black solid 2px;
+        border-bottom: none;
         background-color: whitesmoke;
         max-height: 25px;
         
@@ -311,13 +283,43 @@ img {
         color: grey;
     }
     
-    #bio {
-        font-size: 1.2em;
+    .ham {
+        display: none;
     }
     
-    .container {
-        margin-top: 40px;
-}
+    .smaller {
+        display: block;
+        margin-top: 30px;
+    }
+        
+    img {
+        width: auto ;
+        max-width: 100% ;
+        height: auto ;
+    }
+    .namediv {
+        display: none;
+    }
+
+    
+    #bio {
+        padding-right: 30px;
+        padding-left: 30px;
+        max-height: none;
+
+    }
+    
+    .parallax {
+        background-image: none;
+        height: 100vh;
+        background-attachment: scroll;
+        background-color: whitesmoke;
+        height: auto;
+    }
+    
+    .second {
+        display: none;
+    }
 
 
 }

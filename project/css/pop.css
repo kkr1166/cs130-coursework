@@ -54,6 +54,11 @@ nav a.active {
   color: grey;
 }
 
+.rainbow-text {
+    background-image: linear-gradient(to left, red, blue);   -webkit-background-clip: text;
+    color: transparent; 
+}
+
 
 /*Message
 -----------------------------------*/
@@ -740,15 +745,6 @@ i.fa-envelope:hover {
         padding-top: 5px;
         padding-bottom: 5px;
         
-    }
-    
-    nav>a:hover {
-        color: grey;
-        
-    }
-    
-    nav a.active {
-        color: grey;
     }
     
     .track {

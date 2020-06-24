@@ -49,6 +49,7 @@ nav a {
   padding-bottom: 10px;
   width: 20%;
   text-decoration: none;
+  font-family: 'times new roman';
   font-size: 2em;
   background-color: whitesmoke;
 }
@@ -401,6 +402,7 @@ outline: none;
 /* Big-Medium ----------- */
 @media only screen and (max-width : 880px) {
 
+/*
     nav {
         height: 50px;
     }
@@ -409,6 +411,7 @@ outline: none;
         font-size: 1.8em;
         
     }
+*/
     
     p, .btn, h2 {
         font-size: 1.1em;
@@ -692,10 +695,6 @@ outline: none;
 }
     
     
-
-  
-}
-    
     
 /* Smaller ------
 ----- */
@@ -706,26 +705,16 @@ outline: none;
         margin-right: 10px;
         width: calc(100vw - 20px);
         border-bottom: black solid 2px;
-        background-color: whitesmoke;
+        background-color: pink;
         max-height: 25px;
         
     }
     
     nav a {
-        font-size: .8em;
-        color: black;
+        font-size: 0.8em;
         padding-top: 5px;
         padding-bottom: 5px;
         
-    }
-    
-    nav>a:hover {
-        color: grey;
-        
-    }
-    
-    nav a.active {
-        color: grey;
     }
     
     .message-b {
@@ -743,6 +732,8 @@ outline: none;
         position: absolute;
         left: calc(50% - 34px);
     }
+   
+    
     
     .watch {
     margin-left: calc(16.67vw - 20px);

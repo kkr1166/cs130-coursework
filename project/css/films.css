@@ -268,6 +268,11 @@ outline: none;
     .btn {
         font-size: 1.1em;
     }
+    
+    .back-button {
+        margin-left: calc(11.66667vw - 51px);
+        margin-right: calc(11.66667vw - 51px);
+}
 }
 
 /* Special ----------- */
@@ -312,8 +317,8 @@ outline: none;
 }
 
     .back-button {
-        margin-left: calc(16.67vw - 82px);
-        margin-right: calc(16.67vw - 82px);
+        margin-left: calc(16.67vw - 80px);
+        margin-right: calc(16.67vw - 80px);
 }
     
     
@@ -378,15 +383,15 @@ outline: none;
         cursor: pointer;
 }
     .watch {
-    margin-left: calc(16.67vw - 72px);
-    margin-right: calc(16.67vw - 72px);
+    margin-left: calc(16.67vw - 70px);
+    margin-right: calc(16.67vw - 70px);
     
     
 }
 
 .back-button {
-    margin-left: calc(16.67vw - 65px);
-    margin-right: calc(16.67vw - 65px);
+    margin-left: calc(16.67vw - 61px);
+    margin-right: calc(16.67vw - 61px);
     padding-left: 8px;
     padding-right: 8px;
 }
@@ -429,15 +434,15 @@ outline: none;
         cursor: pointer;
 }
     .watch {
-        margin-left: calc(16.67vw - 72px);
-        margin-right: calc(16.67vw - 72px);
+        margin-left: calc(16.67vw - 68px);
+        margin-right: calc(16.67vw - 68px);
     
     
 }
 
 .back-button {
-    margin-left: calc(16.67vw - 65px);
-    margin-right: calc(16.67vw - 65px);
+    margin-left: calc(16.67vw - 61px);
+    margin-right: calc(16.67vw - 61px);
     padding-left: 8px;
     padding-right: 8px;
 }
@@ -499,16 +504,16 @@ outline: none;
     }
     
     .watch {
-        margin-left: calc(16.67vw - 50px);
-        margin-right: calc(16.67vw - 50px);
+        margin-left: calc(16.67vw - 57px);
+        margin-right: calc(16.67vw - 57px);
     
     
 }
     
     .back-button {
         margin-top: 10px;
-        margin-left: calc(16.67vw - 47px);
-        margin-right: calc(16.67vw - 47px);
+        margin-left: calc(16.67vw - 52px);
+        margin-right: calc(16.67vw - 52px);
 }
     h1, h2, p {
     padding-left: 10px;
@@ -544,6 +549,18 @@ outline: none;
     h2 {
         display: none;
     }
+    
+    .watch {
+        margin-left: calc(16.67vw - 50px);
+        margin-right: calc(16.67vw - 50px);
+    
+    
+}
+    
+    .back-button {
+        margin-left: calc(16.67vw - 47px);
+        margin-right: calc(16.67vw - \47px);
+}
     
 }
 
@@ -615,17 +632,23 @@ outline: none;
     }
     
     .back-button {
-    margin-left: calc(16.67vw - 12px);
-    margin-right: calc(16.67vw - 12px);
-    margin-top: 10px;
-  
-}
+        margin-top: 10px;
+        margin-left: 0;
+        margin-right: 0;
+        position: absolute;
+        left: calc(50% - 40px);
+    }
+    
     .watch {
-    margin-left: calc(16.67vw - 24px);
-    margin-right: calc(16.67vw - 24px);
+    margin-left: calc(16.67vw - 20px);
+    margin-right: calc(16.67vw - 22px);
     
   
 }
+    
+    
+    
+    
     #five {
     display: block;
 }
@@ -637,28 +660,39 @@ outline: none;
 ----- */
 @media only screen and (max-width : 580px) {
     
-    .back-button {
-        margin-left: calc(16.67vw - 19px);
-        margin-right: calc(16.67vw - 19px);
+
 }
-}
+
+
+
+
+
 /* Small-Smaller-Smaller ------
 ----- */  
 @media only screen and (max-width : 525px) {
     
     h1 {
         font-size: 1.2em;
+        margin-top: 10px;
     }
     
     h2, p, .btn {
         font-size: 1em;
     }
     
+        .back-button {
+        margin-top: 10px;
+        margin-left: 0;
+        margin-right: 0;
+        position: absolute;
+        left: calc(50% - 35px);
+    }
     
-    .back-button {
-        margin-left: calc(16.67vw - 19px);
-        margin-right: calc(16.67vw - 19px);
+  
 }
+    
+    
+
   
 }
     
@@ -748,7 +782,15 @@ outline: none;
             padding-left: 3px;
             padding-right: 3px;
     }
+        
+            .back-button {
+        left: calc(50% - 33px);
     }
+    
+    
+  
+}
+
     
 /* Smallest!!! ------
 ----- */
@@ -835,4 +877,16 @@ outline: none;
     
   
 }
+        
+        /* Smallest!!! ------
+----- */
+    @media only screen and (max-width : 320px) {
+        
+        p {
+            margin-top: 0px;
+        }
+        h1 {
+/*            padding-bottom: 0px;*/
+        }
+        }
     }

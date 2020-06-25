@@ -1,22 +1,3 @@
-//function viewScore(id) {
-//  var x = document.getElementsByClassName("embedded_score");
-//  var y = document.querySelector("#blacksugar").querySelector(".tooltiptext");
-//  var z = document.querySelector("#blacksugar").querySelector("#eye");
-//  if (x.style.display === "none") {
-//    x.style.display = "block";
-//    y.innerHTML = "";
-//    y.innerHTML = "Hide Score"; 
-//    z.classList.remove('fa-eye', 'fa-times');
-//    z.classList.add('fa-times');
-//  } else {
-//    x.style.display = "none";
-//    y.innerHTML = "";
-//    y.innerHTML = "View Score";
-//    z.classList.remove('fa-times', 'fa-eye');
-//    z.classList.add('fa-eye');    
-//  }
-//}
- 
 function viewScore(id) {
     var x = document.getElementById(id + "_score");
     var y = document.getElementById(id);
@@ -31,18 +12,6 @@ function viewScore(id) {
         y.innerHTML = "View Score";        
     }   
 }
- 
-//var cards = document.querySelectorAll(".card");
-
-//function playAudio(id) {
-//  var audio = document.getElementById("audio" + id);
-//  audio.play();
-//}
-//
-//function pauseAudio(id) {
-//  var audio = document.getElementById("audio" + id);
-//  audio.pause();
-//}
 
 const audioPlayer1 = AudioPlayer('.player.heterochromia', "../music/classicalMusic/heterochromia.mp3");
 

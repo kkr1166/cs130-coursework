@@ -1,6 +1,6 @@
 /*loading page
 ------------------------------------*/
- 
+  
 @-moz-document url(about:blank) {
     html, body { background-color: whitesmoke; }
 }

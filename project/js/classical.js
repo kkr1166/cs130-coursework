@@ -12,9 +12,12 @@ const AudioPlayer = (selector, audioFile) => {
         } else {
             pause();
         }
-    };
+    }; 
  
     const play = () => {
+        //////////////////
+        /////////////////
+        ////////////////
         playButton.classList.remove('fa-play', 'fa-pause');
         jumpToTime();
         audio.play();

@@ -47,6 +47,13 @@ const AudioPlayer = (selector, audioFile) => {
     };
  
     const play = () => {
+        for (let item of document.getElementsByClassName('track')) {
+            item.pause();
+        }
+        for (let button of document.getElementsByClassName('play_pause')) {
+            button.classList.remove('fa-play', 'fa-pause');
+            button.classList.add('fa-play');
+        }
         playButton.classList.remove('fa-play', 'fa-pause');
         jumpToTime();
         audio.play();

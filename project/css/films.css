@@ -17,10 +17,14 @@ html {
 }
 
 body {
-    overflow: hidden;
+    overflow: auto;
+/*    overflow: hidden;*/
     margin: 0;
 }
 
+.message-b {
+    display: none;
+}
 .main {
     margin: 0;
 }
@@ -74,7 +78,7 @@ nav a.active {
     padding-bottom: 10px;
     padding-left: 15vw;
     padding-right: 15vw;
-    margin-top: 119px;
+    margin-top: 80px; /*with message-b, 119px*/
     width: calc(100vw - 30vw); /*100vw - side paddings of .cards - side borders of .cards*/
     height: calc(150vw - 45vw - 90px + 60px); /*3*(height of .card + sum of top&bottom borders of all .card in 1 column + sum of top&bottom margins of all .card in 1 column)*/
 }
@@ -197,6 +201,7 @@ p {
 .back-button {
     margin-left: calc(11.66667vw - 10px - 46px);
     margin-right: calc(11.66667vw - 10px - 46px);
+    white-space: nowrap;
 }
 
 .btn:hover {
@@ -284,7 +289,6 @@ outline: none;
     .cards {
     padding-left: 80px;
     padding-right: 80px;
-    margin-top: 119px;
     width: calc(100vw - 160px); /*100vw - side paddings of .cards - side borders of .cards*/
     height: calc(150vw - 330px + 60px); /*3*(height of .card + sum of top&bottom borders of all .card in 1 column + sum of top&bottom margins of all .card in 1 column)*/
 }

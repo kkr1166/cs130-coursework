@@ -30,6 +30,7 @@ nav {
   top: 0;
   width: calc(100vw - 20vw);
   background-color: whitesmoke;
+  z-index: 10;
 }
 
 nav a {
@@ -45,7 +46,7 @@ nav a {
   font-size: 2em;
   background-color: whitesmoke;
 }
-
+ 
 nav>a:hover {
   color: grey;
 }
@@ -75,7 +76,7 @@ nav a.active {
     margin-right: 15vw;
 }
 
-.track {
+.song {
     margin-bottom: 20px;
     
 }
@@ -747,7 +748,7 @@ i.fa-envelope:hover {
         
     }
     
-    .track {
+    .song {
         margin-bottom: 12px;
     }
     .right {

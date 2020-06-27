@@ -1,35 +1,3 @@
-//var dontThinkAudio = document.getElementById('dontThinkAudio');
-//
-//var controlBtn = document.getElementById('play-pause');
-//
-//function playPause() {
-//    if (dontThinkAudio.paused) {
-//        dontThinkAudio.play();
-//        //controlBtn.textContent = "Pause";
-//        controlBtn.classList.remove("fa-play-circle");
-//        controlBtn.classList.add("fa-pause-circle");
-//        controlBtn.classList.remove("play");
-//        
-//        controlBtn.classList.add("pause");
-//         
-//    } else { 
-//        dontThinkAudio.pause();
-//         //controlBtn.textContent = "Play";
-//        controlBtn.classList.add("fa-play-circle");
-//        controlBtn.classList.remove("fa-pause-circle");
-//        controlBtn.classList.add("play");
-//        
-//        controlBtn.classList.remove("pause");
-//    }
-//}
-// 
-//controlBtn.addEventListener("click", playPause);
-//dontThinkAudio.addEventListener("ended", function() {
-//  controlBtn.className = "play";
-//});
-
-//Classical Player
-
 const AudioPlayer = (selector, audioFile) => { 
     let audio;
     let playButton;
@@ -47,6 +15,13 @@ const AudioPlayer = (selector, audioFile) => {
     };
  
     const play = () => {
+        for (let item of document.getElementsByClassName('track')) {
+            item.pause();
+        }
+        for (let button of document.getElementsByClassName('play_pause')) {
+            button.classList.remove('fa-play', 'fa-pause');
+            button.classList.add('fa-play');
+        }
         playButton.classList.remove('fa-play', 'fa-pause');
         jumpToTime();
         audio.play();

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Films - Kitra Razin</title>
+        <link rel="stylesheet" href="../css/films.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/4629a0026c.js" crossorigin="anonymous"></script>
+        <script src="jquery-3.5.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+         
+    </head> 
+    <body>
+        
+        <nav role="navigation">
+
+            <a href="index.html" title="Homepage">Home</a>
+            <a href="classical.html" title="Classical Music" >Classical</a>
+            <a href="films.html" class="active" title="Film Scores">Films</a>
+            <a href="pop.html" class="rainbow-text" title="Pop Music">Pop</a>
+            <a href="lessons.html" title="Composition Lessons">Lessons</a>
+            
+                </nav>
+            
+        <main>
+                
+            <div class="message-b"><div><button class="ok">
+<!--                <i class="fas fa-lock"></i>-->
+                UNLOCK</button></div>
+            </div>
+            
+ 
+            <section class="cards">
+                
+                <div class="card" id="four">
+                    <div class="flipper">
+                        <div class="front" onclick="playAudio('four')"><img src="../images/playback_poster.jpeg"></div> 
+                        <div class="back"><h1>Playback</h1><h2>(2018)</h2><p>A photographer struggles to face the reality of an irreparable relationship.</p><a class="btn watch" onclick="pauseAudio('four')" href="playback.html" target="_blank">watch film</a> <button class="btn back-button" onclick="pauseAudio('four')">flip card</button></div>
+                    </div>                
+                </div>
+                
+                <div class="card" onmouseenter="playAudio(this.id)" onmouseleave="pauseAudio(this.id)" id="one">
+                    <div class="flipper">
+                        <div class="front"><img src="../images/mrp.jpg"></div>
+                        <div class="back"><h1>Mississippi River Princess</h1><h2>(2018)</h2> <p>Two black sisters journey south along the Mississippi River to save their family's home and reconnect to their spiritual roots.</p><a class="btn watch" onclick="pauseAudio('one')" href="mrp.html" target="_blank">watch film</a> <button class="btn back-button">flip card</button></div>
+                    </div>
+                </div>
+                
+                <div class="card" onmouseenter="playAudio(this.id)" onmouseleave="pauseAudio(this.id)" id="three">
+                    <div class="flipper">
+                        <div class="front"><img src="../images/wrtiy_poster.jpg"></div>
+                        <div class="back"><h1>We Regret to Inform You</h1><h2>(2019)</h2><p>In this atypical comedy, a high schooler applying to colleges doesn’t know what she wants more: to kill herself or all around her.</p><a class="btn watch" onclick="pauseAudio('three')" href="wrtiy.html" target="_blank">watch film</a> <button class="btn back-button">flip card</button></div>
+                    </div>
+                </div>
+                
+                <div class="card" onmouseenter="playAudio(this.id)" onmouseleave="pauseAudio(this.id)" id="nine">
+                    <div class="flipper">
+                        <div class="front"><img src="../images/yup2_poster.jpeg" ></div>
+                        <div class="back"><h1>Yup!</h1><h2>(2018)</h2> <p>A talking dog, doctor and their friends navigate their lives, jobs and relationships in the big city.</p><a class="btn watch" onclick="pauseAudio('nine')" href="yup.html" target="_blank">watch film</a> <button class="btn back-button">flip card</button></div>
+                    </div>
+                </div>
+                
+                <div class="card" onmouseenter="playAudio(this.id)" onmouseleave="pauseAudio(this.id)" id="two">
+                    <div class="flipper">
+                        <div class="front"><img src="../images/eb_poster.jpg"></div>
+                        <div class="back"><h1>Evelyn's Bracelet</h1><h2>(2019)</h2> <p>A delusional high school girl is challenged to face the reality of her unrequited love and finds new meaning in life through an unexpected friendship.</p>
+<!--                        <a class="btn watch" href="placeholder.html" target="_blank">watch film</a> -->
+                        <button class="btn back-button">flip card</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card" onmouseenter="playAudio(this.id)" onmouseleave="pauseAudio(this.id)" id="seven">
+                    <div class="flipper">
+                        <div class="front"><img src="../images/cp_poster.jpg"></div>
+                        <div class="back"><h1>Cat &amp; Piano</h1><h2>(2020)</h2><p>A cat copes with loss through music and companionship in this heartwarming animation.</p><a class="btn watch" onclick="pauseAudio('seven')" href="cp.html" target="_blank">out soon!</a> <button class="btn back-button">flip card</button></div>
+                    </div>
+                </div>
+                
+                <div class="card" onmouseenter="playAudio(this.id)" onmouseleave="pauseAudio(this.id)" id="ten">
+                    <div class="flipper">
+                        <div class="front"><img src="../images/jokers.jpg"></div>
+                        <div class="back"><h1>Jokers</h1><h2>(2019)</h2> <p>A talented comic struggles to make it into the boys club of stand-up.</p>
+                        <a class="btn watch" onclick="pauseAudio('ten')" href="jokers.html" target="_blank">watch film</a><button class="btn back-button">flip card</button></div>
+                    </div>
+                </div>
+                
+                <div class="card" onmouseenter="playAudio(this.id)" onmouseleave="pauseAudio(this.id)" id="six">
+                    <div class="flipper">
+                        <div class="front"><img src="../images/itst_poster.jpeg"></div>
+                        <div class="back"><h1>Is This Seat Taken?</h1><h2>(2019)</h2> <p>A gay college student searches for love through a series of conversations with random strangers in a coffee shop.</p>
+<!--                        <a class="btn watch" href="placeholder.html" target="_blank">watch film</a>-->
+                        <button class="btn back-button">flip card</button></div>
+                    </div>
+                </div>
+                
+                <div class="card" onmouseenter="playAudio(this.id)" onmouseleave="pauseAudio(this.id)" id="eight">
+                    <div class="flipper">
+                        <div class="front"><img src="../images/yards.jpg"></div>
+                        <div class="back"><h1>The Yards</h1><h2>(2018)</h2> <p>Feeling trapped financially and morally in a broken neighborhood, two south side Latino boys plan to commit a crime in an attempt to do the right thing.</p>
+<!--                        <a class="btn watch" href="placeholder.html" target="_blank">watch film</a> -->
+                        <button class="btn back-button">flip card</button></div>
+                    </div>
+                </div>
+                
+                <div class="card" onmouseenter="playAudio(this.id)" onmouseleave="pauseAudio(this.id)" id="five">
+                    <div class="flipper">
+                        <div class="front"><img src="../images/matched.jpg"></div>
+                        <div class="back"><h1>Matched</h1><h2>(2020)</h2> <p>In a world where being good is rewarded with social currency, a man with little promise makes a gamble in order to change his family’s situation.</p><a class="btn watch">out soon!</a> <button class="btn back-button">flip card</button></div>
+                    </div>
+                </div>
+                
+               
+            </section>
+            <audio src="../music/filmMusic/pb.mp3" id="audiofour" type="audio/mpeg"></audio>
+            <audio src="../music/filmMusic/mrp.mp3" id="audioone" type="audio/mpeg" ></audio>
+            <audio src="../music/filmMusic/wrtiyone.mp3" id="audiothree" type="audio/mpeg"></audio>
+            <audio src="../music/filmMusic/yup.mp3" id="audionine" type="audio/mpeg"></audio>
+            <audio src="../music/filmMusic/ebtwo.mp3" id="audiotwo" type="audio/mpeg"></audio>
+            <audio src="../music/filmMusic/cpone.mp3" id="audioseven" type="audio/mpeg"></audio>
+            <audio src="../music/filmMusic/jokers.mp3" id="audioten" type="audio/mpeg"></audio>
+            <audio src="../music/filmMusic/itst.mp3" id="audiosix" type="audio/mpeg"></audio>
+            <audio src="../music/filmMusic/yards.mp3" id="audioeight" type="audio/mpeg"></audio>
+            <audio src="../music/filmMusic/matched.mp3" id="audiofive" type="audio/mpeg"></audio>
+        </main>
+        
+    <script type="text/javascript" src="../js/films.js"></script>
+    </body>
+</html> 

@@ -70,7 +70,7 @@ nav a.active {
  
 /*Film Posters
 ------------------------------------*/
-
+ 
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -103,17 +103,8 @@ img {
     opacity: 70%;
 }
 
-.back {
-    cursor: pointer;
-}
-
 #five {
     display: none;
-}
-
-.back-button {
-    display: none;
-    visibility: hidden;
 }
 
 /*Flip Posters

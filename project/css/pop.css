@@ -411,6 +411,7 @@ i.fa-envelope:hover {
 .ttt {
     font-size: .6em;
     font-weight: normal;
+    font-family: 'times new roman';
 }
 
 .tt .ttt {

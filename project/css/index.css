@@ -112,14 +112,10 @@ a>i {
     margin-right: 10px;
 }
 
-.classical, .pop {
+.classical, .pop, .fa-linkedin, fa-linkedin-in, .fa-envelope {
     font-size: 1.6em;
 }
 
-
-.fa-envelope {
-    font-size: 2.2em;
-}
 
 i.classical:hover {
     background-image: linear-gradient(to left, blue, red);   -webkit-background-clip: text;
@@ -132,29 +128,93 @@ i.pop:hover {
     color: transparent; 
 }
 
+i.fa-linkedin:hover {
+/*
+    background-image: linear-gradient(to left, red, blue);   -webkit-background-clip: text;
+    color: transparent; 
+*/
+    color: darkblue;
+}
+
 i.fa-envelope:hover {
-    color: maroon;
+/*    color: maroon;*/
+    color: darkblue;
+/*
+    background-image: linear-gradient(to left, blue, red);   -webkit-background-clip: text;
+    color: transparent; 
+*/
     
+}
+
+/*Icon Tooltips
+-----------------------------------*/
+.tt {
+  position: relative;
+  display: inline-block;
+}
+
+.ttt {
+    font-size: .6em;
+    font-weight: normal;
+}
+
+.tt .ttt {
+  visibility: hidden;
+  background-color: grey;
+  white-space: nowrap;
+  color: whitesmoke;
+  text-align: center;
+  padding: 2px 4px;
+  margin-bottom: 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+}
+
+.tt:hover .ttt {
+  visibility: visible;
+}
+
+.ct {
+    margin-left: -260%;
+}
+
+.et {
+    margin-left: -145%;
+}
+
+.lt {
+    margin-left: -200%;
+}
+
+.pt {
+    margin-left: -220%;
 }
 
 /*Icon Media Queries
 -----------------------------------*/
 @media only screen and (max-width : 1000px) {
     .icons {
-        margin-top: 25px;
+        margin-top: 38px;
     }
 }
 
 @media only screen and (max-width : 600px) {
-    .classical, .pop {
-    font-size: 1.2em;
+    .classical, .pop, .fa-linkedin, fa-linkedin-in, .fa-envelope {
+/*    font-size: 1.2em;*/
+}
+
 }
 
 
-.fa-envelope {
-    font-size: 1.6em;
+@media only screen and (max-width : 370px) {
+    .ct {
+    margin-left: -220%;
 }
+
 }
+
 
 /* Media Queries! ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -178,18 +238,13 @@ img {
     nav {
         height: 50px;
     }
-    
     nav a {
-        font-size: 1.8em;
-        
+        font-size: 1.8em;   
     }
-    
     .container {
         margin-top: 80px;
-    }
-
+    }   
 }
-
 
 /* Medium ----------- */
 @media only screen and (max-width : 800px) {

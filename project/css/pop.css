@@ -303,6 +303,7 @@ a:hover {
     width: 100%;
     height: 3px;
     align-items: center;
+    cursor: pointer;
 }
 
 [type='range'] {
@@ -324,6 +325,7 @@ input[type=range]::-moz-range-track {
   width: 12.5em;
   height: 0.2em;
   background: #777;
+  cursor: pointer;
 }
 
 [type='range']::-webkit-slider-thumb {
@@ -335,6 +337,7 @@ input[type=range]::-moz-range-track {
   height: 1em;
   border-radius: 50%;
   background-color: grey;
+  cursor: pointer;
 }
 
 /*Embedded score
@@ -473,7 +476,7 @@ i.fa-envelope:hover {
     }
     
     .right {
-        right: 110px;
+        right: 120px;
     }
     
 }

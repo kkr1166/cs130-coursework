@@ -354,6 +354,7 @@ input[type=range]::-moz-range-track {
     justify-content: center;
     margin-top: 45px;
     margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .icon {
@@ -373,14 +374,20 @@ a>i {
 
 
 i.classical:hover {
+/*
     background-image: linear-gradient(to left, blue, red);   -webkit-background-clip: text;
     color: transparent; 
+*/
+    color: black;
     
 }
 
 i.pop:hover {
+/*
     background-image: linear-gradient(to left, red, blue);   -webkit-background-clip: text;
     color: transparent; 
+*/
+    color: black;
 }
 
 i.fa-linkedin:hover {
@@ -388,12 +395,12 @@ i.fa-linkedin:hover {
     background-image: linear-gradient(to left, red, blue);   -webkit-background-clip: text;
     color: transparent; 
 */
-    color: darkblue;
+    color: black;
 }
 
 i.fa-envelope:hover {
 /*    color: maroon;*/
-    color: darkblue;
+    color: black;
 /*
     background-image: linear-gradient(to left, blue, red);   -webkit-background-clip: text;
     color: transparent; 
@@ -487,7 +494,6 @@ i.fa-envelope:hover {
     .right {
         right: 120px;
     }
-    
 }
 
 /* Big ----------- */
@@ -522,8 +528,6 @@ i.fa-envelope:hover {
     .message {
         height: 80px;
     }
-
-
 }
 
 /* Medium ----------- */
@@ -737,9 +741,6 @@ i.fa-envelope:hover {
     .time-elapsed {
         padding-left: 3px;
     }
-    
-    
-
 }
 
 /* Smaller ------

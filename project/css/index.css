@@ -33,8 +33,6 @@ body {
 
 img {
     width: 500px;
-/*    height: calc(309.26px);*/
-/*    height: inherit;*/
     height: calc((500px/2299)*1422);
     border: solid 3px grey;
 }
@@ -92,6 +90,14 @@ nav a.active {
   color: grey;
 }
 
+/*
+nav a.rainbow-text {
+    
+    background-image: linear-gradient(to left, blue, red);   -webkit-background-clip: text;
+    color: transparent; 
+}
+*/
+
 /*Icons
 -----------------------------------*/
 .icons {
@@ -112,46 +118,13 @@ a>i {
     margin-right: 10px;
 }
 
-.classical, .pop, .fa-linkedin, fa-linkedin-in, .fa-envelope {
+.classical, .pop, .fa-linkedin, fa-linkedin-in, .fa-envelope, .fa-github, .fa-github-square {
     font-size: 1.6em;
 }
 
 
-i.classical:hover {
-/*
-    background-image: linear-gradient(to left, blue, red);   -webkit-background-clip: text;
-    color: transparent; 
-*/
+i.classical:hover, i.fa-linkedin:hover, i.pop:hover, i.fa-github:hover, i.fa-github-square:hover, i.fa-envelope:hover {
     color: black;
-    
-}
-
-i.pop:hover {
-/*
-    background-image: linear-gradient(to left, red, blue);   -webkit-background-clip: text;
-    color: transparent; 
-*/
-    color: black;
-}
-
-i.fa-linkedin:hover {
-/*
-    background-image: linear-gradient(to left, red, blue);   -webkit-background-clip: text;
-    color: transparent; 
-*/
-/*    color: darkblue;*/
-    color: black;
-}
-
-i.fa-envelope:hover {
-/*    color: maroon;*/
-/*    color: darkblue;*/
-    color: black;
-/*
-    background-image: linear-gradient(to left, blue, red);   -webkit-background-clip: text;
-    color: transparent; 
-*/
-    
 }
 
 /*Icon Tooltips
@@ -197,6 +170,10 @@ i.fa-envelope:hover {
     margin-left: -200%;
 }
 
+.gt {
+    margin-left: -245%;
+}
+
 .pt {
     margin-left: -220%;
 }
@@ -209,18 +186,13 @@ i.fa-envelope:hover {
     }
 }
 
-@media only screen and (max-width : 600px) {
-    .classical, .pop, .fa-linkedin, fa-linkedin-in, .fa-envelope {
-/*    font-size: 1.2em;*/
-}
-
-}
-
-
 @media only screen and (max-width : 370px) {
     .ct {
-    margin-left: -220%;
+    margin-left: -180%;
 }
+    .pt {
+        margin-left: -250%;
+    }
 
 }
 

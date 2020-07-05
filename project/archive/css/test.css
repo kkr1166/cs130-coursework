@@ -1,0 +1,134 @@
+body {
+    background-color: whitesmoke;
+}
+.squared {
+    height: 50px;
+    background-color: red;
+/*
+    margin-left: calc(.05vw*.05vw);
+    margin-right: calc(.05vw*.05vw);
+    width: calc(100% - .05vw*.05vw - .05vw*.05vw);
+*/
+    margin-left: calc(100%*.05*100%);
+    margin-right: calc(100%*.05*100%);
+    width: calc(100% - 100%*.05*100% - 100%*.05*100%);
+}
+
+.one {
+    width: 100px;
+    border: solid 3px red;
+    
+}
+
+.two {
+    width: 100px;
+    border: solid 1px aqua;
+}
+
+.three {
+    width: 100px;
+    border: solid 1px aqua;
+    padding: 4px;
+    margin: 9px;
+}
+
+.four {
+    width: 200px;
+    border: solid 3px black;
+}
+/* flip the pane when hovered */
+
+.flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+/*
+.flip-container, .front, .back {
+    width: 250px;
+    height: 250px;
+}
+*/
+
+.flip-container {
+/*
+    width: 250px;
+    height: 250px;
+*/
+    width: calc(33.33% - 20px);
+    height: calc(70% - 20px);
+    min-height: 120px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.front, .back {
+    height: calc(70vh - 20px - 15px);
+    width: calc(33.33vw - 20px);
+}
+
+/* flip speed */
+
+.flipper {
+    transition: 2s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+
+/* hide back of pane during swap */
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+/*
+    top: 0;
+    left: 0;
+*/
+    
+}
+
+
+/* front pane, placed above back */
+
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+    background: url(http://img.bleacherreport.net/img/images/photos/003/556/940/edab30087cea36c0ca206fc61a4b10fa_crop_north.jpg?w=630&h=420&q=75) center center no-repeat;
+    background-size: cover;
+}
+
+
+/* back, initially hidden pane */
+
+.back {
+    transform: rotateY(180deg);
+    background-color: blue;
+}
+
+/*
+.artist-1 {
+    background: url(http://img.bleacherreport.net/img/images/photos/003/556/940/edab30087cea36c0ca206fc61a4b10fa_crop_north.jpg?w=630&h=420&q=75) center center no-repeat;
+    background-size: cover;
+}
+*/
+
+.cards {
+    display: flex;
+}
+
+.item {
+    background: #ccc;
+  width: 200px;
+    height: 300px;
+}
+.block {
+    height: 50px;
+    background: red;
+    width: 100%;
+}
+.info{
+    background: green;
+    height: 20px;
+    width: 100%;
+}

@@ -13,7 +13,7 @@ const AudioPlayer = (selector, audioFile) => {
             pause();
         }
     }; 
- 
+  
     const play = () => {
         //////////////////
         /////////////////

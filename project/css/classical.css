@@ -108,12 +108,43 @@ nav a.active {
 }
 
 .right {
-    margin-top: 14px;
+/*    margin-top: 14px;*/
     position: absolute;
     right: 15vw;
     display: flex;
     align-items: center;
   
+}
+
+.btn {
+    font-size: 1em;
+    border: solid 1px whitesmoke;
+    border-radius: 6px;
+    padding: 3px;
+    margin: 0px 10px 0px 0px;
+    font-style: italic;
+}
+.logic {
+/*    display: none;*/
+}
+
+.btn:hover {
+/*    background-color: whitesmoke;*/
+    border: solid 1px grey!important;
+/*    background-color: darkslategrey;*/
+    color: grey;
+    cursor: pointer;
+}
+
+.flex {
+    height: 50px;
+/*    border: solid 1px red;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
 }
 
 .instrumentation {
@@ -199,15 +230,14 @@ nav a.active {
     cursor: pointer;
 }
 
-.view_score:hover {
-    color: whitesmoke;
-}
 
 /*Tooltip
 -----------------------------------*/
+/*
 .fa-ellipsis-v {
     font-size: 1.5em;   
 }
+*/
 
 .tooltip {
   position: relative;
@@ -215,52 +245,60 @@ nav a.active {
   display: flex;
   align-items: center;
   cursor: pointer;
-  padding-left: 60px;
-  padding-right: 16px;
+  padding-left: 0px;
+  padding-right: 0px;
+  
     
 }
 
 .tooltip .tooltiptext {
-  visibility: hidden;
   text-decoration: underline;
   width: 200px;
-  background-color: rgb(59,56,56);
-  color: grey;
+  background-color: black;
   text-align: center;
-  border-radius: 0px;
+  border-radius: 8px;
   padding-bottom: 5px;
   padding-top: 5px;
   padding-left: 0px;
   padding-right: 0px;
   position: absolute;
   z-index: 1;
-  top: 100%;
+/*  top: 26px;*/
+  top: 20px;
   left: 50%;
-  margin-left: -169px;
-  border: solid 3px lightgrey;
+/*  margin-left: -220px;*/
+    margin-left: -163px;
+/*  margin-top: 25px;*/
+  border: solid 3px grey;
 }
 
 .tooltip .tooltiptext::after {
+/*
   content: "";
   position: absolute;
   bottom: 100%;
   left: 80%;
-  margin-left: 13px;
+  margin-left: 10px;
   border-width: 15px;
   border-style: solid;
-  border-color: transparent transparent lightgrey transparent;
+  border-color: pink transparent grey transparent;
+*/
 
 }
 
+/*
 .tooltip:hover .tooltiptext {
   visibility: visible;
   
 }
+*/
 
+/*
 .tooltip:hover {
   color: grey;
   
 }
+*/
 
 .embedded_score {
     display: none;
@@ -271,23 +309,25 @@ nav a.active {
 /*Tooltip Up
 -----------------------------------*/
 .up .tooltiptext {
-  top: -510%;
+  top: -125px;
 }
 
 .up .tooltiptext::after {
+/*
   top: 100%;
   border-color: lightgrey transparent transparent transparent;
+*/
 }
 
 /*Download hover tooltip
 -----------------------------------*/
 
 a {
-    color: grey;
+    color: whitesmoke;
 }
 
 a:hover {
-    color: whitesmoke;
+    color: grey;
 }
 
 /*Slider
@@ -511,12 +551,11 @@ i.classical:hover, i.fa-linkedin:hover, i.pop:hover, i.fa-github:hover, i.fa-git
     }
     
     .left_of_middle {
-        width: calc(50vw - 280px);
+        width: calc(50vw - 295px);
     }
     
     .right {
         right: 43px;
-        margin-top: 13px;
     }
     
     .time-elapsed {
@@ -587,15 +626,14 @@ i.classical:hover, i.fa-linkedin:hover, i.pop:hover, i.fa-github:hover, i.fa-git
     .instrumentation {
         font-size: .9em;
     }
-    
+    .flex {
+    height: 45px;
+}
+
+/*
     .up .tooltiptext {
 
   top: -660%;
-}
-
-.up .tooltiptext::after {
-  top: 100%;
-  border-color: lightgrey transparent transparent transparent;
 }
     .tooltip {
         padding-left: 10px;
@@ -604,6 +642,7 @@ i.classical:hover, i.fa-linkedin:hover, i.pop:hover, i.fa-github:hover, i.fa-git
         
         margin-left: -194px;
     }
+*/
 
 }
 
@@ -620,7 +659,7 @@ i.classical:hover, i.fa-linkedin:hover, i.pop:hover, i.fa-github:hover, i.fa-git
     }
     
     .left_of_middle {
-        width: calc(50vw - 245px);
+        width: calc(50vw - 285px);
     }
     
     [type='range']::-webkit-slider-thumb {
@@ -671,12 +710,16 @@ i.classical:hover, i.fa-linkedin:hover, i.pop:hover, i.fa-github:hover, i.fa-git
     }
     
     .left_of_middle {
-        width: calc(50vw - 215px);
+        width: calc(50vw - 240px);
     }
     
     .right {
         right: 17px;
-        margin-top: 10px;
+    }
+    
+    .flex {
+        height: 40px;
+        font-size: .9em;
     }
     
     .track_name {
@@ -719,7 +762,7 @@ i.classical:hover, i.fa-linkedin:hover, i.pop:hover, i.fa-github:hover, i.fa-git
  
 /* Smaller ------
 ----- */
-@media only screen and (max-width : 465px) {
+@media only screen and (max-width : 505px) {
 
     nav {
         margin-left: 10px;
@@ -752,7 +795,6 @@ i.classical:hover, i.fa-linkedin:hover, i.pop:hover, i.fa-github:hover, i.fa-git
         margin-bottom: 12px;
     }
     .right {
-        margin-top: 9.5px;
         padding-left: 0px;
     }
     
@@ -782,7 +824,8 @@ i.classical:hover, i.fa-linkedin:hover, i.pop:hover, i.fa-github:hover, i.fa-git
         padding-top: 2px;
     }
     .left_of_middle {
-        width: calc(50vw - 165px);
+        width: calc(50vw - 200px);
+        
     }
     
     .message {
@@ -791,6 +834,10 @@ i.classical:hover, i.fa-linkedin:hover, i.pop:hover, i.fa-github:hover, i.fa-git
     
     .controls {
         margin-left: 4px;
+    }
+    
+    .flex {
+        font-size: .8em;
     }
     
     [type='range']::-webkit-slider-thumb {

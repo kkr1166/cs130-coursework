@@ -121,7 +121,7 @@ nav a.active {
 }
 
 .right {
-    margin-top: 14px;
+/*    margin-top: 14px;*/
     position: absolute;
     right: 15vw;
     display: flex;
@@ -129,6 +129,37 @@ nav a.active {
   
 }
 
+.btn {
+    font-size: 1em;
+    border: solid 1px whitesmoke;
+    border-radius: 6px;
+    padding: 3px;
+    margin: 0px 10px 0px 0px;
+    font-style: italic;
+}
+.logic {
+/*    display: none;*/
+}
+
+.btn:hover {
+/*    background-color: whitesmoke;*/
+    border: solid 1px grey!important;
+/*    background-color: darkslategrey;*/
+    color: grey;
+    cursor: pointer;
+}
+
+.flex {
+    height: 50px;;
+/*    border: solid 1px red;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+ 
 .instrumentation {
     color: grey;
 }
@@ -211,9 +242,6 @@ nav a.active {
     cursor: pointer;
 }
 
-.view_score:hover {
-    color: whitesmoke;
-}
 
 /*View hover tooltip
 -----------------------------------*/
@@ -523,7 +551,7 @@ i.classical:hover, i.fa-linkedin:hover, i.pop:hover, i.fa-github:hover, i.fa-git
     
     .right {
         right: 43px;
-        margin-top: 13px;
+/*        margin-top: 13px;*/
     }
     
     .time-elapsed {
@@ -713,7 +741,7 @@ i.classical:hover, i.fa-linkedin:hover, i.pop:hover, i.fa-github:hover, i.fa-git
 
 /* Smaller ------
 ----- */
-@media only screen and (max-width : 465px) {
+@media only screen and (max-width : 505px) {
 
     nav {
         margin-left: 10px;

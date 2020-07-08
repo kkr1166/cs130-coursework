@@ -106,13 +106,23 @@ function viewParts(id) {
 
 const audioPlayer1 = AudioPlayer('.player.heterochromia', "../music/classicalMusic/heterochromia.mp3");
 
-const audioPlayer2 = AudioPlayer('.player.bonesick', "../music/classicalMusic/boneSick.m4a");
+//const audioPlayer1 = AudioPlayer('.player.heterochromia', "../music/classicalMusic/heterochromia.mp3");
 
-const audioPlayer3 = AudioPlayer('.player.blacksugar', "../music/classicalMusic/blackSugar.m4a");
+const audioPlayer2 = AudioPlayer('.player.bonesick', "../music/classicalMusic/rain.mp3");
 
-const audioPlayer4 = AudioPlayer('.player.smokewater', "../music/classicalMusic/smokeWater.m4a");
+const audioPlayer3 = AudioPlayer('.player.blacksugar', "../music/classicalMusic/rain.mp3");
 
-const audioPlayer5 = AudioPlayer('.player.beehivecoke', "../music/classicalMusic/beehiveCoke.m4a");
+const audioPlayer4 = AudioPlayer('.player.smokewater', "../music/classicalMusic/rain.mp3");
+
+const audioPlayer5 = AudioPlayer('.player.beehivecoke', "../music/classicalMusic/rain.mp3");
+
+//const audioPlayer2 = AudioPlayer('.player.bonesick', "../music/classicalMusic/boneSick.m4a");
+//
+//const audioPlayer3 = AudioPlayer('.player.blacksugar', "../music/classicalMusic/blackSugar.m4a");
+//
+//const audioPlayer4 = AudioPlayer('.player.smokewater', "../music/classicalMusic/smokeWater.m4a");
+//
+//const audioPlayer5 = AudioPlayer('.player.beehivecoke', "../music/classicalMusic/beehiveCoke.m4a");
 
 const audioPlayer6 = AudioPlayer('.player.mode', "../music/classicalMusic/mode.mp3");
 

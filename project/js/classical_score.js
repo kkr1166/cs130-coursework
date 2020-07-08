@@ -108,7 +108,7 @@ const audioPlayer1 = AudioPlayer('.player.heterochromia', "../music/classicalMus
 
 //const audioPlayer1 = AudioPlayer('.player.heterochromia', "../music/classicalMusic/heterochromia.mp3");
 
-const audioPlayer2 = AudioPlayer('.player.bonesick', "../music/classicalMusic/rain.mp3");
+const audioPlayer2 = AudioPlayer('.player.bonesick', "../../music/classicalMusic/rain.mp3");
 
 const audioPlayer3 = AudioPlayer('.player.blacksugar', "../music/classicalMusic/rain.mp3");
 

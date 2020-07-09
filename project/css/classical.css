@@ -44,10 +44,7 @@ nav a {
   background-color: whitesmoke;
 }
 
-nav>a:hover {
-  color: grey;
-    cursor: pointer;
-}
+
 
 nav a.active {
   color: grey;
@@ -703,7 +700,7 @@ i.classical:hover, i.fa-linkedin:hover, i.pop:hover, i.fa-github:hover, i.fa-git
     }
     
     nav>a:hover {
-        color: grey;
+/*        color: grey;*/
         
     }
     
@@ -789,14 +786,6 @@ i.classical:hover, i.fa-linkedin:hover, i.pop:hover, i.fa-github:hover, i.fa-git
         
     }
     
-    nav>a:hover {
-        color: grey;
-        
-    }
-    
-    nav a.active {
-        color: grey;
-    }
     
     .song {
         margin-bottom: 12px;
@@ -964,6 +953,13 @@ i.classical:hover, i.fa-linkedin:hover, i.pop:hover, i.fa-github:hover, i.fa-git
         
     } 
     
-
+/* Hovering ------
+----- */
+@media(hover: hover) and (pointer: fine) {
+    nav>a:hover {
+        color: grey;
+        cursor: pointer;
+    }
+}
 
 

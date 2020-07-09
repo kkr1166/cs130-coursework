@@ -117,13 +117,14 @@ nav a.active {
 }
 
 .btn {
-    font-size: 1em;
+    font-size: .9em;
     border: solid 1px whitesmoke;
     border-radius: 6px;
     padding: 3px;
-    margin: 0px 10px 0px 0px;
+    margin: 0px 8px 0px 0px;
     font-style: italic;
 }
+
 .logic {
 /*    display: none;*/
 }
@@ -145,6 +146,10 @@ nav a.active {
     align-content: center;
     justify-content: center;
     justify-items: center;
+}
+
+.mini {
+    display: flex;
 }
 
 .instrumentation {
@@ -247,13 +252,11 @@ nav a.active {
   cursor: pointer;
   padding-left: 0px;
   padding-right: 0px;
-  
-    
 }
 
 .tooltip .tooltiptext {
   text-decoration: underline;
-  width: 200px;
+  width: 180px;
   background-color: black;
   text-align: center;
   border-radius: 8px;
@@ -267,7 +270,7 @@ nav a.active {
   top: 20px;
   left: 50%;
 /*  margin-left: -220px;*/
-    margin-left: -163px;
+    margin-left: -194px;
 /*  margin-top: 25px;*/
   border: solid 3px grey;
 }
@@ -303,6 +306,10 @@ nav a.active {
 .embedded_score {
     display: none;
     margin-bottom: 20px;
+}
+
+iframe {
+    height: 350px;
 }
 
 
@@ -581,7 +588,7 @@ i.classical:hover, i.fa-linkedin:hover, i.pop:hover, i.fa-github:hover, i.fa-git
 }
 
     .play_pause {
-        font-size: 1em;
+/*        font-size: 1em;*/
         padding-right: 10px;
 }
 
@@ -655,7 +662,7 @@ i.classical:hover, i.fa-linkedin:hover, i.pop:hover, i.fa-github:hover, i.fa-git
     
     .left .play_pause {
         padding-left: 10px;
-        font-size: 1.4em;
+/*        font-size: 1.4em;*/
     }
     
     .left_of_middle {
@@ -719,7 +726,7 @@ i.classical:hover, i.fa-linkedin:hover, i.pop:hover, i.fa-github:hover, i.fa-git
     
     .flex {
         height: 40px;
-        font-size: .9em;
+        font-size: .8em;
     }
     
     .track_name {
@@ -859,11 +866,61 @@ i.classical:hover, i.fa-linkedin:hover, i.pop:hover, i.fa-github:hover, i.fa-git
         margin-left: -199px;
     }
 }
+
 /* Smallest ------
 ----- */
-    @media only screen and (max-width : 370px) {
+    @media only screen and (max-width : 435px) {
+        
+        .instrumentation {
+            max-width: 100px;
+            
+        }
+        
+        .track_photo {
+            height: 53px;
+            width: 53px;
+        }
+        
         .time-elapsed, .time-total {
-            display: none;
+            font-size: .9em;
+
+        }
+        
+        .play_pause {
+            font-size: 1.6em!important;
+            padding-left: 7px!important;
+            padding-right: 7px!important;
+        }
+        
+            [type='range']::-webkit-slider-thumb {
+  margin-top: -.45em;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  border: none;
+  width: 1em;
+  height: 1em;
+}
+        .left_of_middle {
+        
+        min-width: 12px;
+        width: calc(50vw - 177px);
+        
+    }
+        
+        .flex {
+    height: 53px;
+            font-size: .9em;
+        }
+        
+        
+}
+
+
+/* Smallest ------
+----- */
+    @media only screen and (max-width : 380px) {
+        .time-elapsed, .time-total {
+/*            display: none;*/
         }
         
         .controls {
@@ -872,7 +929,7 @@ i.classical:hover, i.fa-linkedin:hover, i.pop:hover, i.fa-github:hover, i.fa-git
         }
         
         .right {
-            right: 12px;
+/*            right: 12px;*/
         }
         
         .play_pause {
@@ -880,8 +937,31 @@ i.classical:hover, i.fa-linkedin:hover, i.pop:hover, i.fa-github:hover, i.fa-git
         }
         
         .left_of_middle {
-            width: calc(50vw - 150px);
+            width: calc(50vw - 160px);
+            min-width: 8px;
+    }
+        .flex {
+            height: 23px;
+            padding: 0px 0px 0px 0px;
+            margin-top: 2px;
         }
+        
+        .mini {
+            display: block;
+/*            border: solid 1px red;*/
+            height: 53px;
+        }
+        
+        .btn {
+            padding: 0px 3px 0px 3px;
+        }
+        
+        .play_pause {
+            font-size: 1.3em!important;
+            padding-right: 4px!important;
+        }
+
+        
     } 
     
 

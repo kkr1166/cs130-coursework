@@ -88,8 +88,8 @@ function viewParts(id) {
         x.style.display = "block";
         y.innerHTML = "";
         y.innerHTML = "hide"; 
-        y.style.paddingLeft ="5.5px";
-        y.style.paddingRight ="5.5px";
+        y.style.paddingLeft ="6px";
+        y.style.paddingRight ="6px";
 //        y.style.color ="grey";
 //        y.style.hpaddingRight ="6px";
     }

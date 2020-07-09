@@ -120,19 +120,14 @@ nav a.active {
     padding: 3px;
     margin: 0px 8px 0px 0px;
     font-style: italic;
+    cursor: pointer;
 }
 
 .logic {
 /*    display: none;*/
 }
 
-.btn:hover {
-/*    background-color: whitesmoke;*/
-    border: solid 1px grey!important;
-/*    background-color: darkslategrey;*/
-    color: grey;
-    cursor: pointer;
-}
+
 
 .flex {
     height: 50px;
@@ -330,9 +325,7 @@ a {
     color: whitesmoke;
 }
 
-a:hover {
-    color: grey;
-}
+
 
 /*Slider
 -----------------------------------*/
@@ -699,14 +692,6 @@ i.classical:hover, i.fa-linkedin:hover, i.pop:hover, i.fa-github:hover, i.fa-git
         
     }
     
-    nav>a:hover {
-/*        color: grey;*/
-        
-    }
-    
-    nav a.active {
-        color: grey;
-    }
     
     .tracks {
         margin-left: 20px;
@@ -960,6 +945,15 @@ i.classical:hover, i.fa-linkedin:hover, i.pop:hover, i.fa-github:hover, i.fa-git
         color: grey;
         cursor: pointer;
     }
+    
+    .btn:hover {
+    border: solid 1px grey!important;
+    color: grey;
+}
+    a:hover {
+    color: grey;
+}
+    
 }
 
 

@@ -812,6 +812,10 @@ a>i {
         
         margin-left: -199px;
     }
+    
+    iframe {
+    height: 300px;
+}
 }
 
 /* Smallest ------

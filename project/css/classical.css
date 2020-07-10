@@ -865,7 +865,7 @@ a>i {
 
 /* Smallest ------
 ----- */
-    @media only screen and (max-width : 380px) {
+    @media only screen and (max-width : 425px) {
         .time-elapsed, .time-total {
 /*            display: none;*/
         }
@@ -900,7 +900,8 @@ a>i {
         }
         
         .btn {
-            padding: 0px 3px 0px 3px;
+            padding-top: 0px;
+            padding-bottom: 0px;
         }
         
         .play_pause {

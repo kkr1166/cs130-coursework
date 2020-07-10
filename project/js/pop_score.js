@@ -5,11 +5,26 @@ function viewScore(id) {
     var z = document.getElementById(id + "_logic_btn");
     var w = document.getElementById(id + "_logic_pdf");
     if (x.style.display === "none") {
+        for (let pdf of document.getElementsByClassName("score")) {
+            pdf.style.display = "none";
+        }
+        for (let lybtn of document.getElementsByClassName("lyrics")) {
+            lybtn.innerHTML = "";
+            lybtn.innerHTML = "lyrics";
+            lybtn.style.paddingLeft ="1.2px";
+            lybtn.style.paddingRight ="1.2px";
+        }
+        for (let lobtn of document.getElementsByClassName("logic")) {
+            lobtn.innerHTML = "";
+            lobtn.innerHTML = "logic";
+            lobtn.style.paddingLeft ="3px";
+            lobtn.style.paddingRight ="3px";
+        }
         x.style.display = "block";
         y.innerHTML = "";
         y.innerHTML = "hide"; 
-        y.style.paddingLeft ="7px";
-        y.style.paddingRight ="7px";
+        y.style.paddingLeft ="4.5px";
+        y.style.paddingRight ="4.5px";
         w.style.display = "none";
         z.innerHTML = "";
         z.innerHTML = "logic";
@@ -20,8 +35,8 @@ function viewScore(id) {
         x.style.display = "none";
         y.innerHTML = "";
         y.innerHTML = "lyrics";
-        y.style.paddingLeft ="3px";
-        y.style.paddingRight ="3px";
+        y.style.paddingLeft ="1.2px";
+        y.style.paddingRight ="1.2px";
     }   
 }
  
@@ -32,6 +47,21 @@ function logicDontThink(id) {
     var y = document.getElementById("dontthink_view");
     var w = document.getElementById("dontthink_view_logic_pdf");
     if (w.style.display === "none") {
+        for (let pdf of document.getElementsByClassName("score")) {
+            pdf.style.display = "none";
+        }
+        for (let lybtn of document.getElementsByClassName("lyrics")) {
+            lybtn.innerHTML = "";
+            lybtn.innerHTML = "lyrics";
+            lybtn.style.paddingLeft ="1.2px";
+            lybtn.style.paddingRight ="1.2px";
+        }
+        for (let lobtn of document.getElementsByClassName("logic")) {
+            lobtn.innerHTML = "";
+            lobtn.innerHTML = "logic";
+            lobtn.style.paddingLeft ="3px";
+            lobtn.style.paddingRight ="3px";
+        }
         w.style.display = "block";
         z.innerHTML = "";
         z.innerHTML = "hide"; 
@@ -40,8 +70,8 @@ function logicDontThink(id) {
         x.style.display = "none";
         y.innerHTML = "";
         y.innerHTML = "lyrics";
-        y.style.paddingLeft ="3px";
-        y.style.paddingRight ="3px";
+        y.style.paddingLeft ="1.2px";
+        y.style.paddingRight ="1.2px";
     }
     else {
         w.style.display = "none";
@@ -59,6 +89,21 @@ function logicaffluentaphasia(id) {
     var y = document.getElementById("affluentaphasia_view");
     var w = document.getElementById("affluentaphasia_view_logic_pdf");
     if (w.style.display === "none") {
+        for (let pdf of document.getElementsByClassName("score")) {
+            pdf.style.display = "none";
+        }
+        for (let lybtn of document.getElementsByClassName("lyrics")) {
+            lybtn.innerHTML = "";
+            lybtn.innerHTML = "lyrics";
+            lybtn.style.paddingLeft ="1.2px";
+            lybtn.style.paddingRight ="1.2px";
+        }
+        for (let lobtn of document.getElementsByClassName("logic")) {
+            lobtn.innerHTML = "";
+            lobtn.innerHTML = "logic";
+            lobtn.style.paddingLeft ="3px";
+            lobtn.style.paddingRight ="3px";
+        }
         w.style.display = "block";
         z.innerHTML = "";
         z.innerHTML = "hide"; 
@@ -67,8 +112,8 @@ function logicaffluentaphasia(id) {
         x.style.display = "none";
         y.innerHTML = "";
         y.innerHTML = "lyrics";
-        y.style.paddingLeft ="3px";
-        y.style.paddingRight ="3px";
+        y.style.paddingLeft ="1.2px";
+        y.style.paddingRight ="1.2px";
     }
     else {
         w.style.display = "none";
@@ -86,6 +131,21 @@ function logicfaeries(id) {
     var y = document.getElementById("faeries_view");
     var w = document.getElementById("faeries_view_logic_pdf");
     if (w.style.display === "none") {
+        for (let pdf of document.getElementsByClassName("score")) {
+            pdf.style.display = "none";
+        }
+        for (let lybtn of document.getElementsByClassName("lyrics")) {
+            lybtn.innerHTML = "";
+            lybtn.innerHTML = "lyrics";
+            lybtn.style.paddingLeft ="1.2px";
+            lybtn.style.paddingRight ="1.2px";
+        }
+        for (let lobtn of document.getElementsByClassName("logic")) {
+            lobtn.innerHTML = "";
+            lobtn.innerHTML = "logic";
+            lobtn.style.paddingLeft ="3px";
+            lobtn.style.paddingRight ="3px";
+        }
         w.style.display = "block";
         z.innerHTML = "";
         z.innerHTML = "hide"; 
@@ -94,8 +154,8 @@ function logicfaeries(id) {
         x.style.display = "none";
         y.innerHTML = "";
         y.innerHTML = "lyrics";
-        y.style.paddingLeft ="3px";
-        y.style.paddingRight ="3px";
+        y.style.paddingLeft ="1.2px";
+        y.style.paddingRight ="1.2px";
     }
     else {
         w.style.display = "none";
@@ -113,6 +173,21 @@ function logicskeletonlies(id) {
     var y = document.getElementById("skeletonlies_view");
     var w = document.getElementById("skeletonlies_view_logic_pdf");
     if (w.style.display === "none") {
+        for (let pdf of document.getElementsByClassName("score")) {
+            pdf.style.display = "none";
+        }
+        for (let lybtn of document.getElementsByClassName("lyrics")) {
+            lybtn.innerHTML = "";
+            lybtn.innerHTML = "lyrics";
+            lybtn.style.paddingLeft ="1.2px";
+            lybtn.style.paddingRight ="1.2px";
+        }
+        for (let lobtn of document.getElementsByClassName("logic")) {
+            lobtn.innerHTML = "";
+            lobtn.innerHTML = "logic";
+            lobtn.style.paddingLeft ="3px";
+            lobtn.style.paddingRight ="3px";
+        }
         w.style.display = "block";
         z.innerHTML = "";
         z.innerHTML = "hide"; 
@@ -121,8 +196,8 @@ function logicskeletonlies(id) {
         x.style.display = "none";
         y.innerHTML = "";
         y.innerHTML = "lyrics";
-        y.style.paddingLeft ="3px";
-        y.style.paddingRight ="3px";
+        y.style.paddingLeft ="1.2px";
+        y.style.paddingRight ="1.2px";
     }
     else {
         w.style.display = "none";
@@ -140,6 +215,21 @@ function logicseasharpe(id) {
     var y = document.getElementById("seasharpe_view");
     var w = document.getElementById("seasharpe_view_logic_pdf");
     if (w.style.display === "none") {
+        for (let pdf of document.getElementsByClassName("score")) {
+            pdf.style.display = "none";
+        }
+        for (let lybtn of document.getElementsByClassName("lyrics")) {
+            lybtn.innerHTML = "";
+            lybtn.innerHTML = "lyrics";
+            lybtn.style.paddingLeft ="1.2px";
+            lybtn.style.paddingRight ="1.2px";
+        }
+        for (let lobtn of document.getElementsByClassName("logic")) {
+            lobtn.innerHTML = "";
+            lobtn.innerHTML = "logic";
+            lobtn.style.paddingLeft ="3px";
+            lobtn.style.paddingRight ="3px";
+        }
         w.style.display = "block";
         z.innerHTML = "";
         z.innerHTML = "hide"; 
@@ -148,8 +238,8 @@ function logicseasharpe(id) {
         x.style.display = "none";
         y.innerHTML = "";
         y.innerHTML = "lyrics";
-        y.style.paddingLeft ="3px";
-        y.style.paddingRight ="3px";
+        y.style.paddingLeft ="1.2px";
+        y.style.paddingRight ="1.2px";
     }
     else {
         w.style.display = "none";
@@ -167,6 +257,21 @@ function logicroslyn(id) {
     var y = document.getElementById("roslyn_view");
     var w = document.getElementById("roslyn_view_logic_pdf");
     if (w.style.display === "none") {
+        for (let pdf of document.getElementsByClassName("score")) {
+            pdf.style.display = "none";
+        }
+        for (let lybtn of document.getElementsByClassName("lyrics")) {
+            lybtn.innerHTML = "";
+            lybtn.innerHTML = "lyrics";
+            lybtn.style.paddingLeft ="1.2px";
+            lybtn.style.paddingRight ="1.2px";
+        }
+        for (let lobtn of document.getElementsByClassName("logic")) {
+            lobtn.innerHTML = "";
+            lobtn.innerHTML = "logic";
+            lobtn.style.paddingLeft ="3px";
+            lobtn.style.paddingRight ="3px";
+        }
         w.style.display = "block";
         z.innerHTML = "";
         z.innerHTML = "hide"; 
@@ -175,8 +280,8 @@ function logicroslyn(id) {
         x.style.display = "none";
         y.innerHTML = "";
         y.innerHTML = "lyrics";
-        y.style.paddingLeft ="3px";
-        y.style.paddingRight ="3px";
+        y.style.paddingLeft ="1.2px";
+        y.style.paddingRight ="1.2px";
     }
     else {
         w.style.display = "none";
@@ -194,6 +299,21 @@ function logicwhy(id) {
     var y = document.getElementById("why_view");
     var w = document.getElementById("why_view_logic_pdf");
     if (w.style.display === "none") {
+        for (let pdf of document.getElementsByClassName("score")) {
+            pdf.style.display = "none";
+        }
+        for (let lybtn of document.getElementsByClassName("lyrics")) {
+            lybtn.innerHTML = "";
+            lybtn.innerHTML = "lyrics";
+            lybtn.style.paddingLeft ="1.2px";
+            lybtn.style.paddingRight ="1.2px";
+        }
+        for (let lobtn of document.getElementsByClassName("logic")) {
+            lobtn.innerHTML = "";
+            lobtn.innerHTML = "logic";
+            lobtn.style.paddingLeft ="3px";
+            lobtn.style.paddingRight ="3px";
+        }
         w.style.display = "block";
         z.innerHTML = "";
         z.innerHTML = "hide"; 
@@ -202,8 +322,8 @@ function logicwhy(id) {
         x.style.display = "none";
         y.innerHTML = "";
         y.innerHTML = "lyrics";
-        y.style.paddingLeft ="3px";
-        y.style.paddingRight ="3px";
+        y.style.paddingLeft ="1.2px";
+        y.style.paddingRight ="1.2px";
     }
     else {
         w.style.display = "none";
@@ -221,6 +341,21 @@ function logicriver(id) {
     var y = document.getElementById("river_view");
     var w = document.getElementById("river_view_logic_pdf");
     if (w.style.display === "none") {
+        for (let pdf of document.getElementsByClassName("score")) {
+            pdf.style.display = "none";
+        }
+        for (let lybtn of document.getElementsByClassName("lyrics")) {
+            lybtn.innerHTML = "";
+            lybtn.innerHTML = "lyrics";
+            lybtn.style.paddingLeft ="1.2px";
+            lybtn.style.paddingRight ="1.2px";
+        }
+        for (let lobtn of document.getElementsByClassName("logic")) {
+            lobtn.innerHTML = "";
+            lobtn.innerHTML = "logic";
+            lobtn.style.paddingLeft ="3px";
+            lobtn.style.paddingRight ="3px";
+        }
         w.style.display = "block";
         z.innerHTML = "";
         z.innerHTML = "hide"; 
@@ -229,8 +364,8 @@ function logicriver(id) {
         x.style.display = "none";
         y.innerHTML = "";
         y.innerHTML = "lyrics";
-        y.style.paddingLeft ="3px";
-        y.style.paddingRight ="3px";
+        y.style.paddingLeft ="1.2px";
+        y.style.paddingRight ="1.2px";
     }
     else {
         w.style.display = "none";

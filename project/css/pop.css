@@ -228,6 +228,10 @@ nav a.active {
     align-items: center;
 }
 
+.cover {
+    display: inline;
+    
+}
 
 /*Tooltip
 -----------------------------------*/
@@ -917,8 +921,12 @@ i.classical:hover, i.fa-linkedin:hover, i.pop:hover, i.fa-github:hover, i.fa-git
         iframe {
     height: 150px;
 }
-
-        
+        .cover {
+/*            font-style: italic;*/
+            font-size: 0.7em;
+/*            margin-left: 4px;*/
+}
+  
     } 
     
 /* Hovering ------

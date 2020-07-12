@@ -310,6 +310,34 @@ iframe {
     height: 300px;
 }
 
+h1 {
+    font-weight: normal;
+    font-style: italic;
+    font-family: 'times new roman';
+}
+.words {
+/*    text-align: left;*/
+    display: inline-block;
+    height: 100%;
+/*    border: 1px red solid;*/
+}
+
+.lyric-wrap {
+    display: flex;
+    text-align: center;
+    background-color: white;
+    border: solid grey 3px;
+    height: 278px;
+    overflow: scroll;
+    padding-bottom: 20px;
+/*    box-shadow: 3px 3px 8px 3px lightgrey;*/
+}
+
+/*
+div.river_view_score>.words{
+    margin-left: 30px;
+}
+*/
 
 /*Download hover tooltip
 -----------------------------------*/
@@ -416,10 +444,6 @@ a>i {
   z-index: 1;
   bottom: 100%;
   left: 50%;
-}
-
-.tt:hover .ttt {
-  visibility: visible;
 }
 
 .ct {
@@ -609,6 +633,9 @@ a>i {
     iframe {
     height: 250px;
 }
+   .lyric-wrap {
+    height: 228px;
+}
 /*
     .tooltip {
         padding-left: 10px;
@@ -723,6 +750,10 @@ a>i {
     .time-elapsed {
         padding-left: 3px;
     }
+    
+    p {
+        font-size: 0.9em;
+    }
 }
 
 /* Smaller ------
@@ -819,6 +850,10 @@ a>i {
     iframe {
     height: 200px;
 }
+    .lyric-wrap {
+    height: 178px;
+}
+    
 }
 
 /* Smallest ------
@@ -863,8 +898,12 @@ a>i {
         
         .flex {
     height: 53px;
-            font-size: .9em;
+            font-size: 0.9em;
         }
+        
+        p {
+        font-size: 0.8em;
+    }
         
         
 }
@@ -918,6 +957,9 @@ a>i {
         
         iframe {
     height: 150px;
+}
+        .lyric-wrap {
+    height: 128px;
 }
         .cover {
 /*            font-style: italic;*/

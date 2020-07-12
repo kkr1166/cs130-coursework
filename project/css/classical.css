@@ -405,9 +405,6 @@ a>i {
   left: 50%;
 }
 
-.tt:hover .ttt {
-  visibility: visible;
-}
 
 .ct {
     margin-left: -260%;
@@ -810,10 +807,6 @@ a>i {
         padding-left: 0px;
     }
     
-    .tooltip .tooltiptext {
-        
-        margin-left: -199px;
-    }
     
     iframe {
     height: 300px;
@@ -915,7 +908,12 @@ a>i {
             padding-right: 4px!important;
         }
 
-        
+        .tooltip .tooltiptext {
+  top: 25px;
+}
+        .up .tooltiptext {
+  top: -110px;
+}
     } 
     
 /* Hovering ------
@@ -946,6 +944,10 @@ i.classical:hover, i.fa-linkedin:hover, i.pop:hover, i.fa-github:hover, i.fa-git
 
 .fa-ellipsis-v:hover {
     cursor: pointer;
+}
+    
+.tt:hover .ttt {
+  visibility: visible;
 }
     
 }

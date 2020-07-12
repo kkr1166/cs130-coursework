@@ -1,6 +1,10 @@
 body {
     background-color: whitesmoke;
 }
+.words {
+    border: solid;
+    display: inline-block;
+}
 .squared {
     height: 50px;
     background-color: red;

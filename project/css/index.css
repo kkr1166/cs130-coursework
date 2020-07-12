@@ -81,11 +81,6 @@ nav a {
   background-color: whitesmoke;
 }
 
-nav>a:hover {
-  color: grey;
-    cursor: pointer;
-}
-
 nav a.active {
   color: grey;
 }
@@ -122,11 +117,6 @@ a>i {
     font-size: 1.6em;
 }
 
-
-i.classical:hover, i.fa-linkedin:hover, i.pop:hover, i.fa-github:hover, i.fa-github-square:hover, i.fa-envelope:hover {
-    color: black;
-}
-
 /*Icon Tooltips
 -----------------------------------*/
 .tt {
@@ -154,9 +144,11 @@ i.classical:hover, i.fa-linkedin:hover, i.pop:hover, i.fa-github:hover, i.fa-git
   left: 50%;
 }
 
+
 .tt:hover .ttt {
   visibility: visible;
 }
+
 
 .ct {
     margin-left: -260%;
@@ -269,11 +261,6 @@ img {
         
     }
     
-    nav>a:hover {
-        color: grey;
-        
-    }
-    
     nav a.active {
         color: grey;
     }
@@ -344,11 +331,6 @@ img {
         
     }
     
-    nav>a:hover {
-        color: grey;
-        
-    }
-    
     nav a.active {
         color: grey;
     }
@@ -362,6 +344,23 @@ img {
 }
 
 
+}
+
+
+/* Hovering ------
+----- */
+@media(hover: hover) and (pointer: fine) {
+    nav>a:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+i.classical:hover, i.fa-linkedin:hover, i.pop:hover, i.fa-github:hover, i.fa-github-square:hover, i.fa-envelope:hover {
+    color: black;
+}
+
+
+    
 }
 
 

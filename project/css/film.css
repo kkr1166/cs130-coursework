@@ -59,9 +59,7 @@ nav a {
   background-color: whitesmoke;
 }
 
-nav>a:hover {
-  color: grey;
-}
+
 
 nav a.active {
   color: grey;
@@ -96,11 +94,6 @@ nav a.active {
 
 img {
     width: 100%;
-}
-
-.front:hover {
-    cursor: pointer;
-    opacity: 70%;
 }
 
 .back {
@@ -213,11 +206,7 @@ p {
     white-space: nowrap;
 }
 
-.btn:hover {
-    background-color: black;
-    box-shadow: 4px 4px 3px 3px lightgrey;
-    cursor: pointer;
-}
+
 
 /*Alerts
 ------------------------------------*/
@@ -247,12 +236,7 @@ p {
     padding-right: 10px;    
 }
 
-.ok:hover {
-    color: white;
-    background-color: black;
-    border: solid 1px black;
-    cursor: pointer;
-}
+
 
 button:focus {
 outline: none;
@@ -394,9 +378,8 @@ outline: none;
     }
     
     .btn:hover {
-        background-color: black;
         box-shadow: 1px 1px 2px 1px lightgrey;
-        cursor: pointer;
+        
 }
     .watch {
     margin-left: calc(16.67vw - 70px);
@@ -447,9 +430,7 @@ outline: none;
     }
     
     .btn:hover {
-        background-color: black;
         box-shadow: 1px 1px 2px 1px lightgrey;
-        cursor: pointer;
 }
     .watch {
         margin-left: calc(16.67vw - 68px);
@@ -599,11 +580,6 @@ outline: none;
         color: black;
         padding-top: 5px;
         padding-bottom: 5px;
-        
-    }
-    
-    nav>a:hover {
-        color: grey;
         
     }
     
@@ -896,3 +872,32 @@ outline: none;
         }
         }
     }
+
+/* Hovering ------
+----- */
+@media(hover: hover) and (pointer: fine) {
+    nav>a:hover {
+  color: grey;
+}
+
+.front:hover {
+    cursor: pointer;
+    opacity: 70%;
+}
+
+.btn:hover {
+    background-color: black;
+    box-shadow: 4px 4px 3px 3px lightgrey;
+    cursor: pointer;
+}
+
+
+.ok:hover {
+    color: white;
+    background-color: black;
+    border: solid 1px black;
+    cursor: pointer;
+}
+    
+    
+}

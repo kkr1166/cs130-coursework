@@ -44,10 +44,7 @@ nav a {
   background-color: whitesmoke;
 }
 
-nav>a:hover {
-  color: grey;
-    cursor: pointer;
-}
+
 
 nav a.active {
   color: grey;
@@ -69,15 +66,6 @@ nav a.active {
   border-bottom: dotted 2px;
 }
 
-.alive, .collapsible:hover {
-/*  background-color: #f1f1f1;*/
-    color: black;
-    
-}
-
-.alive {
-/*    margin-bottom: 0px;*/
-}
 
 button {
     border: solid 1px black;
@@ -136,9 +124,6 @@ p>a {
     
 }
 
-p>a:hover {
-    color: grey;
-}
 
 .extra {
         display: none;
@@ -210,9 +195,6 @@ img {
     
 }
 
-img:hover {
-    opacity: 50%;
-}
 .image_container {
     margin-left: 10px;
     margin-right: 10px;
@@ -346,11 +328,6 @@ iframe {
         
     }
     
-    nav>a:hover {
-        color: grey;
-        
-    }
-    
     nav a.active {
         color: grey;
     }
@@ -408,11 +385,6 @@ iframe {
         
     }
     
-    nav>a:hover {
-        color: grey;
-        
-    }
-    
     nav a.active {
         color: grey;
     }
@@ -456,4 +428,23 @@ iframe {
 }
     }
     
+/* Hovering ------
+----- */
+@media(hover: hover) and (pointer: fine) {
+    nav>a:hover {
+  color: grey;
+  cursor: pointer;  
+}
+
+.alive, .collapsible:hover {
+    color: black; 
+}
+    p>a:hover {
+    color: grey;
+}
+img:hover {
+    opacity: 50%;
+}
+
+}
 

@@ -405,7 +405,9 @@ a>i {
   left: 50%;
 }
 
-
+.tt:hover .ttt {
+  visibility: visible;
+}
 
 .ct {
     margin-left: -260%;
@@ -931,9 +933,7 @@ a>i {
     a:hover {
     color: grey;
 }
-    .tt:hover .ttt {
-  visibility: visible;
-}
+    
 
 i.classical:hover, i.fa-linkedin:hover, i.pop:hover, i.fa-github:hover, i.fa-github-square:hover, i.fa-envelope:hover {
     color: black;
